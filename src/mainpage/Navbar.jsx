@@ -18,7 +18,7 @@ export default function Navbar() {
             <li>
               <img
                 className="round-img"
-                src="src\assets\images\logo.png"
+                src="public\images\logo.png"
                 alt="logo"
                 height="60"
               />
@@ -41,7 +41,7 @@ export default function Navbar() {
             <li>
               <div className="account">
                 <img
-                  src="src\assets\images\account.png"
+                  src="public\images\account.png"
                   alt="account"
                   className="round-img"
                   height="60"
@@ -75,7 +75,7 @@ export default function Navbar() {
           <div className="logo">
             <img
               className="round-img"
-              src="src\assets\images\logo.png"
+              src="public\images\logo.png"
               alt="logo"
               height="60"
             />
@@ -83,7 +83,7 @@ export default function Navbar() {
           {/* -----------------------account ------------------------------- */}
           <div className="account">
             <img
-              src="src\assets\images\account.png"
+              src="public\images\account.png"
               alt="account"
               className="round-img account2"
               height="60"
