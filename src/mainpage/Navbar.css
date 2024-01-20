@@ -51,7 +51,7 @@ ul{
     .option-body{
         height: 400px;
         width: 200px;
-        margin-top: 70px;
+        margin-top: -6px;
         position: fixed;
         margin-left: -200px;
         transition: 0.5s;
