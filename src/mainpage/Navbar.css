@@ -1,0 +1,25 @@
+
+ul{
+    list-style: none;
+}
+.links-container{
+    height: 80px;
+    background-color: rgb(255, 0, 179);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+.round-img{
+    border-radius: 50%;
+}
+.links-container li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.links-container li a:hover{
+    color: aquamarine;
+    transition:0.5s;
+    text-decoration: underline;
+}

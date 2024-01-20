@@ -9,9 +9,9 @@ import Reactpage from "./pages/react/Basicreact";
 export default function App(){
   return(
     <>
-    <BrowserRouter>
+      <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Navbar />}>
+        <Route className="routes" path="/" element={<Navbar />}>
           <Route index element={<Home />} />
           <Route path="css" element={<Csspage />} />
           <Route path="html" element={<Htmlpage />} />
