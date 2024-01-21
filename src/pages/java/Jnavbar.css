@@ -2,77 +2,60 @@
 *{
     z-index: 0;
 }
+nav{
+    margin-top: -10px;
+}
 ul{
     list-style: none;
 }
-.links-container{
-    height: 80px;
-    background-color: rgb(255, 0, 179);
+.jlinks-container{
+    height: 40px;
+    background-color: rgb(233, 227, 231);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
    position: fixed;
    width: 100%;
 }
-.round-img{
+.jround-img{
     border-radius: 50%;
 }
-.links-container li a{
+.jlinks-container li a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 139, 226);
     font-weight: bold;
 }
-.links-container li a:hover{
+.jlinks-container li a:hover{
     color: aquamarine;
     transition:0.5s;
     text-decoration: underline;
 }
 /* -------------mobile header-------------- */
-.nav2{
+.jnav2{
     display: flex;
     align-items: center;
-    height: 70px;
+    height: 40px;
     width: 100%;
-    background-color:rgb(255, 0, 179) ;
+    background-color:rgb(221, 221, 221) ;
     justify-content: space-between;
     padding: 0 2%;
     visibility: hidden;
    margin-bottom: -120px;
     /* position: fixed; */
 }
-#theme{
-    position: fixed;
-    z-index: 10;
-    margin-top: 5px;
-    margin-left: 85%;
-    display: flex;
-    height: 10px;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    color: white;
-    font-family:cursive;
-}
-#theme input{
-    margin: 0 !important;
-    padding: 0 !important;
-    border-radius: 50%;
-    height: 20px;
-    width: 20px;
-}
  @media screen and (max-width:576px) {
-    .links-container{
+    .jlinks-container{
         visibility: hidden;
     }
-    .nav2{
+    .jnav2{
         visibility: visible;
         margin-bottom: 5px;
     }
-    .account2{
+    .jaccount2{
         height: 40px;
         margin-top: 15px;
     }
-    .option-body{
+    .joption-body{
         height: 400px;
         width: 200px;
         margin-top: -6px;
@@ -82,7 +65,7 @@ ul{
         padding: 1%;
         background-color: rgb(91, 36, 84);
     }
-    #option-dismiss{
+    #joption-dismiss{
         float: right;
         background-color: rgb(0, 0, 0);
         padding:0 3px 0 3px;

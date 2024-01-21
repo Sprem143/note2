@@ -9,12 +9,22 @@ export default function Navbar() {
   function dismiss() {
     document.getElementById("option-container").style.marginLeft = "-200px";
   }
+  function changeTheme(){
+    let colore=document.getElementById("exampleColorInput").value;
+    document.getElementById("nave").style.backgroundColor=colore;
+    document.getElementsByTagName("body").style.backgroundColor=colore;
+  }
   return (
     <>
-      <nav>
+      <nav >
+        {/* back ground change */}
+        <div id="theme">
+        <span>Theme</span>
+<input type="color" onInput ={changeTheme} class="form-control form-control-color" id="exampleColorInput" value="#FFFDD0" title="Choose your color"></input>
+</div>
         {/* desktop navbar */}
-        <div className="nav1">
-          <ul className="links-container">
+        <div className="nav1" >
+          <ul className="links-container" id="nave">
             <li>
               <img
                 className="round-img"
@@ -44,7 +54,7 @@ export default function Navbar() {
                   src="/static/images/account.png"
                   alt="account"
                   className="round-img"
-                  height="60"
+                  height="45"
                 />
               </div>
             </li>
