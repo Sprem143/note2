@@ -11,7 +11,7 @@ export default function Javapage(){
       }
       return (
         <>
-          <nav>
+          <nav className="jnav">
             {/* desktop navbar */}
             <div className="jnav1">
               <ul className="jlinks-container">

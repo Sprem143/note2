@@ -12,7 +12,7 @@ export default function Navbar() {
   function changeTheme(){
     let colore=document.getElementById("exampleColorInput").value;
     document.getElementById("nave").style.backgroundColor=colore;
-    document.getElementsByTagName("body").style.backgroundColor=colore;
+    document.getElementsByTagName("root").style.backgroundColor=colore;
   }
   return (
     <>
