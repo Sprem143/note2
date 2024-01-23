@@ -1,5 +1,8 @@
 import { Outlet, Link } from "react-router-dom";
 import "./Navbar.css";
+import { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
 export default function Navbar() {
   function showoption() {
     document.getElementById("option-container").style.marginLeft = "0";
@@ -9,98 +12,141 @@ export default function Navbar() {
   function dismiss() {
     document.getElementById("option-container").style.marginLeft = "-200px";
   }
-  function changeTheme(){
-    let colore=document.getElementById("exampleColorInput").value;
-    document.getElementById("nave").style.backgroundColor=colore;
-    document.getElementsByTagName("root").style.backgroundColor=colore;
+  function changeTheme() {
+    let colore = document.getElementById("exampleColorInput").value;
+    document.getElementById("nave").style.backgroundColor = colore;
+    document.getElementsByTagName("root").style.backgroundColor = colore;
   }
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <>
-      <nav >
-        {/* back ground change */}
-        <div id="theme">
-        <span>Theme</span>
-<input type="color" onInput ={changeTheme} class="form-control form-control-color" id="exampleColorInput" value="#FFFDD0" title="Choose your color"></input>
-</div>
-        {/* desktop navbar */}
-        <div className="nav1" >
-          <ul className="links-container" id="nave">
-            <li>
+      
+        <nav>
+          {/* back ground change */}
+          <div id="theme">
+            <span>Theme</span>
+            <input
+              type="color"
+              onInput={changeTheme}
+              class="form-control form-control-color"
+              id="exampleColorInput"
+              value="#FFFDD0"
+              title="Choose your color"
+            ></input>
+          </div>
+          {/* desktop navbar */}
+          <div className="nav1">
+            <ul className="links-container" id="nave">
+              <li>
+                <img
+                  className="round-img"
+                  src="/static/images/logo.png"
+                  alt="logo"
+                  height="60"
+                />
+              </li>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/html">HTML</Link>
+              </li>
+              <li>
+                <Link to="/css">CSS</Link>
+              </li>
+              <li>
+                <Link to="/java">JAVA</Link>
+              </li>
+              <li>
+                <Link to="/react">REACT</Link>
+              </li>
+              <li>
+                <div className="account">
+                  {/* model */}
+                  <Button id="acnt-btn" onClick={handleShow}>
+                    <img
+                      src="/static/images/account.png"
+                      alt="account"
+                      className="round-img"
+                      height="45"
+                    />
+                  </Button>
+
+                  <Modal
+                    show={show}
+                    onHide={handleClose}
+                    animation={false}
+                    className="acnt-model"
+                  >
+                    <div className="model-content">
+                      <Modal.Header closeButton>
+                        <Modal.Title>Prem Kumar</Modal.Title>
+                      </Modal.Header>
+                      <Modal.Body className="model-body">
+                        <img
+                          src="/static/images/mypic.png"
+                          className="round-img"
+                          alt=""
+                          height="120"
+                        />
+                      </Modal.Body>
+                      <Modal.Footer>
+                        Website Designer
+                        {/* <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button> */}
+                      </Modal.Footer>
+                    </div>
+                  </Modal>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          {/* mobile navbar */}
+          <div className="nav2">
+            {/* -----------------------menu icons*----------------------*/}
+            <div className="menu-icon" onClick={showoption}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="24"
+                fill="white"
+                class="bi bi-list"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+                />
+              </svg>
+            </div>
+            {/* onlclik display options */}
+
+            {/*---------------------- mobile logo---------------------- */}
+            <div className="logo">
               <img
                 className="round-img"
                 src="/static/images/logo.png"
                 alt="logo"
                 height="60"
               />
-            </li>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/html">HTML</Link>
-            </li>
-            <li>
-              <Link to="/css">CSS</Link>
-            </li>
-            <li>
-              <Link to="/java">JAVA</Link>
-            </li>
-            <li>
-              <Link to="/react">REACT</Link>
-            </li>
-            <li>
-              <div className="account">
-                <img
-                  src="/static/images/account.png"
-                  alt="account"
-                  className="round-img"
-                  height="45"
-                />
-              </div>
-            </li>
-          </ul>
-        </div>
-
-        {/* mobile navbar */}
-        <div className="nav2">
-          {/* -----------------------menu icons*----------------------*/}
-          <div className="menu-icon" onClick={showoption}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="30"
-              height="24"
-              fill="white"
-              class="bi bi-list"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            </div>
+            {/* -----------------------account ------------------------------- */}
+            <div className="account">
+              <img
+                src="/static/images/account.png"
+                alt="account"
+                className="round-img account2"
+                height="60"
               />
-            </svg>
+            </div>
           </div>
-          {/* onlclik display options */}
-
-          {/*---------------------- mobile logo---------------------- */}
-          <div className="logo">
-            <img
-              className="round-img"
-              src="/static/images/logo.png"
-              alt="logo"
-              height="60"
-            />
-          </div>
-          {/* -----------------------account ------------------------------- */}
-          <div className="account">
-            <img
-              src="/static/images/account.png"
-              alt="account"
-              className="round-img account2"
-              height="60"
-            />
-          </div>
-        </div>
-      </nav>
+        </nav>
       <div className="option-body" id="option-container">
         <div id="option-dismiss" onClick={dismiss}>
           <svg
@@ -120,16 +166,24 @@ export default function Navbar() {
         {/* Menu links */}
         <ul>
           <li className="linkstyle">
-            <Link to="/html" onClick={dismiss}>HTML</Link>
+            <Link to="/html" onClick={dismiss}>
+              HTML
+            </Link>
           </li>
           <li className="linkstyle">
-            <Link to="/css" onClick={dismiss}>CSS</Link>
+            <Link to="/css" onClick={dismiss}>
+              CSS
+            </Link>
           </li>
           <li className="linkstyle">
-            <Link to="/java" onClick={dismiss}>JAVA</Link>
+            <Link to="/java" onClick={dismiss}>
+              JAVA
+            </Link>
           </li>
           <li className="linkstyle">
-            <Link to="/react" onClick={dismiss}>REACT</Link>
+            <Link to="/react" onClick={dismiss}>
+              REACT
+            </Link>
           </li>
         </ul>
       </div>

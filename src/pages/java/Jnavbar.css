@@ -1,7 +1,7 @@
-
+/* 
 *{
     z-index: 0;
-}
+} */
 .jnav{
     margin-top: -10px;
 }
@@ -9,52 +9,52 @@ ul{
     list-style: none;
 }
 .jlinks-container{
-    height: 40px;
     background-color: rgb(233, 227, 231);
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-   position: fixed;
    width: 100%;
+ margin: 0;
+ padding: 0;
 }
 .jround-img{
     border-radius: 50%;
 }
 .jlinks-container li a{
     text-decoration: none;
-    color: rgb(0, 139, 226);
-    font-weight: bold;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
 }
 .jlinks-container li a:hover{
-    color: aquamarine;
+    color: rgb(21, 0, 255);
     transition:0.5s;
     text-decoration: underline;
 }
-/* -------------mobile header-------------- */
-.jnav2{
-    display: flex;
-    align-items: center;
-    height: 40px;
-    width: 100%;
-    background-color:rgb(221, 221, 221) ;
-    justify-content: space-between;
-    padding: 0 2%;
-    visibility: hidden;
-   margin-bottom: -120px;
-    /* position: fixed; */
+/* coresol slide css */
+.jtopic-slide{
+display: flex !important;
+flex-direction: row !important;
+width: 100%;
+justify-content: space-evenly;
+background-color: rgb(50, 56, 61);
+}
+.carousel { height:  inherit; }
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 90%;
+    outline: black;
+    background-color: rgb(0, 0, 0);
+    background-size: 100%, 100%;
+   margin: 0 -20px;
+    border: 2px solid black;
+}
+.carousel-control-next, .carousel-control-prev{
+    width: 18px !important;
 }
  @media screen and (max-width:576px) {
-    .jlinks-container{
-        visibility: hidden;
-    }
-    .jnav2{
-        visibility: visible;
-        margin-bottom: 5px;
-    }
     .jaccount2{
         height: 40px;
         margin-top: 15px;
     }
+
     .joption-body{
         height: 400px;
         width: 200px;
@@ -80,4 +80,21 @@ ul{
     #theme{
         margin-left: 80%;
     }
+ }
+ .jnav-mobile{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    }
+ @media screen and (max-width:768px) {
+.jnav-mobile{
+visibility: visible;
+height: inherit;
+width: inherit;
+}
+.jnav-desktop{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
  }

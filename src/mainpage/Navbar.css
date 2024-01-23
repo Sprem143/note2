@@ -60,9 +60,34 @@ ul{
     height: 20px;
     width: 20px;
 }
+#acnt-btn{
+    background-color: unset !important;
+    border: none;
+    border-radius: 50%;
+}
+.acnt-model{
+    width: 30%;
+    margin-left: 70%;
+    margin-top: 50px;
+}
+.model-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.model-content{
+background-image: linear-gradient(to right, rgb(48, 104, 167), rgb(190, 22, 148));
+color:white;
+font-family: cursive;
+}
  @media screen and (max-width:576px) {
     .links-container{
         visibility: hidden;
+    }
+    .acnt-model{
+        width: 30%;
+        margin-left: 50%;
+        margin-top: 50px;
     }
     .nav2{
         visibility: visible;
