@@ -3,7 +3,8 @@
     z-index: 0;
 } */
 .jnav{
-    margin-top: -10px;
+    margin-top: 130px;
+    z-index: 10;
 }
 ul{
     list-style: none;

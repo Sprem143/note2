@@ -1,5 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Accessmodifier from "./javatopics/Accessmodifier";
 import Array from "./javatopics/Array";
 import CodingStandard from "./javatopics/CodingStandard";
@@ -16,7 +16,6 @@ import OperatorAssignment from './javatopics/OperatorAssignment';
 import Opps from './javatopics/Opps';
 import Vararg from './javatopics/Varargs';
 import Variable from './javatopics/variable';
-import JavaHome from "./JavaHome";
 import Jnavbar from "./Jnavbar";
 export default function AppJava() {
   return (

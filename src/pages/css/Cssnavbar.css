@@ -1,6 +1,7 @@
 
 .cssnav{
-    margin-top: -10px;
+    margin-top: 130px;
+    z-index: 10;
 }
 
 ul {

@@ -1,7 +1,7 @@
 export default function Boxmodel(){
     return(
         <>
-        <h1></h1>
+        <h1>Box model page</h1>
         </>
     )
 }

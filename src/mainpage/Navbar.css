@@ -80,6 +80,31 @@ background-image: linear-gradient(to right, rgb(48, 104, 167), rgb(190, 22, 148)
 color:white;
 font-family: cursive;
 }
+.option-body{
+    height: 400px;
+    width: 200px;
+    margin-top: 40px;
+    position: fixed;
+    margin-left: -200px;
+    transition: 0.5s;
+    padding: 1%;
+    background-color: rgb(9, 19, 62);
+}
+#option-dismiss{
+    float: right;
+    background-color: rgb(0, 0, 0);
+    padding:0 3px 0 3px;
+    color: white;
+}
+.menu-icon{
+    flex-basis: 2%;
+    margin-top:22px !important;
+    padding: 0 !important;
+    z-index: 20;
+    position: fixed;
+}
+
+
  @media screen and (max-width:576px) {
     .links-container{
         visibility: hidden;
@@ -92,27 +117,16 @@ font-family: cursive;
     .nav2{
         visibility: visible;
         margin-bottom: 5px;
+        padding-left:35px ;
     }
     .account2{
         height: 40px;
         margin-top: 15px;
     }
     .option-body{
-        height: 400px;
-        width: 200px;
         margin-top: -6px;
-        position: fixed;
-        margin-left: -200px;
-        transition: 0.5s;
-        padding: 1%;
-        background-color: rgb(91, 36, 84);
     }
-    #option-dismiss{
-        float: right;
-        background-color: rgb(0, 0, 0);
-        padding:0 3px 0 3px;
-        color: white;
-    }
+    
     .linkstyle a{
         text-decoration: none;
         list-style: none;
