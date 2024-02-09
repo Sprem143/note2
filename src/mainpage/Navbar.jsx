@@ -1,8 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
 import "./Navbar.css";
 import { useState } from "react";
-import Dropdown from "react-bootstrap/Dropdown";
-import DropdownButton from "react-bootstrap/DropdownButton";
+import Accordion from "react-bootstrap/Accordion";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Modal from "react-bootstrap/Modal";
@@ -37,8 +36,9 @@ export default function Navbar() {
           ></input>
         </div>
         {/* -----------------------menu icons*----------------------*/}
-        <div className="menu-icon" >
-          <svg onClick={handleShow}
+        <div className="menu-icon">
+          <svg
+            onClick={handleShow}
             xmlns="http://www.w3.org/2000/svg"
             width="30"
             height="24"
@@ -51,25 +51,184 @@ export default function Navbar() {
               d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
             />
           </svg>
-      <Offcanvas show={show} onHide={handleClose}>
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Welcome</Offcanvas.Title>
-        </Offcanvas.Header>
-        <Offcanvas.Body>
-          I will not close if you click outside of me.
-        </Offcanvas.Body>
-      </Offcanvas>
-      
+          <Offcanvas show={show} onHide={handleClose}>
+            <Offcanvas.Header closeButton>
+              <Offcanvas.Title>Welcome Prem</Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body className="sidebar">
+              <Accordion>
+                <Accordion.Item eventKey="0" className="accordianItem">
+                  <Accordion.Header className="accordianHeader">
+                    <img
+                      src="/static/images/python-logo.png"
+                      alt="python"
+                      height="30"
+                    />
+                    <Link to="/python">Python</Link>
+                  </Accordion.Header>
+                  <Accordion.Body className="accordionbody">
+                    {/* dropdown links */}
+                    <ul>
+                      <li>
+                        {" "}
+                        <Link onHide={handleClose} to="/python/numpy">
+                          Numpy
+                        </Link>{" "}
+                      </li>
+                      <li>
+                        {" "}
+                        <Link to="/python/panda">Pands</Link>{" "}
+                      </li>
+                      <li>
+                        {" "}
+                        <Link to="/python/seaborn">Seaborn</Link>{" "}
+                      </li>
+                    </ul>
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="1">
+                  <Accordion.Header className="accordianHeader">
+                    <img
+                      src="/static/images/java-logo.png"
+                      alt="python"
+                      height="30"
+                    />
+                    <Link to="/java">Java</Link>
+                  </Accordion.Header>
+                  <Accordion.Body>{/* dropdown links */}</Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey="2">
+                  <Accordion.Header className="accordianHeader">
+                    <img
+                      src="/static/images/React-logo.png"
+                      alt="react"
+                      height="30"
+                    />
+                    <Link to="/react">React</Link>
+                  </Accordion.Header>
+                  <Accordion.Body>{/* dropdown links */}</Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="3">
+                  <Accordion.Header className="accordianHeader">
+                    <img
+                      src="/static/images/html-logo.png"
+                      alt="html"
+                      height="30"
+                    />
+                    <Link to="/html">HTML</Link>
+                  </Accordion.Header>
+                  <Accordion.Body>{/* dropdown links */}</Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="4">
+                  <Accordion.Header className="accordianHeader">
+                    <img
+                      src="/static/images/css-logo.png"
+                      alt="css"
+                      height="30"
+                      width="25"
+                    />
+                    <Link to="/css">CSS</Link>
+                  </Accordion.Header>
+                  <Accordion.Body>{/* dropdown links */}</Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="5">
+                  <Accordion.Header className="accordianHeader">
+                    <img
+                      src="/static/images/javascript-logo.png"
+                      alt="js"
+                      height="30"
+                    />
+                    <Link to="/javascript">JavaScript</Link>
+                  </Accordion.Header>
+                  <Accordion.Body>{/* dropdown links */}</Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="6">
+                  <Accordion.Header className="accordianHeader">
+                    <img
+                      src="/static/images/django-logo.png"
+                      alt="js"
+                      height="30"
+                    />
+                    <Link to="/django">Django</Link>
+                  </Accordion.Header>
+                  <Accordion.Body>{/* dropdown links */}</Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="7">
+                  <Accordion.Header className="accordianHeader">
+                    <img
+                      src="/static/images/spring-logo.png"
+                      alt="spring"
+                      height="30"
+                    />
+                    <Link to="/spring">Spring</Link>
+                  </Accordion.Header>
+                  <Accordion.Body>{/* dropdown links */}</Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="8">
+                  <Accordion.Header className="accordianHeader">
+                    <img
+                      src="/static/images/springboot-logo.png"
+                      alt="js"
+                      height="30"
+                    />
+                    <Link to="/springboot">Springboot</Link>
+                  </Accordion.Header>
+                  <Accordion.Body>{/* dropdown links */}</Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="9">
+                  <Accordion.Header className="accordianHeader">
+                    <img
+                      src="/static/images/nodejs-logo.png"
+                      alt="nodejs"
+                      height="30"
+                    />
+                    <Link to="/nodejs">Node JS</Link>
+                  </Accordion.Header>
+                  <Accordion.Body>{/* dropdown links */}</Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="10">
+                  <Accordion.Header className="accordianHeader">
+                    <img src="/static/images/c-logo.png" alt="c" height="30" />
+                    <Link to="/c">C Language</Link>
+                  </Accordion.Header>
+                  <Accordion.Body>{/* dropdown links */}</Accordion.Body>
+                </Accordion.Item>
+
+                <Accordion.Item eventKey="11">
+                  <Accordion.Header className="accordianHeader">
+                    <img
+                      src="/static/images/python-logo.png"
+                      alt="c++"
+                      height="30"
+                    />
+                    <Link to="/c++">C++ Language</Link>
+                  </Accordion.Header>
+                  <Accordion.Body>{/* dropdown links */}</Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+            </Offcanvas.Body>
+          </Offcanvas>
         </div>
         <div className="nav1">
           <ul className="links-container" id="nave">
             <li>
-              <img
-                className="round-img"
-                src="/static/images/logo.png"
-                alt="logo"
-                height="60"
-              />
+              <Link to="/">
+                {" "}
+                <img
+                  className="round-img"
+                  src="/static/images/logo.png"
+                  alt="logo"
+                  height="60"
+                />{" "}
+              </Link>
             </li>
             <li>
               <Link to="/python">Python</Link>
@@ -137,7 +296,20 @@ export default function Navbar() {
               height="60"
             />
           </div>
-          <h4>Welcome to Programming</h4>
+            <ul className="links-container2">
+              <li>
+                <Link to="/python">Python</Link>
+              </li>
+              <li>
+                <Link to="/java">JAVA</Link>
+              </li>
+              <li>
+                <Link to="/html">HTML</Link>
+              </li>
+              <li>
+                <Link to="/css">CSS</Link>
+              </li>
+            </ul>
           {/* -----------------------account ------------------------------- */}
           <div className="account">
             <img
@@ -149,7 +321,49 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-
+      <div className="topicicon">
+        <div>
+          <Link to="/python">
+            <img src="/static/images/python-logo.png" alt="" height="30" />{" "}
+          </Link>
+          <Link to="/python">Python</Link>
+        </div>
+        <div>
+          <Link to="/java">
+            <img src="/static/images/java-logo.png" alt="" height="30" />
+          </Link>
+          <Link to="/java">Java</Link>
+        </div>
+        <div>
+          <Link to="/react">
+            <img src="/static/images/React-logo.png" alt="" height="30" />
+          </Link>
+          <Link to="/react">React</Link>
+        </div>
+        <div>
+          <Link to="/html">
+            <img src="/static/images/html-logo.png" alt="" height="30" />
+          </Link>
+          <Link to="/html">HTML</Link>
+        </div>
+        <div>
+          <Link to="/css">
+            <img src="/static/images/css-logo.png" alt="" height="30" />
+          </Link>
+          <Link to="/css">CSS</Link>
+        </div>
+        <div>
+          <Link to="/javascript">
+            {" "}
+            <img
+              src="/static/images/javascript-logo.png"
+              alt=""
+              height="30"
+            />{" "}
+          </Link>
+          <Link to="/javascript">JS</Link>
+        </div>
+      </div>
       <Outlet />
     </>
   );

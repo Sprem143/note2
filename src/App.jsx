@@ -8,6 +8,8 @@ import Jnavbar from './pages/java/Jnavbar';
 import AppJava from './pages/java/Appjava';
 import Cssnavbar from './pages/css/Cssnavbar';
 import Appcss from './pages/css/Appcss';
+import Pynavbar from './pages/python/pynavbar';
+import Apppython from './pages/python/Apppython';
 export default function App(){
   return(
     <>
@@ -16,6 +18,7 @@ export default function App(){
       <Routes>
         <Route className="routes" path="/" element={ <Navbar /> }>
           <Route index element={<Home />} />
+          <Route path="python/*" element={<>< Pynavbar/> <Apppython /></>} />
           <Route path="css/*" element={<>< Cssnavbar/> <Appcss /></>} />
           <Route path="html" element={<Htmlpage />} />
           <Route path="java/*" element={<><Jnavbar/><AppJava/> </>} />

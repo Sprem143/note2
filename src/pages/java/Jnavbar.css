@@ -3,7 +3,7 @@
     z-index: 0;
 } */
 .jnav{
-    margin-top: 130px;
+    margin-top: -10px;
     z-index: 10;
 }
 ul{
@@ -14,7 +14,7 @@ ul{
     display: flex;
     align-items: center;
    width: 100%;
- margin: 0;
+ margin-top: 130px;
  padding: 0;
 }
 .jround-img{
@@ -50,12 +50,31 @@ background-color: rgb(50, 56, 61);
 .carousel-control-next, .carousel-control-prev{
     width: 18px !important;
 }
+
+@media screen and (max-width:768px) {
+    .jnav-mobile{
+    visibility: visible;
+    height: inherit;
+    width:100%;
+    }
+    .jnav-desktop{
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
+    .carousel-control-next-icon{
+     margin: -2px 0px;   
+    }
+     }
  @media screen and (max-width:576px) {
     .jaccount2{
         height: 40px;
         margin-top: 15px;
     }
-
+.nav2{
+    display: flex;
+    justify-content: space-evenly;
+}
     .joption-body{
         height: 400px;
         width: 200px;
@@ -87,15 +106,4 @@ background-color: rgb(50, 56, 61);
     height: 0;
     width: 0;
     }
- @media screen and (max-width:768px) {
-.jnav-mobile{
-visibility: visible;
-height: inherit;
-width: inherit;
-}
-.jnav-desktop{
-    visibility: hidden;
-    height: 0;
-    width: 0;
-}
- }
+ 
