@@ -10,6 +10,8 @@ import Cssnavbar from './pages/css/Cssnavbar';
 import Appcss from './pages/css/Appcss';
 import Pynavbar from './pages/python/pynavbar';
 import Apppython from './pages/python/Apppython';
+import JavaHome from './pages/java/JavaHome';
+import PythonHome from './pages/python/PythonHome';
 export default function App(){
   return(
     <>
@@ -18,10 +20,10 @@ export default function App(){
       <Routes>
         <Route className="routes" path="/" element={ <Navbar /> }>
           <Route index element={<Home />} />
-          <Route path="python/*" element={<>< Pynavbar/> <Apppython /></>} />
+          <Route path="python/*" element={<>< PythonHome/> <Apppython /></>} />
           <Route path="css/*" element={<>< Cssnavbar/> <Appcss /></>} />
           <Route path="html" element={<Htmlpage />} />
-          <Route path="java/*" element={<><Jnavbar/><AppJava/> </>} />
+          <Route path="java/*" element={<><AppJava/><JavaHome/> </>} />
           <Route path="react" element={<Reactpage />} />
           {/* <Route path="*" element={<NoPage />} /> */}
 

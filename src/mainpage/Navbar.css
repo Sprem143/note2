@@ -141,7 +141,7 @@ font-family: cursive;
     align-items: center;
 }
 .topicicon>div{
-    margin: 7px 2px 10px 0;
+    margin: 8px 2px 19px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -162,17 +162,64 @@ font-family: cursive;
     font-weight: bold;
     color: blue;
 }
+.mi{
+    margin-top: 10px;
+    position: fixed;
+    z-index: 30;
+    opacity: 0.3;
+    box-shadow: 2px 3px 6px 1px rgb(111, 111, 111);
+    animation: moveb 15s linear 1s infinite alternate;
+}
+@keyframes moveb{
+    0%{
+        margin-left: 0;
+        transform: rotateY(0deg);
+
+    }
+    100%{
+        margin-left: 90%;
+        transform: rotateY(180deg);
+
+    }
+}
+.pyicon{
+    margin-top: 10px;
+    position: fixed;
+    z-index: 30;
+    opacity: 0.3;
+    box-shadow: 2px 3px 6px 1px rgb(111, 111, 111);
+    animation: movep 15s linear 1s infinite alternate;
+}
+@keyframes movep{
+    0%{
+        margin-left: 90%;
+        transform: rotateY(0deg);
+    }
+    100%{
+        margin-left: 0%;
+        transform: rotateY(180deg);
+    }
+}
  @media screen and (max-width:576px) {
     .links-container{
         visibility: hidden;
+        position: fixed
     }
     .nav2{
         display: flex;
         visibility: visible;
-        margin-bottom: 5px;
         padding-left:35px ;
         align-items: center;
         justify-content: center;
+        position: fixed;
+        margin-top: -110px;
+        margin-bottom: 50px;
+    }
+    .menu-icon {
+        flex-basis: 2%;
+        margin-top: -90px !important;
+        padding: 0 !important;
+        z-index: 20;
         position: fixed;
     }
     .links-container2{
@@ -217,6 +264,9 @@ font-family: cursive;
         margin: 2%;
     }
     #theme{
-        margin-left: 80%;
+        margin-top: -125px;
+    }
+    .mi, .pyicon{
+        margin-top: -105px;
     }
  }

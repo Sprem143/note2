@@ -1,3 +1,40 @@
 .body-home{
-    height: 2000px;
+    margin-top: 130px;
+    margin-left: 60px;
+    height: auto;
+    width: fit-content;
+}
+.content-box:nth-child(2n){
+    background: rgb(201, 233, 233) !important;
+    box-shadow:2px 2px 3px 4px red ;
+}
+.movingobject{
+margin: 150px 0 0 100px;
+z-index: 50;
+height: 500px;
+width: 500px;
+position:fixed;
+}
+.movingobject img{
+    animation: move 5s linear 1s infinite alternate;
+
+}
+@keyframes move{
+    0%{
+        margin-top: 0;
+    }
+    50%{
+        margin-top: 200px;
+    }
+    100%{
+        margin-top: 400px;
+    }
+    
+}
+@media screen and (max-width:576px) {
+   .body-home{
+    margin-left:0;
+    margin-top: 110px;
+   }
+  
 }

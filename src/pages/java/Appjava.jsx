@@ -17,10 +17,11 @@ import Opps from './javatopics/Opps';
 import Vararg from './javatopics/Varargs';
 import Variable from './javatopics/variable';
 import Jnavbar from "./Jnavbar";
+import JavaHome from "./JavaHome";
 export default function AppJava() {
   return (
     <>
-      <Routes className="routes" path="/" element={<Jnavbar />}>
+      <Routes className="routes" path="/" element={<><JavaHome/></>}>
         <Route path="accessmodifier" element={<Accessmodifier />} />
         <Route path="array" element={<Array />} />
         <Route path="codingstandard" element={<CodingStandard />} />

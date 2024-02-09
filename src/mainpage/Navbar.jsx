@@ -218,16 +218,20 @@ export default function Navbar() {
           </Offcanvas>
         </div>
         <div className="nav1">
+        <img
+                  className="round-img mi"
+                  src="/static/images/java-logo.png"
+                  height="60" />
+                <img  className="round-img pyicon" src="/static/images/python-logo.png" alt="" height="60"/>
           <ul className="links-container" id="nave">
             <li>
               <Link to="/">
-                {" "}
                 <img
                   className="round-img"
                   src="/static/images/logo.png"
                   alt="logo"
                   height="60"
-                />{" "}
+                />
               </Link>
             </li>
             <li>
