@@ -1,9 +1,10 @@
 import "./Home.css";
+import "/src/App.css"
 export default function Home() {
   return (
     <>
       <div className="body-home container-fluid">
-        <div className="content-box shadow  bg-body-tertiary p-3 mb-2  rounded">
+        <div className="content-box p-1">
           <h3>
             <b className="text-danger hd"> Welcome to my website</b>- Your
             Ultimate Hub for Programming Beginners!
@@ -15,7 +16,7 @@ export default function Home() {
             to guide you through every step of your programming adventure.
           </p>
         </div>
-        <div className="content-box shadow p-3 mb-2 bg-body-tertiary rounded">
+        <div className="content-box p-2 rounded">
           <h3>What Makes Us Special?</h3>
           <p>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At my website, we
@@ -25,7 +26,7 @@ export default function Home() {
             also change theme of website according to your choice.
           </p>
         </div>
-        <div className="content-box shadow p-3 mb-2 bg-body-tertiary rounded">
+        <div className="content-box p-2">
           <h3>Comprehensive Learning Resources:</h3>
           <p>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Whether you're
@@ -37,7 +38,7 @@ export default function Home() {
             understanding.
           </p>
         </div>
-        <div className="content-box shadow p-3 mb-2 bg-body-tertiary rounded">
+        <div className="content-box p-2">
           <h3>Structured Learning Paths:</h3>
           <p>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We believe in a
@@ -47,7 +48,7 @@ export default function Home() {
             advanced concepts.
           </p>
         </div>
-        <div className="content-box shadow p-3 mb-2 bg-body-tertiary rounded">
+        <div className="content-box  p-2">
           <h3> Interactive Coding Challenges:</h3>
           <p>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Put your newfound
@@ -56,7 +57,7 @@ export default function Home() {
             confidence in solving real-world programming problems.
           </p>
         </div>
-        <div className="content-box shadow p-3 mb-2 bg-body-tertiary rounded">
+        <div className="content-box  p-2 ">
           <h3> Community Support:</h3>
           <p>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Learning is more fun
@@ -65,7 +66,7 @@ export default function Home() {
             with like-minded individuals passionate about programming.
           </p>
         </div>
-        <div className="content-box shadow p-3 mb-2 bg-body-tertiary rounded">
+        <div className="content-box p-1 ">
           <h3>Absolutely Free:</h3>
           <p>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Education should be
@@ -74,7 +75,7 @@ export default function Home() {
             waiting for you to explore.
           </p>
         </div>
-        <div className="content-box shadow p-3 mb-2 bg-body-tertiary rounded">
+        <div className="content-box p-1">
           <h3>Get Started Today!</h3>
           <p>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ready to take the

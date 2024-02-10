@@ -32,11 +32,11 @@ import Table from "./csspages/Table";
 import Text from "./csspages/Text";
 import Zindex from "./csspages/Zindex";
 import Dropdown from "./csspages/Dropdown";
-import Cssnavbar from "./Cssnavbar";
+import Csshome from "./Csshome";
 export default function Appcss() {
   return (
     <>
-      <Routes className="routes" path="/" element={<Cssnavbar />}>
+      <Routes className="routes" path="/" element={<><Csshome /></>}>
         <Route path="syntax" element={<Syntax />} />
         <Route path="selectors" element={<Selectors />} />
         <Route path="comment" element={<Comment />} />

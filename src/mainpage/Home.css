@@ -1,12 +1,10 @@
 .body-home{
-    margin-top: 130px;
+    margin-top: 140px !important;
     margin-left: 60px;
     height: auto;
     width: fit-content;
-}
-.content-box:nth-child(2n){
-    background: rgb(201, 233, 233) !important;
-    box-shadow:2px 2px 3px 4px red ;
+    /* background-image:linear-gradient(90deg, rgb(169, 104, 178),rgb(50, 125, 171));
+    color: rgb(255, 255, 255); */
 }
 .movingobject{
 margin: 150px 0 0 100px;

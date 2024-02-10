@@ -6,11 +6,10 @@ import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Modal from "react-bootstrap/Modal";
 export default function Navbar() {
-  function changeTheme() {
-    let colore = document.getElementById("exampleColorInput").value;
-    document.getElementById("nave").style.backgroundColor = colore;
-    document.getElementsByTagName("root").style.backgroundColor = colore;
-  }
+  // function changeTheme() {
+  //   let colore = document.getElementById("exampleColorInput").value;
+  //   document.getElementById("nave").style.backgroundColor = colore;
+  // }
   const [showac, setShowac] = useState(false);
   const handleCloseac = () => setShowac(false);
   const handleShowac = () => setShowac(true);
@@ -24,7 +23,7 @@ export default function Navbar() {
     <>
       <nav>
         {/* back ground change */}
-        <div id="theme">
+        {/* <div id="theme">
           <span>Theme</span>
           <input
             type="color"
@@ -34,7 +33,7 @@ export default function Navbar() {
             value="#FFFDD0"
             title="Choose your color"
           ></input>
-        </div>
+        </div> */}
         {/* -----------------------menu icons*----------------------*/}
         <div className="menu-icon">
           <svg

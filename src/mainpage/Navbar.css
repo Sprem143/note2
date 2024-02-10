@@ -7,7 +7,7 @@ ul{
 }
 .links-container{
     height: 80px;
-    background-color: rgb(255, 0, 179);
+    background-color:rgb(16, 16, 76);;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -33,33 +33,15 @@ ul{
     align-items: center;
     height: 70px;
     width: 100%;
-    background-color:rgb(255, 0, 179) ;
+    background-color:rgb(16, 16, 76);
     justify-content: space-between;
     padding: 0 2%;
     visibility: hidden;
    margin-bottom: -120px;
     /* position: fixed; */
 }
-#theme{
-    position: fixed;
-    z-index: 10;
-    margin-top: 5px;
-    margin-left: 85%;
-    display: flex;
-    height: 10px;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    color: white;
-    font-family:cursive;
-}
-#theme input{
-    margin: 0 !important;
-    padding: 0 !important;
-    border-radius: 50%;
-    height: 20px;
-    width: 20px;
-}
+
+
 #acnt-btn{
     background-color: unset !important;
     border: none;

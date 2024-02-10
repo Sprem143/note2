@@ -1,4 +1,4 @@
-
+/* 
 .cssnav{
     margin-top: 130px;
     z-index: 10;
@@ -29,7 +29,7 @@ ul {
     text-decoration: underline;
 }
 
-/* coresol slide css */
+
 .csstopic-slide {
     display: flex !important;
     flex-direction: row !important;
@@ -112,4 +112,4 @@ ul {
         height: 0;
         width: 0;
     }
-}
+} */
