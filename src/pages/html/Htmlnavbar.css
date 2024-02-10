@@ -1,0 +1,10 @@
+.html-body{
+    margin-top: -130px;
+    margin-left: 60px;
+}
+
+@media screen and (max-width:576px) {
+    .html-body{
+        margin-left: 10px;
+    }
+}

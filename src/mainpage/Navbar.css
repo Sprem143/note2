@@ -212,15 +212,15 @@ font-family: cursive;
         align-items: center;
         justify-content: center;
         position: fixed;
-        margin-top: -110px;
+        margin-top: -120px;
         margin-bottom: 50px;
     }
     .menu-icon {
         flex-basis: 2%;
-        margin-top: -90px !important;
+        margin-top: -100px !important;
         padding: 0 !important;
         z-index: 20;
-        position: fixed;
+        position:fixed;
     }
     .links-container2{
     display: flex;
@@ -264,9 +264,9 @@ font-family: cursive;
         margin: 2%;
     }
     #theme{
-        margin-top: -125px;
+        margin-top: -115px;
     }
     .mi, .pyicon{
-        margin-top: -105px;
+        margin-top: -115px;
     }
  }

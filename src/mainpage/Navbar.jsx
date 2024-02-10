@@ -238,17 +238,21 @@ export default function Navbar() {
               <Link to="/python">Python</Link>
             </li>
             <li>
-              <Link to="/html">HTML</Link>
-            </li>
-            <li>
-              <Link to="/css">CSS</Link>
-            </li>
-            <li>
               <Link to="/java">JAVA</Link>
             </li>
             <li>
               <Link to="/react">REACT</Link>
             </li>
+            <li>
+              <Link to="/html">HTML</Link>
+            </li>
+            <li>
+              <Link to="/css">CSS</Link>
+            </li>
+           <li>
+            <Link to="/javascript">JavaScript</Link>
+           </li>
+           
             <li>
               <div className="account">
                 {/* model */}

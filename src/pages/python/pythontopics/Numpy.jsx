@@ -1,4 +1,4 @@
-import "/src/pages/page.css"
+
 export default function Numpy(){
     return(
         <>

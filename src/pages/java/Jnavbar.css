@@ -1,6 +1,6 @@
 .body-part{
     margin-left: 60px;
-    margin-top: -140px;
+    margin-top: -125px;
 }
 
 .text-center{
@@ -58,12 +58,18 @@ background-color: rgb(50, 56, 61);
 .carousel-control-next, .carousel-control-prev{
     width: 18px !important;
 }
-
+.jnav-mobile{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    }
 @media screen and (max-width:768px) {
     .jnav-mobile{
     visibility: visible;
     height: inherit;
     width:100%;
+    margin-top: -6px;
+    margin-bottom: 160px;
     }
     .jnav-desktop{
         visibility: hidden;
@@ -78,6 +84,9 @@ background-color: rgb(50, 56, 61);
     .jaccount2{
         height: 40px;
         margin-top: 15px;
+    }
+    .jnav-mobile{
+        margin-top: -55px;
     }
 .nav2{
     display: flex;
@@ -108,10 +117,9 @@ background-color: rgb(50, 56, 61);
     #theme{
         margin-left: 80%;
     }
- }
- .jnav-mobile{
-    visibility: hidden;
-    height: 0;
-    width: 0;
+    #root{
+        margin-top: 50px;
     }
+ }
+
  

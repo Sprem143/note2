@@ -1,5 +1,6 @@
 import Pynavbar from "./pynavbar";
 import "../java/Jnavbar.css";
+import "/src/App.css"
 import { Link,Outlet } from "react-router-dom";
 export default function PythonHome() {
   return (
