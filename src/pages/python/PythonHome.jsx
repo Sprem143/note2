@@ -1,4 +1,4 @@
-import Pynavbar from "./Pynavbar";
+import Pynavbar from "./pynavbar";
 import "../java/Jnavbar.css";
 import "/src/App.css";
 export default function PythonHome() {
