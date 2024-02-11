@@ -51,13 +51,13 @@ export default function App(){
       <BrowserRouter>
       <Routes>
         <Route className="routes" path="/" element={ <Navbar /> }>
-          <Route index element={<Home />} />
-          <Route path="python/*" element={<><PythonHome/><Apppython/> </>} />
-          <Route path="css/*" element={<><Appcss /><Csshome/> </>} />
-          <Route path="html/*" element={<><Apphtml/><HtmlHome/> </>} />
-          <Route path="java/*" element={<><AppJava/> </>} />
-          <Route path="react/*" element={<><Appreact/><ReactHome/></>} />
-          <Route path="javascript/*" element={<><Appjs/><JsHome/></>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/python/*" element={<><PythonHome/><Apppython/> </>} />
+          <Route path="/css/*" element={<><Appcss /><Csshome/> </>} />
+          <Route path="/html/*" element={<><Apphtml/><HtmlHome/> </>} />
+          <Route path="/java/*" element={<><AppJava/> </>} />
+          <Route path="/react/*" element={<><Appreact/><ReactHome/></>} />
+          <Route path="/javascript/*" element={<><Appjs/><JsHome/></>} />
           {/* <Route path="*" element={<NoPage />} /> */}
 
          
