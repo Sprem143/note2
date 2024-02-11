@@ -1,19 +1,15 @@
 import Pynavbar from "./pynavbar";
 import "../java/Jnavbar.css";
-import "/src/App.css"
-import { Link,Outlet } from "react-router-dom";
+import "/src/App.css";
 export default function PythonHome() {
   return (
     <>
       <Pynavbar />
-      
-      <div className="body-part">
+      <div className="container-fluid">
       <h2 className="text-center">Welcome to World of Python</h2>
-        <div className="content-box shadow  bg-body-tertiary p-3 mb-2  rounded">
             <h4>🐍Embrace the Power and Versatility of Python</h4>
             <p>Welcome, Python enthusiasts! At [Your Website Name], we're thrilled to guide you through the fascinating world of Python programming – a language that has become a cornerstone in the realm of technology and innovation.</p>
-        </div>
-        <div className="content-box shadow  bg-body-tertiary p-3 mb-2  rounded">
+        
             <h4>🌐 Why Python?</h4>
             <ol>
                 <li>
@@ -33,14 +29,11 @@ export default function PythonHome() {
                     <p>The Python community is vibrant and supportive. Joining the Python community means gaining access to a vast pool of knowledge, resources, and like-minded individuals ready to share insights and assist you on your coding journey.</p>
                 </li>
             </ol>
-        </div>
-        <div className="content-box shadow  bg-body-tertiary p-3 mb-2  rounded">
+       
             <h4>🚀 Start Your Python Expedition Now!</h4>
             <p>Ready to unlock the potential of Python? Click the "Begin Learning" button below to access our curated content and start your Python programming journey.</p>
-            <button className="btn "><Link to="/numpy">Begin Learning</Link></button>
-        </div>
-        <div className="content-box shadow  bg-body-tertiary p-3 mb-2  rounded">
-            <h4>Uses of Python</h4>
+            {/* <button className="btn "><Link to="/numpy">Begin Learning</Link></button> */}
+                  <h4>Uses of Python</h4>
             <p>Python is a versatile and powerful programming language with a wide range of applications across various domains. Here are some of the key uses of Python:</p>
             <ol>
                 <li>
@@ -89,11 +82,8 @@ export default function PythonHome() {
                 </li>
             </ol>
             <p>These diverse applications showcase the versatility of Python, making it a favorite among developers for a wide range of projects and industries.</p>
-        </div>
-        <div className="content-box shadow  bg-body-tertiary p-3 mb-2  rounded">
-            <h3>💡 Let's Code Together, Let's Master Python!</h3>
-           
-        </div>
+     
+                <h3>💡 Let's Code Together, Let's Master Python!</h3>
       </div>
     </>
   );

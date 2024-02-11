@@ -1,12 +1,22 @@
-
+import "/src/App.css"
 export default function Numpy(){
     return(
         <>
         <div className="content-container">
-        <h1>Welcome to numpy</h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis laudantium libero voluptates tempora. Corrupti accusamus tempora suscipit porro quam laudantium dolore, impedit officiis nihil. Ex quidem architecto quos laudantium iste!
-       Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nihil laborum quisquam ipsum, praesentium cupiditate! Cumque, earum. Consectetur quos voluptatibus temporibus alias quidem cum, laudantium expedita quod impedit! Possimus, quos!
-       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod libero, distinctio fugit voluptates, exercitationem, aperiam consectetur dolores cupiditate quasi beatae eos minima in commodi culpa totam numquam! Possimus, totam repellat.
+        <h2 className="text-danger"><b>Numpy: A Python Library</b></h2>
+        <h3><b>Need of Numpy:</b></h3>
+        <p>As the part of Data Science, Machine Learining, Deep Learning it is the very common requirement to perform complex mathematical operations like :
+            <ol>
+                <li>Creation of Array/Matrices</li>
+                <li>Perform several operations on array/matrices</li>
+                <li>Perform integral calculus operations</li>
+                <li>Solving Differential equations</li>
+                <li>Statistics related operations etc</li>
+            </ol>
+            To perform these complex mathematical operations, python does not contain any inbuilt library.
+            <br />To perform these complex operations we require a library which is nothing but numpy.
+
+        </p>
         </div>
        
         </>

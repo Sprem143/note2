@@ -15,17 +15,17 @@ import JsHome from './pages/js/JsHome';
 import Appjs from './pages/js/Appjs';
 import Csshome from './pages/css/Csshome';
 export default function App(){
-  function changeTheme() {
-    let colore = document.getElementById("exampleColorInput").value;
-document.getElementById("root").style.backgroundColor= colore  }
+//   function changeTheme() {
+//     let colore = document.getElementById("exampleColorInput").value;
+// document.getElementById("root").style.backgroundColor= colore  }
 
-function changetext(){
-  let colore = document.getElementById("exampleColorInput2").value;
-document.getElementById("root").style.color= colore  }
+// function changetext(){
+//   let colore = document.getElementById("exampleColorInput2").value;
+// document.getElementById("root").style.color= colore  }
   return(
     <>
       
-      <div className="theme">
+      {/* <div className="theme">
           <span>Background-color</span>
           <input
             type="color"
@@ -46,16 +46,16 @@ document.getElementById("root").style.color= colore  }
             value="#FFC0CB"
             title="Choose your "
           ></input>
-        </div>
+        </div> */}
 
       <BrowserRouter>
       <Routes>
         <Route className="routes" path="/" element={ <Navbar /> }>
           <Route index element={<Home />} />
-          <Route path="python/*" element={<>< PythonHome/> <Apppython /></>} />
+          <Route path="python/*" element={<><PythonHome/><Apppython/> </>} />
           <Route path="css/*" element={<><Appcss /><Csshome/> </>} />
           <Route path="html/*" element={<><Apphtml/><HtmlHome/> </>} />
-          <Route path="java/*" element={<><AppJava/><JavaHome/> </>} />
+          <Route path="java/*" element={<><AppJava/> </>} />
           <Route path="react/*" element={<><Appreact/><ReactHome/></>} />
           <Route path="javascript/*" element={<><Appjs/><JsHome/></>} />
           {/* <Route path="*" element={<NoPage />} /> */}

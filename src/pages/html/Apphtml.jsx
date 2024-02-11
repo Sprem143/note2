@@ -1,7 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Routes, Route } from "react-router-dom";
-import HtmlHome from "./HtmlHome";
-import Htmlnavbar from "./Htmlnavbar";
 import Attribute from "./htmltopics/Attrubutes";
 import Basic from "./htmltopics/Basic";
 import BlockInline from "./htmltopics/BlockInline";
@@ -37,7 +35,7 @@ import Table from "./htmltopics/Table";
 export default function Apphtml() {
   return (
     <>
-      <Routes className="routes" path="/" element={<><HtmlHome/></>}>
+      <Routes className="routes" path="/" >
         <Route path="attribute" element={<Attribute />} />
        <Route path="basic" element={<Basic />} />
        <Route path="blockinline" element={<BlockInline />} />

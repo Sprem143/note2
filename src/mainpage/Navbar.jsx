@@ -6,10 +6,6 @@ import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Modal from "react-bootstrap/Modal";
 export default function Navbar() {
-  // function changeTheme() {
-  //   let colore = document.getElementById("exampleColorInput").value;
-  //   document.getElementById("nave").style.backgroundColor = colore;
-  // }
   const [showac, setShowac] = useState(false);
   const handleCloseac = () => setShowac(false);
   const handleShowac = () => setShowac(true);
@@ -22,18 +18,6 @@ export default function Navbar() {
   return (
     <>
       <nav>
-        {/* back ground change */}
-        {/* <div id="theme">
-          <span>Theme</span>
-          <input
-            type="color"
-            onInput={changeTheme}
-            class="form-control form-control-color"
-            id="exampleColorInput"
-            value="#FFFDD0"
-            title="Choose your color"
-          ></input>
-        </div> */}
         {/* -----------------------menu icons*----------------------*/}
         <div className="menu-icon">
           <svg
@@ -69,19 +53,17 @@ export default function Navbar() {
                     {/* dropdown links */}
                     <ul>
                       <li>
-                        {" "}
-                        <Link onHide={handleClose} to="/python/numpy">
-                          Numpy
-                        </Link>{" "}
+                        <Link to="python/numpy">Numpy</Link>
                       </li>
                       <li>
-                        {" "}
-                        <Link to="/python/panda">Pands</Link>{" "}
+                        <Link to="/python/panda">Panda</Link>
                       </li>
                       <li>
-                        {" "}
-                        <Link to="/python/seaborn">Seaborn</Link>{" "}
+                        <Link to="/python/seaborn">Seaborn</Link>
                       </li>
+                      <li><Link to="/python/matlibplot">Matlibplot</Link></li>
+                      <li><Link to="/python/machinelearning">Machine Learining</Link></li>
+                      <li><Link to="/python/deeplearning">Deep Learining</Link></li>
                     </ul>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -217,11 +199,17 @@ export default function Navbar() {
           </Offcanvas>
         </div>
         <div className="nav1">
-        <img
-                  className="round-img mi"
-                  src="/static/images/java-logo.png"
-                  height="60" />
-                <img  className="round-img pyicon" src="/static/images/python-logo.png" alt="" height="60"/>
+          <img
+            className="round-img mi"
+            src="/static/images/java-logo.png"
+            height="60"
+          />
+          <img
+            className="round-img pyicon"
+            src="/static/images/python-logo.png"
+            alt=""
+            height="60"
+          />
           <ul className="links-container" id="nave">
             <li>
               <Link to="/">
@@ -248,10 +236,10 @@ export default function Navbar() {
             <li>
               <Link to="/css">CSS</Link>
             </li>
-           <li>
-            <Link to="/javascript">JavaScript</Link>
-           </li>
-           
+            <li>
+              <Link to="/javascript">JavaScript</Link>
+            </li>
+
             <li>
               <div className="account">
                 {/* model */}
@@ -303,20 +291,20 @@ export default function Navbar() {
               height="60"
             />
           </div>
-            <ul className="links-container2">
-              <li>
-                <Link to="/python">Python</Link>
-              </li>
-              <li>
-                <Link to="/java">JAVA</Link>
-              </li>
-              <li>
-                <Link to="/html">HTML</Link>
-              </li>
-              <li>
-                <Link to="/css">CSS</Link>
-              </li>
-            </ul>
+          <ul className="links-container2">
+            <li>
+              <Link to="/python">Python</Link>
+            </li>
+            <li>
+              <Link to="/java">JAVA</Link>
+            </li>
+            <li>
+              <Link to="/html">HTML</Link>
+            </li>
+            <li>
+              <Link to="/css">CSS</Link>
+            </li>
+          </ul>
           {/* -----------------------account ------------------------------- */}
           <div className="account">
             <img
