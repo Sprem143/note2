@@ -55,7 +55,7 @@ export default function App(){
           <Route path="/python/*" element={<><PythonHome/><Apppython/> </>} />
           <Route path="/css/*" element={<><Appcss /><Csshome/> </>} />
           <Route path="/html/*" element={<><Apphtml/><HtmlHome/> </>} />
-          <Route path="/java/*" element={<><AppJava/> </>} />
+          <Route path="/java/*" element={<><AppJava/><JavaHome/></>} />
           <Route path="/react/*" element={<><Appreact/><ReactHome/></>} />
           <Route path="/javascript/*" element={<><Appjs/><JsHome/></>} />
           {/* <Route path="*" element={<NoPage />} /> */}
