@@ -21,7 +21,7 @@ import Jnavbar from "./Jnavbar";
 export default function AppJava() {
   return (
     <>
-      <Routes className="routes" path="/*" element={<Jnavbar/>}>
+      <Routes className="routes" path="/" element={<Jnavbar/>}>
         <Route path="accessmodifier" element={<Accessmodifier />} />
         <Route path="array" element={<Array />} />
         <Route path="codingstandard" element={<CodingStandard />} />
