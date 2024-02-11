@@ -15,7 +15,7 @@ import Multithreading from './javatopics/Multithreading';
 import OperatorAssignment from './javatopics/OperatorAssignment';
 import Opps from './javatopics/Opps';
 import Vararg from './javatopics/Varargs';
-import Variable from './javatopics/variable';
+import Variable from './javatopics/Variable';
 import JavaHome from "./JavaHome";
 import Jnavbar from "./Jnavbar";
 export default function AppJava() {
