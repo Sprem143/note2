@@ -1,6 +1,5 @@
 .body-home{
     margin-top: 140px !important;
-    margin-left: 60px;
     height: auto;
     width: fit-content;
     /* background-image:linear-gradient(90deg, rgb(169, 104, 178),rgb(50, 125, 171));
@@ -31,8 +30,7 @@ position:fixed;
 }
 @media screen and (max-width:576px) {
    .body-home{
-    margin-left:0;
-    margin-top: 110px;
+
    }
   
 }

@@ -202,13 +202,13 @@ export default function Navbar() {
           <img
             className="round-img mi"
             src="/static/images/java-logo.png"
-            height="60"
+            height="40"
           />
           <img
             className="round-img pyicon"
             src="/static/images/python-logo.png"
             alt=""
-            height="60"
+            height="40"
           />
           <ul className="links-container" id="nave">
             <li>
@@ -305,12 +305,36 @@ export default function Navbar() {
           </ul>
           {/* -----------------------account ------------------------------- */}
           <div className="account">
-            <img
-              src="/static/images/account.png"
-              alt="account"
-              className="round-img account2"
-              height="60"
-            />
+          <Button id="acnt-btn" onClick={handleShowac}>
+                  <img
+                    src="/static/images/account.png"
+                    alt="account"
+                    className="round-img"
+                    height="45"
+                  />
+                </Button>
+
+                <Modal
+                  show={showac}
+                  onHide={handleCloseac}
+                  animation={false}
+                  className="acnt-model"
+                >
+                  <div className="model-content">
+                    <Modal.Header closeButton>
+                      <Modal.Title>Prem Kumar</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body className="model-body">
+                      <img
+                        src="/static/images/mypic.png"
+                        className="round-img"
+                        alt=""
+                        height="120"
+                      />
+                    </Modal.Body>
+                    <Modal.Footer>Website Designer</Modal.Footer>
+                  </div>
+                </Modal>
           </div>
         </div>
       </nav>

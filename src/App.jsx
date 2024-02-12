@@ -5,15 +5,9 @@ import Navbar from "./mainpage/Navbar";
 import AppJava from './pages/java/Appjava';
 import Appcss from './pages/css/Appcss';
 import Apppython from './pages/python/Apppython';
-import JavaHome from './pages/java/JavaHome';
-import PythonHome from './pages/python/PythonHome';
 import Apphtml from './pages/html/Apphtml';
-import HtmlHome from './pages/html/HtmlHome';
-import ReactHome from './pages/react/ReactHome';
 import Appreact from './pages/react/Appreact';
-import JsHome from './pages/js/JsHome';
 import Appjs from './pages/js/Appjs';
-import Csshome from './pages/css/Csshome';
 export default function App(){
   function changeTheme() {
     let colore = document.getElementById("exampleColorInput").value;
