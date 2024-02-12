@@ -5,7 +5,6 @@ import Carousel from "react-bootstrap/Carousel";
 // import ExampleCarouselImage from 'components/ExampleCarouselImage';
 export default function Jnavbar() {
   const [clickedLink, setClickedLink] = useState("white");
-
   const handleLinkClick = (link) => {
     setClickedLink(link);}
   return (

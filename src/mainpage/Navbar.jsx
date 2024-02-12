@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav>
+      <nav id="main-nav">
         {/* -----------------------menu icons*----------------------*/}
         <div className="menu-icon">
           <svg

@@ -2,8 +2,6 @@
     margin-top: 140px !important;
     height: auto;
     width: fit-content;
-    /* background-image:linear-gradient(90deg, rgb(169, 104, 178),rgb(50, 125, 171));
-    color: rgb(255, 255, 255); */
 }
 .movingobject{
 margin: 150px 0 0 100px;
@@ -29,8 +27,6 @@ position:fixed;
     
 }
 @media screen and (max-width:576px) {
-   .body-home{
-
-   }
+  
   
 }

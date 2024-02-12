@@ -57,7 +57,7 @@ flex-basis: 2%;
     .toolbar{
         margin-top: -135px;
     }
-    .container-fluid{
+    #fsm{
         margin-left: 5px !important;
     }
     #readmode{
