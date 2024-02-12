@@ -55,7 +55,8 @@ flex-basis: 2%;
         flex-basis: 20%;
     }
     .toolbar{
-        margin-top: -135px;
+        margin-top: -130px !important;
+        padding-top: 4px;
     }
     #fsm{
         margin-left: 5px !important;
