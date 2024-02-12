@@ -3,7 +3,7 @@ import "/src/App.css";
 export default function ReactHome() {
   return (
     <>
-      <div className="container-fluid">
+      <div className="container-fluid"  id="fsm">
         <h2 className="text-center"> Welcome to React Home Page</h2>
             <h4>Why use React?</h4>
             <p>ReactJs is one of the most widely used front-end JavaScript libraries for creating Web Applications. Around 8,000 businesses around the world have chosen React over other popular libraries and frameworks for building rich user interfaces. React is a Facebook-developed JavaScript package that was used to create Instagram, among other things. It is like a panacea for developers to build user interfaces for websites and apps swiftly. The virtual DOM is the core notion of ReactJs.</p>

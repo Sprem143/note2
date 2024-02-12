@@ -2,7 +2,7 @@ import "/src/App.css";
 export default function JsHome() {
   return (
     <>
-      <div className="container-fluid">
+      <div className="container-fluid"  id="fsm">
         <h2 className="text-center fw-bold text-primary">
           Welcome to JavaScript Page
         </h2>

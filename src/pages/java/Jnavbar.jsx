@@ -1,8 +1,13 @@
 import { Outlet, Link } from "react-router-dom";
+import React, { useState } from 'react';
 import "./Jnavbar.css";
 import Carousel from "react-bootstrap/Carousel";
 // import ExampleCarouselImage from 'components/ExampleCarouselImage';
 export default function Jnavbar() {
+  const [clickedLink, setClickedLink] = useState("white");
+
+  const handleLinkClick = (link) => {
+    setClickedLink(link);}
   return (
     <>
       <nav className="jnav">
@@ -13,10 +18,12 @@ export default function Jnavbar() {
             {/* ------Slide 01 ------------- */}
             <Carousel.Item className="jtopic-slide">
               <li>
-                <Link to="accessmodifier">Access Modifier</Link>
+                <Link to="accessmodifier" style={{ color: clickedLink == 'accessmodifier' ? 'red' : 'white' }}
+        onClick={() => handleLinkClick('accessmodifier')}>Access Modifier</Link>
               </li>
               <li>
-                <Link to="array">Array</Link>
+                <Link to="array"  style={{ color: clickedLink == 'array' ? 'red' : 'white' }}
+        onClick={() => handleLinkClick('array')}>Array</Link>
               </li>
               <li>
                 <Link to="languagefundamental">Fundamental</Link>
@@ -120,4 +127,4 @@ export default function Jnavbar() {
       <Outlet />
     </>
   );
-}
+  }

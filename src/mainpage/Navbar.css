@@ -113,7 +113,7 @@ font-family: cursive;
     text-decoration:underline
 }
 /* fixed sidebar */
-.topicicon{
+#topicicon{
     height: 600px;
     width: 50px;
     background-color: rgb(255, 255, 255);
@@ -125,24 +125,24 @@ font-family: cursive;
     flex-direction: column;
     align-items: center;
 }
-.topicicon>div{
+#topicicon>div{
     margin: 8px 2px 19px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.topicicon>div>a>img{
+#topicicon>div>a>img{
     box-shadow: 4px 2px 3px 2px rgb(219, 219, 219);
 }
-.topicicon>div>img:hover{
+#topicicon>div>img:hover{
     box-shadow: 2px 4px 2px 2px rgba(93, 95, 122, 0.5) ;
 }
-.topicicon>div>a{
+#topicicon>div>a{
     text-decoration: none;
     color: midnightblue;
     font-size: small;
 }
-.topicicon>div>a:hover{
+#topicicon>div>a:hover{
     text-decoration: underline;
     font-weight: bold;
     color: blue;
@@ -244,7 +244,7 @@ font-family: cursive;
     .option-body{
         margin-top: -6px;
     }
-    .topicicon{
+    #topicicon{
         visibility: hidden;
     }
     
@@ -260,7 +260,5 @@ font-family: cursive;
     .mi, .pyicon{
         margin-top: -135px;
     }
-    .mi,.pyicon{
-       height: 40px;
-    }
+   
  }

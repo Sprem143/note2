@@ -14,6 +14,9 @@ export default function Navbar() {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const [clickedLink, setClickedLink] = useState(null);
+  const handleLinkClick = (link) => {
+    setClickedLink(link);}
 
   return (
     <>
@@ -53,17 +56,23 @@ export default function Navbar() {
                     {/* dropdown links */}
                     <ul>
                       <li>
-                        <Link to="python/numpy">Numpy</Link>
+                        <Link to="python/numpy"  style={{ color: clickedLink == 'numpy' ? 'red' : 'magenta' }}
+        onClick={() => handleLinkClick('numpy')}>Numpy</Link>
                       </li>
                       <li>
-                        <Link to="/python/panda">Panda</Link>
+                        <Link to="/python/panda"  style={{ color: clickedLink == 'panda' ? 'red' : 'magenta' }}
+        onClick={() => handleLinkClick('panda')}>Panda</Link>
                       </li>
                       <li>
-                        <Link to="/python/seaborn">Seaborn</Link>
+                        <Link to="/python/seaborn"  style={{ color: clickedLink == 'seaborn' ? 'red' : 'magenta' }}
+        onClick={() => handleLinkClick('seaborn')}>Seaborn</Link>
                       </li>
-                      <li><Link to="/python/matlibplot">Matlibplot</Link></li>
-                      <li><Link to="/python/machinelearning">Machine Learining</Link></li>
-                      <li><Link to="/python/deeplearning">Deep Learining</Link></li>
+                      <li><Link to="/python/matlibplot"  style={{ color: clickedLink == 'matlibplot' ? 'red' : 'magenta' }}
+        onClick={() => handleLinkClick('matlibplot')}>Matlibplot</Link></li>
+                      <li><Link to="/python/machinelearning"  style={{ color: clickedLink == 'machinelearning' ? 'red' : 'magenta' }}
+        onClick={() => handleLinkClick('machinelearning')}>Machine Learining</Link></li>
+                      <li><Link to="/python/deeplearning"  style={{ color: clickedLink == 'deeplearning' ? 'red' : 'magenta' }}
+        onClick={() => handleLinkClick('deeplearning')}>Deep Learining</Link></li>
                     </ul>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -222,22 +231,28 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to="/python">Python</Link>
+              <Link to="/python"  style={{ color: clickedLink == 'python' ? 'red' : 'white' }}
+        onClick={() => handleLinkClick('python')}>Python</Link>
             </li>
             <li>
-              <Link to="/java">JAVA</Link>
+              <Link to="/java"  style={{ color: clickedLink == 'java' ? 'red' : 'white' }}
+        onClick={() => handleLinkClick('java')}>JAVA</Link>
             </li>
             <li>
-              <Link to="/react">REACT</Link>
+              <Link to="/react"  style={{ color: clickedLink == 'react' ? 'red' : 'white' }}
+        onClick={() => handleLinkClick('react')}>REACT</Link>
             </li>
             <li>
-              <Link to="/html">HTML</Link>
+              <Link to="/html"  style={{ color: clickedLink == 'html' ? 'red' : 'white' }}
+        onClick={() => handleLinkClick('html')}>HTML</Link>
             </li>
             <li>
-              <Link to="/css">CSS</Link>
+              <Link to="/css"  style={{ color: clickedLink == 'css' ? 'red' : 'white' }}
+        onClick={() => handleLinkClick('css')}>CSS</Link>
             </li>
             <li>
-              <Link to="/javascript">JavaScript</Link>
+              <Link to="/javascript"  style={{ color: clickedLink == 'numpy' ? 'red' : 'white' }}
+        onClick={() => handleLinkClick('numpy')}>JavaScript</Link>
             </li>
 
             <li>
@@ -338,7 +353,7 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-      <div className="topicicon">
+      <div id="topicicon">
         <div>
           <Link to="/python">
             <img src="/static/images/python-logo.png" alt="" height="30" />{" "}

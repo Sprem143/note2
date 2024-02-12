@@ -2,7 +2,7 @@ import "/src/App.css";
 export default function JavaHome() {
   return (
     <>
-      <div className="container-fluid">
+      <div className="container-fluid"  id="fsm">
         <h2 className="text-center">Welcome to Java Page</h2>
         <div className="content-box shadow  bg-body-tertiary p-3 mb-2  rounded">
           <h3>🚀 Explore, Learn, Code</h3>

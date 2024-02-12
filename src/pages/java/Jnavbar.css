@@ -1,94 +1,120 @@
-.body-part{
+.body-part {
     margin-left: 60px;
     margin-top: -125px;
 }
 
-.text-center{
+.text-center {
     display: flex;
     justify-content: center;
 }
-ul{
+
+ul {
     list-style: none;
 }
-.jlinks-container{
+
+.jlinks-container {
     background-color: rgb(233, 227, 231);
     display: flex;
     align-items: center;
-   width: 100%;
- margin-top: 130px;
- padding: 0;
+    width: 100%;
+    margin-top: 130px;
+    padding: 0;
 }
-.jround-img{
+
+.jround-img {
     border-radius: 50%;
 }
-.jlinks-container li a{
+
+.jlinks-container li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     white-space: nowrap;
+    height:inherit;
+   
 }
-.jlinks-container li a:hover{
-    color: rgb(21, 0, 255);
-    transition:0.5s;
-    text-decoration: underline;
+
+.jlinks-container li a:hover {
+    color: rgb(255, 0, 149);
+    transition: 0.5s;
+    background-color: rgb(255, 255, 255);
+    padding: 0 5px ;
 }
+.jlinks-container li a:active{
+    background-color: red;
+    padding: 3%;
+    color: rgb(255, 255, 255);
+}
+
 /* coresol slide css */
-.jtopic-slide{
-display: flex !important;
-flex-direction: row !important;
-width: 100%;
-justify-content: space-evenly;
-background-color: rgb(50, 56, 61);
+.jtopic-slide {
+    display: flex !important;
+    flex-direction: row !important;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: rgb(50, 56, 61);
 }
-.carousel { 
-    height:  inherit;
+
+.carousel {
+    height: inherit;
     position: fixed;
- }
-.carousel-control-prev-icon, .carousel-control-next-icon {
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
     height: 90%;
     outline: black;
     background-color: rgb(0, 0, 0);
     background-size: 100%, 100%;
-   margin: 0 -20px;
+    margin: 0 -20px;
     border: 2px solid black;
 }
-.carousel-control-next, .carousel-control-prev{
+
+.carousel-control-next,
+.carousel-control-prev {
     width: 18px !important;
 }
-.jnav-mobile{
+
+.jnav-mobile {
     visibility: hidden;
     height: 0;
     width: 0;
-    }
+}
+
 @media screen and (max-width:768px) {
-    .jnav-mobile{
-    visibility: visible;
-    height: inherit;
-    width:100%;
-    margin-top: -6px;
-    margin-bottom: 80px;
+    .jnav-mobile {
+        visibility: visible;
+        height: inherit;
+        width: 100%;
+        margin-top: -6px;
+        margin-bottom: 80px;
     }
-    .jnav-desktop{
+
+    .jnav-desktop {
         visibility: hidden;
         height: 0;
         width: 0;
     }
-    .carousel-control-next-icon{
-     margin: -2px 0px;   
+
+    .carousel-control-next-icon {
+        margin: -2px 0px;
     }
-     }
- @media screen and (max-width:576px) {
-    .jaccount2{
+}
+
+@media screen and (max-width:576px) {
+    .jaccount2 {
         height: 40px;
         margin-top: 15px;
     }
-    .jnav-mobile{
+
+    .jnav-mobile {
         margin-top: -83px;
     }
-/* .nav2{
+
+    /* .nav2{
     display: flex;
     justify-content: space-evenly;
 } */
-    .joption-body{
+    .joption-body {
         height: 400px;
         width: 200px;
         margin-top: -6px;
@@ -98,21 +124,22 @@ background-color: rgb(50, 56, 61);
         padding: 1%;
         background-color: rgb(91, 36, 84);
     }
-    #joption-dismiss{
+
+    #joption-dismiss {
         float: right;
         background-color: rgb(0, 0, 0);
-        padding:0 3px 0 3px;
+        padding: 0 3px 0 3px;
         color: white;
     }
-    .linkstyle a{
+
+    .linkstyle a {
         text-decoration: none;
         list-style: none;
         color: white;
         margin: 2%;
     }
+
     /* #root{
         margin-top: 50px;
     } */
- }
-
- 
+}

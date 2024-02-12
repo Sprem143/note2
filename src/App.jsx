@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState } from 'react';
 import Home from "./mainpage/Home";
 import Navbar from "./mainpage/Navbar";
 import AppJava from './pages/java/Appjava';
@@ -8,6 +9,7 @@ import Apppython from './pages/python/Apppython';
 import Apphtml from './pages/html/Apphtml';
 import Appreact from './pages/react/Appreact';
 import Appjs from './pages/js/Appjs';
+import Nopage from './mainpage/Nopage';
 export default function App(){
   function changeTheme() {
     let colore = document.getElementById("exampleColorInput").value;
@@ -16,11 +18,30 @@ document.getElementById("root").style.backgroundColor= colore  }
 function changetext(){
   let colore = document.getElementById("exampleColorInput2").value;
 document.getElementById("root").style.color= colore  }
+
+const[v, setImage]= useState(0);
+const[image,setImg]=useState("static/images/arrows-fullscreen.svg")
+// let image="static/images/java-logo.png"
+ const handleImage=()=>{
+  console.log(v);
+  if(v==0){
+    setImg("static/images/fullscreen-exit.svg");
+    document.getElementById("topicicon").style.visibility="hidden"
+    document.getElementById("fsm").style.marginLeft="0";
+    setImage(1)
+  }else{
+    setImg("static/images/arrows-fullscreen.svg")
+    document.getElementById("topicicon").style.visibility="visible"
+    document.getElementById("fsm").style.marginLeft="60px";
+
+    setImage(0)
+  }
+}
   return(
     <>
       <div className="toolbar">
       <div className="theme">
-          <span>Theme</span>
+          <span>Theme-</span>
           <input
             type="color"
             onInput={changeTheme}
@@ -41,6 +62,12 @@ document.getElementById("root").style.color= colore  }
             title="Choose your "
           ></input>
         </div>
+        {/* -----full view----- */}
+        <div className='text-white readmode-text'><p>Full-Screen</p></div>
+        <div id='readmode' onClick={handleImage}>
+          
+          <img src={image} alt="" height='90%'/>
+        </div>
       </div>
      
 
@@ -54,9 +81,7 @@ document.getElementById("root").style.color= colore  }
           <Route path="java/*" element={<><AppJava/></>} />
           <Route path="react/*" element={<><Appreact/></>} />
           <Route path="javascript/*" element={<><Appjs/></>} />
-          {/* <Route path="*" element={<NoPage />} /> */}
-
-         
+          <Route path="*" element={<Nopage />} />
         </Route>
       </Routes>
     </BrowserRouter>
