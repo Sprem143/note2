@@ -24,13 +24,13 @@ function changetext(){
 document.getElementById("root").style.color= colore  }
   return(
     <>
-      
+      <div className="toolbar">
       <div className="theme">
           <span>Background-color</span>
           <input
             type="color"
             onInput={changeTheme}
-            class="form-control form-control-color themeapp"
+            className="form-control form-control-color themeapp"
             id="exampleColorInput"
             value="#FF0000"
             title="Choose your "
@@ -41,23 +41,25 @@ document.getElementById("root").style.color= colore  }
           <input
             type="color"
             onInput={changetext}
-            class="form-control form-control-color themeapp"
+            className="form-control form-control-color themeapp"
             id="exampleColorInput2"
             value="#FFC0CB"
             title="Choose your "
           ></input>
         </div>
+      </div>
+     
 
       <BrowserRouter>
       <Routes>
-        <Route className="routes" path="/" element={ <Navbar /> }>
+      <Route className="routes" path="/" element={ <Navbar /> }>
           <Route index element={<Home />} />
-          <Route path="python/*" element={<>< PythonHome/> <Apppython /></>} />
-          <Route path="css/*" element={<><Appcss /><Csshome/> </>} />
-          <Route path="html/*" element={<><Apphtml/><HtmlHome/> </>} />
-          <Route path="java/*" element={<><AppJava/><JavaHome/></>} />
-          <Route path="react/*" element={<><Appreact/><ReactHome/></>} />
-          <Route path="javascript/*" element={<><Appjs/><JsHome/></>} />
+          <Route path="python/*" element={<><Apppython /></>} />
+          <Route path="css/*" element={<><Appcss /> </>} />
+          <Route path="html/*" element={<><Apphtml/> </>} />
+          <Route path="java/*" element={<><AppJava/></>} />
+          <Route path="react/*" element={<><Appreact/></>} />
+          <Route path="javascript/*" element={<><Appjs/></>} />
           {/* <Route path="*" element={<NoPage />} /> */}
 
          

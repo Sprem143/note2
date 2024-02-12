@@ -3,20 +3,14 @@ import "/src/App.css";
 export default function ReactHome() {
   return (
     <>
-      <Reactnavbar />
       <div className="container-fluid">
         <h2 className="text-center"> Welcome to React Home Page</h2>
-        <div className="content-box shadow  bg-body-tertiary p-3 mb-2  rounded">
             <h4>Why use React?</h4>
             <p>ReactJs is one of the most widely used front-end JavaScript libraries for creating Web Applications. Around 8,000 businesses around the world have chosen React over other popular libraries and frameworks for building rich user interfaces. React is a Facebook-developed JavaScript package that was used to create Instagram, among other things. It is like a panacea for developers to build user interfaces for websites and apps swiftly. The virtual DOM is the core notion of ReactJs.</p>
             <p>React has grown in popularity as a front-end web development tool among react development companies since it only requires a basic familiarity of HTML and JavaScript. In March, 2015, Facebook released React Native, an open source UI framework, to develop applications for android, iOS, mac, and other various OS. We’ll discover what ReactJs is and why React is better than other JavaScript frameworks in this Article.</p>
-        </div>
-        <div className="content-box shadow  bg-body-tertiary p-3 mb-2  rounded">
-            <h4>What is React?</h4>
+                    <h4>What is React?</h4>
             <p>The best fit for developing user interfaces is React, as it is a very declarative, fast, and flexible JavaScript library. It allows you to create complex user interfaces using “components,” or small, self-contained pieces of code. It controls the view layer in web applications. Despite the fact that React is more of a library than a language, it is frequently used in web development. 
             </p>
-        </div>
-        <div className="content-box shadow  bg-body-tertiary p-3 mb-2  rounded">
             <h4>Importance of React :</h4>
             <p>React is a popular and widely used JavaScript library for building user interfaces, particularly for single-page applications where user interactions and dynamic content updates are crucial. Here are some key reasons for the importance of React in web development:</p>
             <ol>
@@ -65,9 +59,7 @@ export default function ReactHome() {
                     <p>React has a large and active community, which means a wealth of resources, tutorials, and third-party libraries are available. This community support contributes to the continuous improvement of React, making it easier for developers to find solutions to problems and stay updated with best practices.</p>
                 </li>
             </ol>
-        </div>
-       
-      </div>
+       </div>
     </>
   );
 }

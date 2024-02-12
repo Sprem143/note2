@@ -1,10 +1,8 @@
-import Pynavbar from "./pynavbar";
 import "../java/Jnavbar.css";
 import "/src/App.css";
 export default function PythonHome() {
   return (
     <>
-      <Pynavbar />
       <div className="container-fluid">
       <h2 className="text-center">Welcome to World of Python</h2>
             <h4>🐍Embrace the Power and Versatility of Python</h4>

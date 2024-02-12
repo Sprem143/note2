@@ -1,6 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
-// import "./Jnavbar.css";
-import JavaHome from "./JavaHome";
+import "./Jnavbar.css";
 import Carousel from "react-bootstrap/Carousel";
 // import ExampleCarouselImage from 'components/ExampleCarouselImage';
 export default function Jnavbar() {
@@ -119,7 +118,6 @@ export default function Jnavbar() {
         </ul>
       </nav>
       <Outlet />
-      <JavaHome/>
     </>
   );
 }

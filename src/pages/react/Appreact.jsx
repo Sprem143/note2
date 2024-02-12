@@ -25,10 +25,14 @@ import Usememo from "./reacttopics/Usememo";
 import Usereducer from "./reacttopics/Usereducer";
 import Useref from "./reacttopics/Useref";
 import Usestate from "./reacttopics/Usestate";
+import Reactnavbar from "./Reactnavbar";
+import ReactHome from "./ReactHome";
 export default function Appreact() {
   return (
     <>
-      <Routes className="routes" path="/" element={<></>}>
+      <Routes>
+      <Route className="routes" path="/" element={ <Reactnavbar /> }>
+          <Route index element={<ReactHome />} />
         <Route path="basic" element={<Basic />} />
         <Route path="class" element={<Class />} />
         <Route path="component" element={<Component />} />
@@ -55,7 +59,7 @@ export default function Appreact() {
         <Route path="useref" element={<Useref />} />
         <Route path="usestate" element={<Usestate />} />
        
-      
+      </Route>
       </Routes>
     </>
   );

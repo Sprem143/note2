@@ -1,19 +1,15 @@
 import "/src/App.css";
-import Cssnavbar from "./Cssnavbar";
 export default function Csshome() {
   return (
     <>
-      <Cssnavbar />
       <div className="container-fluid">
         <h2 className="text-center fw-bold text-success">
           Welcome to CSS home Page
         </h2>
 
-        <div className="content-box shadow bg-transparent  p-3 mb-2 ">
           <h4>What is CSS in web development</h4>
           <p>CSS stands for Cascading Style Sheets. It is a fundamental technology in web development that plays a significant part in shaping websites’ visual appearance and layout. CSS helps you style your content sheet online and make it look attractive and user-friendly.</p>
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CSS operates by defining a set of guidelines that specify how HTML elements should be displayed in a web browser. These rules include properties like colors, fonts, spacing, positioning, and more. By applying CSS to HTML documents, web developers are able to develop an integrated and visually pleasing design for their websites.</p>
-        </div>
         <div className="text-center">
           <img
             src="/static/images/css1.png"
@@ -23,7 +19,6 @@ export default function Csshome() {
             style={{ zIndex: -1 }}
           />
         </div>
-        <div className="content-box shadow bg-transparent  p-3 mb-2 ">
           <h4>CSS Introduction</h4>
           <p>
             CSS (Cascading Style Sheets) is a simply designed language intended
@@ -41,9 +36,7 @@ export default function Csshome() {
             to learn and understand, but it provides powerful control over the
             presentation of an HTML document.
           </p>
-        </div>
 
-        <div className="content-box shadow bg-transparent  p-3 mb-2 ">
           <h4>Why CSS?</h4>
           <ul style={{ listStyleType: "circle" }}>
             <li>
@@ -83,7 +76,6 @@ export default function Csshome() {
               cache. Using this we can view offline websites.
             </p>
           </ul>
-        </div>
         <div className="text-center">
           <img
             src="/static/images/css2.png"
@@ -93,7 +85,6 @@ export default function Csshome() {
             style={{ zIndex: -1 }}
           />
         </div>
-        <div className="content-box shadow bg-transparent  p-3 mb-2 ">
           <h4>
             <b>CSS Syntax</b>
           </h4>
@@ -102,9 +93,7 @@ export default function Csshome() {
             then applied to the corresponding elements in your document. A style
             rule set consists of a selector and declaration block.
           </p>
-        </div>
 
-        <div className="content-box shadow bg-transparent  p-3 mb-2 ">
           <h4><b>Importance of CSS in web development</b></h4>
           <p>Let us have a look at some of the major benefits of using CSS in web development here through this article.</p>
           <ul style={{ listStyleType: "circle" }}>
@@ -128,9 +117,7 @@ export default function Csshome() {
             <p>With the help importance Of CSS, we can implement various transitions and animations on our website, which makes it look better and more engaging. We can create smooth transitions, hover effects, beautiful backgrounds, animations, and more.</p>
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;These interactive features improve user experience and keep visitors happy and engaged, which may indirectly help SEO rankings.</p>
           </ul>
-        </div>
 
-        <div className="content-box shadow bg-transparent  p-3 mb-2 ">
           <h4>
             <b>CSS Syntax</b>
           </h4>
@@ -169,7 +156,6 @@ export default function Csshome() {
               separated by a colon.
             </li>
           </ul>
-        </div>
         <div className="bg-dark text-white p-3">
           &lt;h1&gt;Welcome to PremNote&lt;/h2&gt; <br />
           <br />

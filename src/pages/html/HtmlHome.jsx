@@ -3,10 +3,8 @@ import "/src/App.css";
 export default function HtmlHome() {
   return (
     <>
-      <Htmlnavbar />
-      <div className="container-fluid html-body">
-        <h1>Welcome to Html Home page</h1>
-        <div className="content-box shadow bg-transparent  p-3 mb-2 ">
+      <div className="container-fluid">
+        <h1 className="text-center">Welcome to Html Home page</h1>
           <h4>What is HTML?</h4>
           <p>
             HTML, or HyperText Markup Language, is a standard markup language
@@ -16,8 +14,7 @@ export default function HtmlHome() {
             tags and attributes to define and structure the elements on a web
             page.
           </p>
-        </div>
-        <div className="content-box shadow  bg-transparent p-3 mb-2  rounded">
+       
           <h4>HTML Versions</h4>
           <p>
             HTML is a markup language used by the browser to manipulate text,
@@ -26,7 +23,6 @@ export default function HtmlHome() {
             version of HTML was HTML 1.0, but the first standard version was
             HTML 2.0, published in 1995.
           </p>
-        </div>
         <div className="text-center">
           <img
             src="/static/images/html_release_year.png"
@@ -37,7 +33,6 @@ export default function HtmlHome() {
           />
         </div>
 
-        <div className="content-box shadow  bg-transparent p-3 mb-2  rounded">
           <h4>HTML Elements and Tags</h4>
           <p>
             HTML uses predefined tags and elements which tell the browser how to
@@ -45,8 +40,6 @@ export default function HtmlHome() {
             omitted, the browser applies the effect of the opening tag until the
             end of the page.
           </p>
-        </div>
-        <div className="content-box shadow  bg-transparent p-3 mb-2  rounded">
           <h4>HTML Page Structure</h4>
           <p>
             The basic structure of an HTML page is laid out below. It contains
@@ -54,7 +47,6 @@ export default function HtmlHome() {
             HTML, head, title, and body elements) upon which all web pages are
             created.
           </p>
-        </div>
         <div className="text-center">
           <img
             src="/static/images/htmlpagestr.png"
@@ -65,7 +57,6 @@ export default function HtmlHome() {
           />
         </div>
 
-        <div className="content-box shadow  bg-transparent p-3 mb-2  rounded">
           <ul>
             <li>
               <span className="text-primary fw-bold">
@@ -169,7 +160,6 @@ export default function HtmlHome() {
               flexibility.
             </p>
           </ul>
-        </div>
         <div className="text-center">
           <img
             src="/static/images/htmldemo.png"
@@ -189,7 +179,6 @@ export default function HtmlHome() {
             style={{ zIndex: -1, border:"2px solid black" }}
           />
         </div>
-        <div className="content-box shadow  bg-transparent p-3 mb-2  rounded">
           <h4>Features of HTML</h4>
           <ul style={{listStyleType:"circle"}}>
             <li>It is easy to learn and easy to use.</li>
@@ -198,9 +187,7 @@ export default function HtmlHome() {
             <li>Hypertext can be added to the text.</li>
             <li>It is a markup language.</li>
           </ul>
-        </div>
 
-        <div className="content-box shadow  bg-transparent p-3 mb-2  rounded">
           <h4>Why learn HTML?</h4>
           <ul style={{listStyleType:"circle"}}>
             <li>It is a simple markup language. Its implementation is easy.</li>
@@ -208,25 +195,20 @@ export default function HtmlHome() {
             <li>Helps in developing fundamentals about web programming.</li>
             <li>Boost professional career.</li>
           </ul>
-        </div>
 
-        <div className="content-box shadow  bg-transparent p-3 mb-2  rounded">
           <h4>Advantages of HTML</h4>
          <ul style={{listStyleType:"circle"}}>
              <li>HTML is used to build websites.</li>
              <li>It is supported by all browsers.</li>
              <li>It can be integrated with other languages like CSS, JavaScript, etc.</li>
          </ul>
-        </div>
 
-        <div className="content-box shadow  bg-transparent p-3 mb-2  rounded">
           <h4>Disadvantages of HTML</h4>
           <ul style={{listStyleType:"circle"}}>
              <li>HTML can only create static web pages. For dynamic web pages, other languages have to be used.</li>
              <li>A large amount of code has to be written to create a simple web page.</li>
              <li>The security feature is not good.</li>
           </ul>
-        </div>
       </div>
     </>
   );

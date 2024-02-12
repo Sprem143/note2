@@ -37,12 +37,15 @@ import Syntax from "./jstopics/Syntax";
 import Type from "./jstopics/Type";
 import Variable from "./jstopics/Variable";
 import JsHome from "./JsHome";
+import Jsnavbar from "./Jsnavbar";
 
 export default function Appjs() {
   return (
     <>
-      <Routes className="routes" path="/" element={<><JsHome/></>}>
-        <Route path="basic" element={<Basic />} />
+ <Routes>
+      <Route className="routes" path="/" element={ <Jsnavbar /> }>
+        <Route index element={<JsHome />} />      
+          <Route path="basic" element={<Basic />} />
         <Route path="arithmetic" element={<Arithmetic />} />
         <Route path="array" element={<Array />} />
         <Route path="arrow" element={<Arrowfunction />} />
@@ -79,6 +82,7 @@ export default function Appjs() {
         <Route path="type" element={<Type />} />
         <Route path="variable" element={<Variable />} />
         <Route path="assignment" element={<Assignment />} />
+        </Route>
       </Routes>
     </>
   );

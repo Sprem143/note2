@@ -21,7 +21,9 @@ import Jnavbar from "./Jnavbar";
 export default function AppJava() {
   return (
     <>
-      <Routes className="routes" path="/" element={<Jnavbar/>}>
+    <Routes>
+        <Route className="routes" path="/" element={ <Jnavbar /> }>
+          <Route index element={<JavaHome />} />
         <Route path="accessmodifier" element={<Accessmodifier />} />
         <Route path="array" element={<Array />} />
         <Route path="codingstandard" element={<CodingStandard />} />
@@ -38,6 +40,7 @@ export default function AppJava() {
         <Route path="opps" element={<Opps />} />
         <Route path="java/vararg" element={<Vararg />} />
         <Route path="variable" element={<Variable />} />
+        </Route>
       </Routes>
     </>
   );

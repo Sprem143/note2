@@ -32,11 +32,14 @@ import Semantic from "./htmltopics/Semantic";
 import Style from "./htmltopics/Style";
 import SymbolEmoji from "./htmltopics/SymbolEmoji";
 import Table from "./htmltopics/Table";
+import Htmlnavbar from "./Htmlnavbar";
+import HtmlHome from "./HtmlHome";
 export default function Apphtml() {
   return (
     <>
-      <Routes className="routes" path="/" >
-        <Route path="attribute" element={<Attribute />} />
+       <Routes>
+      <Route className="routes" path="/" element={ <Htmlnavbar /> }>
+        <Route index element={<HtmlHome/>} />
        <Route path="basic" element={<Basic />} />
        <Route path="blockinline" element={<BlockInline />} />
        <Route path="charset" element={<Charset />} />
@@ -68,6 +71,7 @@ export default function Apphtml() {
        <Route path="style" element={<Style />} />
        <Route path="symbolemoji" element={<SymbolEmoji />} />
        <Route path="table" element={<Table />} />
+       </Route>
       </Routes>
     </>
   );

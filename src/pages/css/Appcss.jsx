@@ -33,12 +33,15 @@ import Text from "./csspages/Text";
 import Zindex from "./csspages/Zindex";
 import Dropdown from "./csspages/Dropdown";
 import Csshome from "./Csshome";
+import Cssnavbar from "./Cssnavbar";
 export default function Appcss() {
   return (
     <>
-      <Routes className="routes" path="/" element={<><Csshome /></>}>
+ <Routes>
+      <Route className="routes" path="/" element={ <Cssnavbar /> }>
+        <Route index element={<Csshome />} />
         <Route path="syntax" element={<Syntax />} />
-        <Route path="selectors" element={<Selectors />} />
+        <Route path="selector" element={<Selectors />} />
         <Route path="comment" element={<Comment />} />
         <Route path="color" element={<Color />} />
         <Route path="background" element={<Background />} />
@@ -70,7 +73,8 @@ export default function Appcss() {
         <Route path="dropdown" element={< Dropdown/>} />
         <Route path="form" element={<Form />} />
         <Route path="mathfunction" element={<Mathfunction />} />
-      </Routes>
+        </Route>
+      </Routes>   
     </>
   );
 }

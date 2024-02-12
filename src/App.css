@@ -1,28 +1,41 @@
-.container-fluid{
+p,
+dfn,
+li {
+    font-size: 1.2rem;
+}
+
+.container-fluid {
     margin-left: 60px !important;
-    margin-top: -120px;
+    margin-top: -130px;
     width: fit-content;
 }
-.theme{
-    position: fixed;
+
+.theme {
     z-index: 10;
     margin-top: 8px;
-    margin-left: 40%;
     display: flex;
     height: 5px;
     align-items: center;
     justify-content: center;
     gap: 5px;
     color: white;
-    font-family:cursive;
+    font-family: cursive;
+    flex-basis: 15%;
 }
-.theme2{
-    margin-left: 53%; 
-}
-.theme input{
+.theme input {
     margin: 0 !important;
     padding: 0 !important;
-    /* border-radius: 50%; */
     height: 18px;
     width: 18px;
+}
+
+.toolbar {
+    height: 25px;
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    text-align: center;
 }

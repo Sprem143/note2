@@ -1,7 +1,11 @@
+import "/src/App.css"
 export default function Panda(){
     return(
         <>
-        <h1>Welcome to Panda</h1>
+        <div className="container-fluid">
+        <h2 className="text-danger"><b>Numpy: A Python Library</b></h2>
+        </div>
         </>
+        
     )
 }
