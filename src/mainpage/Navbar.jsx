@@ -280,16 +280,14 @@ export default function Navbar() {
 
         {/* mobile navbar */}
         <div className="nav2">
-          {/* onlclik display options */}
-
           {/*---------------------- mobile logo---------------------- */}
           <div className="logo">
-            <img
+            <Link to="/"><img
               className="round-img"
               src="/static/images/logo.png"
               alt="logo"
               height="60"
-            />
+            /></Link>
           </div>
           <ul className="links-container2">
             <li>

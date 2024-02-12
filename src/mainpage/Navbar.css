@@ -185,7 +185,8 @@ font-family: cursive;
  @media screen and (max-width:576px) {
     .links-container{
         visibility: hidden;
-        position: fixed
+        position: fixed;
+        height:0;
     }
     .nav2{
         display: flex;
@@ -194,12 +195,11 @@ font-family: cursive;
         align-items: center;
         justify-content: center;
         position: fixed;
-        margin-top: -120px;
+        margin-top: -140px;
         margin-bottom: 50px;
     }
     .menu-icon {
-        flex-basis: 2%;
-        margin-top: -100px !important;
+        margin-top: -121px !important;
         padding: 0 !important;
         z-index: 20;
         position:fixed;
@@ -209,8 +209,11 @@ font-family: cursive;
     align-items: center;
     justify-content: space-evenly;
    padding: 0;
-   margin-top: 15px;
+   margin-top: 25px;
    flex-basis: 70%;
+    }
+    .toolbar{
+        margin-top:-130px;
     }
     .links-container2 li a{
         text-decoration: none;
@@ -249,6 +252,6 @@ font-family: cursive;
         margin-top: -115px;
     }
     .mi, .pyicon{
-        margin-top: -115px;
+        margin-top: -135px;
     }
  }

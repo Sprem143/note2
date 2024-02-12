@@ -26,7 +26,7 @@ document.getElementById("root").style.color= colore  }
     <>
       <div className="toolbar">
       <div className="theme">
-          <span>Background-color</span>
+          <span>Theme</span>
           <input
             type="color"
             onInput={changeTheme}

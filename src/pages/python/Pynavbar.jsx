@@ -69,19 +69,31 @@ export default function Pynavbar() {
           <Carousel fade indicators={false} touch={true} interval={null}>
             {/* ------Slide 01 ------------- */}
             <Carousel.Item className="jtopic-slide">
-           
+            <li> <Link to="numpy">Numpy </Link> </li>
+              <li> <Link to="panda">Panda </Link> </li>
+              <li> <Link to="seaborn">Seaborn </Link> </li>
+              <li> <Link to="Matlibplot">Matlibplot </Link> </li>
             </Carousel.Item>
             {/* ---------------slide II------------- */}
             <Carousel.Item className="jtopic-slide">
-           
+            <li> <Link to="Machine Learning">Comment </Link> </li>
+              <li> <Link to="Deep Learning">Variable </Link> </li>
+              <li> <Link to="Machine Learning">Comment </Link> </li>
+              <li> <Link to="Deep Learning">Variable </Link> </li>
             </Carousel.Item>
             {/* ---------------slide III------------- */}
             <Carousel.Item className="jtopic-slide">
-           
+            <li> <Link to="numpy">Numpy </Link> </li>
+              <li> <Link to="panda">Panda </Link> </li>
+              <li> <Link to="seaborn">Seaborn </Link> </li>
+              <li> <Link to="Matlibplot">Matlibplot </Link> </li>
             </Carousel.Item>
             {/* --------------slide IV---------------- */}
             <Carousel.Item className="jtopic-slide">
-         
+            <li> <Link to="numpy">Numpy </Link> </li>
+              <li> <Link to="panda">Panda </Link> </li>
+              <li> <Link to="seaborn">Seaborn </Link> </li>
+              <li> <Link to="Matlibplot">Matlibplot </Link> </li>
             </Carousel.Item>
             {/* --------------slide V---------------- */}
             <Carousel.Item className="jtopic-slide">

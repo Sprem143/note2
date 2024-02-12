@@ -1,10 +1,9 @@
 p,
-dfn,
-li {
+dfn{
     font-size: 1.2rem;
 }
 
-.container-fluid {
+.container-fluid{
     margin-left: 60px !important;
     margin-top: -130px;
     width: fit-content;
@@ -15,6 +14,7 @@ li {
     margin-top: 8px;
     display: flex;
     height: 5px;
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
@@ -28,14 +28,26 @@ li {
     height: 18px;
     width: 18px;
 }
-
+.theme span{
+    font-size: 0.6em;
+}
 .toolbar {
     height: 25px;
     width: 100%;
     z-index: 100;
     position: fixed;
     display: flex;
-    flex-direction: row;
     justify-content:center;
     text-align: center;
+}
+@media screen and (max-width:576px) {
+    .theme{
+        flex-basis: 20%;
+    }
+    .toolbar{
+        margin-top: -135px;
+    }
+    .container-fluid{
+        margin-left: 5px !important;
+    }
 }
