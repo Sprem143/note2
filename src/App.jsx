@@ -27,20 +27,14 @@ const[image,setImg]=useState("static/images/arrows-fullscreen.svg")
   if(v==0){
     setImg("static/images/fullscreen-exit.svg");
     document.getElementById("topicicon").style.visibility="hidden"
-    // document.getElementById("fsm").style.marginLeft="35px !important";
-    // document.getElementById("main-nav").style.visibility="hidden !important";
-    // document.getElementsByClassName("nav2")[0].style.marginTop="-220px"
-    // document.getElementsByClassName("toolbar")[0].style.backgroundColor="midnightblue";
    
     setImage(1)
   }else{
     setImg("static/images/arrows-fullscreen.svg")
-    
-    // document.getElementById("fsm").style.marginLeft="60px";
-    // document.getElementById("main-nav").style.visibility="visible"
-    // document.getElementsByClassName("nav2")[0].style.marginTop="-140px"
-    document.getElementsByClassName("toolbar")[0].style.backgroundColor="unset"
-    
+    if(window.innerWidth>768){
+      document.getElementById("topicicon").style.visibility="visible"
+
+    }
     setImage(0)
   }
 }
