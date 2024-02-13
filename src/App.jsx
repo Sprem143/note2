@@ -53,7 +53,7 @@ const[image,setImg]=useState("static/images/arrows-fullscreen.svg")
           ></input>
         </div>
         <div className="theme theme2">
-          <span>Text-color</span>
+          <span>Text</span>
           <input
             type="color"
             onInput={changetext}
