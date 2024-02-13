@@ -185,6 +185,18 @@ font-family: cursive;
         transform: rotateY(180deg);
     }
 }
+/* --sign in || sign up page */
+.authentication{
+display: flex;
+float: left;
+}
+.authentication a{
+    text-decoration: none;
+    padding: 4px 10px;
+    background-color: rgb(5, 13, 235);
+    color: white;
+    border-radius: 10%;
+}
  @media screen and (max-width:576px) {
     .links-container{
         visibility: hidden;

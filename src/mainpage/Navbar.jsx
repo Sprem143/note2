@@ -16,8 +16,11 @@ export default function Navbar() {
   const handleShow = () => setShow(true);
   const [clickedLink, setClickedLink] = useState(null);
   const handleLinkClick = (link) => {
-    setClickedLink(link);}
-
+    setClickedLink(link);
+  };
+  function disappearmodal(){
+    document.getElementsByClassName("acnt-model")[1].style.display="hidden"
+  }
   return (
     <>
       <nav id="main-nav">
@@ -56,23 +59,76 @@ export default function Navbar() {
                     {/* dropdown links */}
                     <ul>
                       <li>
-                        <Link to="python/numpy"  style={{ color: clickedLink == 'numpy' ? 'red' : 'magenta' }}
-        onClick={() => handleLinkClick('numpy')}>Numpy</Link>
+                        <Link
+                          to="python/numpy"
+                          style={{
+                            color: clickedLink == "numpy" ? "red" : "magenta",
+                          }}
+                          onClick={() => handleLinkClick("numpy")}
+                        >
+                          Numpy
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/python/panda"  style={{ color: clickedLink == 'panda' ? 'red' : 'magenta' }}
-        onClick={() => handleLinkClick('panda')}>Panda</Link>
+                        <Link
+                          to="/python/panda"
+                          style={{
+                            color: clickedLink == "panda" ? "red" : "magenta",
+                          }}
+                          onClick={() => handleLinkClick("panda")}
+                        >
+                          Panda
+                        </Link>
                       </li>
                       <li>
-                        <Link to="/python/seaborn"  style={{ color: clickedLink == 'seaborn' ? 'red' : 'magenta' }}
-        onClick={() => handleLinkClick('seaborn')}>Seaborn</Link>
+                        <Link
+                          to="/python/seaborn"
+                          style={{
+                            color: clickedLink == "seaborn" ? "red" : "magenta",
+                          }}
+                          onClick={() => handleLinkClick("seaborn")}
+                        >
+                          Seaborn
+                        </Link>
                       </li>
-                      <li><Link to="/python/matlibplot"  style={{ color: clickedLink == 'matlibplot' ? 'red' : 'magenta' }}
-        onClick={() => handleLinkClick('matlibplot')}>Matlibplot</Link></li>
-                      <li><Link to="/python/machinelearning"  style={{ color: clickedLink == 'machinelearning' ? 'red' : 'magenta' }}
-        onClick={() => handleLinkClick('machinelearning')}>Machine Learining</Link></li>
-                      <li><Link to="/python/deeplearning"  style={{ color: clickedLink == 'deeplearning' ? 'red' : 'magenta' }}
-        onClick={() => handleLinkClick('deeplearning')}>Deep Learining</Link></li>
+                      <li>
+                        <Link
+                          to="/python/matlibplot"
+                          style={{
+                            color:
+                              clickedLink == "matlibplot" ? "red" : "magenta",
+                          }}
+                          onClick={() => handleLinkClick("matlibplot")}
+                        >
+                          Matlibplot
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to="/python/machinelearning"
+                          style={{
+                            color:
+                              clickedLink == "machinelearning"
+                                ? "red"
+                                : "magenta",
+                          }}
+                          onClick={() => handleLinkClick("machinelearning")}
+                        >
+                          Machine Learining
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to="/python/deeplearning"
+                          style={{
+                            color:
+                              clickedLink == "deeplearning" ? "red" : "magenta",
+                          }}
+                          onClick={() => handleLinkClick("deeplearning")}
+                        >
+                          Deep Learining
+                        </Link>
+                      </li>
                     </ul>
                   </Accordion.Body>
                 </Accordion.Item>
@@ -231,28 +287,58 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to="/python"  style={{ color: clickedLink == 'python' ? 'red' : 'white' }}
-        onClick={() => handleLinkClick('python')}>Python</Link>
+              <Link
+                to="/python"
+                style={{ color: clickedLink == "python" ? "red" : "white" }}
+                onClick={() => handleLinkClick("python")}
+              >
+                Python
+              </Link>
             </li>
             <li>
-              <Link to="/java"  style={{ color: clickedLink == 'java' ? 'red' : 'white' }}
-        onClick={() => handleLinkClick('java')}>JAVA</Link>
+              <Link
+                to="/java"
+                style={{ color: clickedLink == "java" ? "red" : "white" }}
+                onClick={() => handleLinkClick("java")}
+              >
+                JAVA
+              </Link>
             </li>
             <li>
-              <Link to="/react"  style={{ color: clickedLink == 'react' ? 'red' : 'white' }}
-        onClick={() => handleLinkClick('react')}>REACT</Link>
+              <Link
+                to="/react"
+                style={{ color: clickedLink == "react" ? "red" : "white" }}
+                onClick={() => handleLinkClick("react")}
+              >
+                REACT
+              </Link>
             </li>
             <li>
-              <Link to="/html"  style={{ color: clickedLink == 'html' ? 'red' : 'white' }}
-        onClick={() => handleLinkClick('html')}>HTML</Link>
+              <Link
+                to="/html"
+                style={{ color: clickedLink == "html" ? "red" : "white" }}
+                onClick={() => handleLinkClick("html")}
+              >
+                HTML
+              </Link>
             </li>
             <li>
-              <Link to="/css"  style={{ color: clickedLink == 'css' ? 'red' : 'white' }}
-        onClick={() => handleLinkClick('css')}>CSS</Link>
+              <Link
+                to="/css"
+                style={{ color: clickedLink == "css" ? "red" : "white" }}
+                onClick={() => handleLinkClick("css")}
+              >
+                CSS
+              </Link>
             </li>
             <li>
-              <Link to="/javascript"  style={{ color: clickedLink == 'numpy' ? 'red' : 'white' }}
-        onClick={() => handleLinkClick('numpy')}>JavaScript</Link>
+              <Link
+                to="/javascript"
+                style={{ color: clickedLink == "numpy" ? "red" : "white" }}
+                onClick={() => handleLinkClick("numpy")}
+              >
+                JavaScript
+              </Link>
             </li>
 
             <li>
@@ -266,28 +352,6 @@ export default function Navbar() {
                     height="45"
                   />
                 </Button>
-
-                <Modal
-                  show={showac}
-                  onHide={handleCloseac}
-                  animation={false}
-                  className="acnt-model"
-                >
-                  <div className="model-content">
-                    <Modal.Header closeButton>
-                      <Modal.Title>Prem Kumar</Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body className="model-body">
-                      <img
-                        src="/static/images/mypic.png"
-                        className="round-img"
-                        alt=""
-                        height="120"
-                      />
-                    </Modal.Body>
-                    <Modal.Footer>Website Designer</Modal.Footer>
-                  </div>
-                </Modal>
               </div>
             </li>
           </ul>
@@ -297,12 +361,14 @@ export default function Navbar() {
         <div className="nav2">
           {/*---------------------- mobile logo---------------------- */}
           <div className="logo">
-            <Link to="/"><img
-              className="round-img"
-              src="/static/images/logo.png"
-              alt="logo"
-              height="60"
-            /></Link>
+            <Link to="/">
+              <img
+                className="round-img"
+                src="/static/images/logo.png"
+                alt="logo"
+                height="60"
+              />
+            </Link>
           </div>
           <ul className="links-container2">
             <li>
@@ -320,36 +386,39 @@ export default function Navbar() {
           </ul>
           {/* -----------------------account ------------------------------- */}
           <div className="account">
-          <Button id="acnt-btn" onClick={handleShowac}>
-                  <img
-                    src="/static/images/account.png"
-                    alt="account"
-                    className="round-img"
-                    height="45"
-                  />
-                </Button>
+            <Button id="acnt-btn" onClick={handleShowac}>
+              <img
+                src="/static/images/account.png"
+                alt="account"
+                className="round-img"
+                height="45"
+              />
+            </Button>
 
-                <Modal
-                  show={showac}
-                  onHide={handleCloseac}
-                  animation={false}
-                  className="acnt-model"
-                >
-                  <div className="model-content">
-                    <Modal.Header closeButton>
-                      <Modal.Title>Prem Kumar</Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body className="model-body">
-                      <img
-                        src="/static/images/mypic.png"
-                        className="round-img"
-                        alt=""
-                        height="120"
-                      />
-                    </Modal.Body>
-                    <Modal.Footer>Website Designer</Modal.Footer>
-                  </div>
-                </Modal>
+            <Modal
+              show={showac}
+              onHide={handleCloseac}
+              animation={false}
+              className="acnt-model"
+            >
+              <div className="model-content">
+                <Modal.Header closeButton>
+                  <Modal.Title>Prem Kumar</Modal.Title>
+                </Modal.Header>
+                <Modal.Body className="model-body">
+                  <img
+                    src="/static/images/mypic.png"
+                    className="round-img"
+                    alt=""
+                    height="120"
+                  />
+                </Modal.Body>
+                <Modal.Footer className="authentication">
+                  <Link to="signin" onClick={disappearmodal}>sign in</Link>
+                  <Link to="signup" onClick={disappearmodal}>sign up</Link>
+                </Modal.Footer>
+              </div>
+            </Modal>
           </div>
         </div>
       </nav>
