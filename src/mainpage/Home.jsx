@@ -7,7 +7,7 @@ export default function Home() {
   useEffect(() => {
     const storedName = localStorage.getItem('student');
     if (storedName) {
-      let nam= JSON.parse(storedName).nam;
+      let nam= JSON.parse(storedName).name;
       setName(nam);
     }
   }, []);
