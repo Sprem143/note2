@@ -1,8 +1,7 @@
 import React from "react";
 import { Navigate,Outlet } from "react-router-dom";
 
-const PrivateComponent=()=>{
+export default function PrivateComponent(){
     const auth= localStorage.getItem('student');
     return auth?<Outlet/>:<Navigate to="/signin"/>  
     }
-export default PrivateComponent;

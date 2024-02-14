@@ -1,16 +1,18 @@
 import { Link } from "react-router-dom";
-import React from "react";
+import React, { useEffect } from "react";
 import "/src/App.css";
 import { useState } from "react";
+import Useeffect from "../pages/react/reacttopics/Useeffect";
 import { useNavigate } from "react-router-dom";
 export default function Signin() {
   const[email,setEmail]=useState("");
   const[password,setPassword]=useState("");
-  const navigater= useNavigate();
+  const navigate= useNavigate();
 
+ 
   const setLogin=async()=>{
       console.log("email,password",email,password)
-      let result= fetch("http://localhost:5000/signin",{
+      let result=await fetch("http://localhost:5000/signin",{
         method:"POST",
         headers:{
           'Content-Type':'application/json'
@@ -18,15 +20,20 @@ export default function Signin() {
         body:JSON.stringify({email,password})
       })
       result= await result.json();
-      alert(result)
-      console.log(result);
       if(result.nam){
-        localStorage.setItem(JSON.stringify(result))
-        navigater('/')
+        localStorage.setItem("student",JSON.stringify(result)) ;
+        navigate("/");
       }else{
         alert("Please enter correct detail")
       }
   }
+  useEffect(()=>{
+    const auth= localStorage.getItem('student');
+    
+    if(auth){
+      navigate('/');
+    }
+  },[])
   return (
     <div className="signIn">
       <h2>Sign In</h2>

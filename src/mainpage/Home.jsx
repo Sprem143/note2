@@ -1,14 +1,22 @@
 import "./Home.css";
-import "/src/App.css"
-
+import "/src/App.css";
+import React from "react";
+import { useState,useEffect } from "react";
 export default function Home() {
+  const[studentName,setName]=useState("user");
+  useEffect(() => {
+    const storedName = localStorage.getItem('student');
+    if (storedName) {
+      let nam= JSON.parse(storedName).nam;
+      setName(nam);
+    }
+  }, []);
   return (
     <>
       <div className="container-fluid body-home" id="fsm">
-          <h3>
-            <b className="text-danger hd"> Welcome to my website</b>- Your
-            Ultimate Hub for Programming Beginners!
-          </h3>
+          <h1>
+            <b className="text-danger hd"> Welcome {studentName}</b>
+          </h1>
           <p>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Are you ready to
             embark on an exciting journey into the world of coding and

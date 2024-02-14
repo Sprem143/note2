@@ -12,7 +12,7 @@ export default function Signup() {
        
   const collectData = async () => {
     // setFormValues(email);
-    localStorage.setItem("student",JSON.stringify({"email":email,"password":password})) ;
+    localStorage.setItem("student",JSON.stringify({"name":nam, "email":email,"password":password})) ;
     console.log(`collect data called ${email}`)
     navigate("/");
     // console.log(JSON.stringify(formValues))

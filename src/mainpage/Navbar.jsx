@@ -6,6 +6,7 @@ import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Modal from "react-bootstrap/Modal";
 export default function Navbar() {
+
   const [showac, setShowac] = useState(false);
   const handleCloseac = () => setShowac(false);
   const handleShowac = () => setShowac(true);
@@ -420,9 +421,9 @@ export default function Navbar() {
                   />
                 </Modal.Body>
                 <Modal.Footer className="authentication">
-                  {auth?<Link onClick={signout} to="/signin">sign out</Link>:
-                <Link to="signin" onClick={disappearmodal}>sign in</Link>}
-                <Link to="signup" onClick={disappearmodal}>sign up</Link>
+                  {auth?<Link onClick={signout} to="/signin">sign out</Link>:<>
+                <Link to="signin" onClick={disappearmodal}>sign in</Link>
+                <Link to="signup" onClick={disappearmodal}>sign up</Link></>}
                 </Modal.Footer>
               </div>
             </Modal>
