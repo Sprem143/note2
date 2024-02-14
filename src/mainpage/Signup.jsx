@@ -2,33 +2,30 @@ import { Link} from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import React from "react";
 import { useState } from "react";
-import { useEffect } from "react";
 export default function Signup() {
   const navigate= useNavigate();
   const [nam, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  // const [formValues, setFormValues] = useState("")
+  const [pic,setPic]=useState('')
        
   const collectData = async () => {
-    // setFormValues(email);
-    localStorage.setItem("student",JSON.stringify({"name":nam, "email":email,"password":password})) ;
+    localStorage.setItem("student",JSON.stringify({"name":nam, "email":email,"password":password,"pic":pic})) ;
     console.log(`collect data called ${email}`)
     navigate("/");
-    // console.log(JSON.stringify(formValues))
     await fetch("http://localhost:5000/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({nam,email,password }),
+      body: JSON.stringify({nam,email,password,pic }),
     });
   };
   return (
     <div className="signIn">
       <h2>Create Account</h2>
 
-      <form action="" className="form-container g-3 needs-validation ">
+      <form action="" className="form-container g-3 needs-validation " enctype="multipart/form-data">
         <label htmlFor="nam" className="me-3">
           nam
         </label>
@@ -64,6 +61,10 @@ export default function Signup() {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
+         <label  className="me-3">
+          Choose profile Pic
+        </label>
+        <input type="file" onClick={(e)=>setPic(e.target.value)} />
         <button
           type="submit"
           className="btn btn-primary mt-3"
