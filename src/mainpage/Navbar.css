@@ -81,8 +81,8 @@ font-family: cursive;
 }
 .bi{
    margin: 1% 2%;
-   background-color: rgba(245, 245, 245, 0.412);
-   box-shadow: 0px -1px 7px 8px rgb(188, 201, 196);
+   background-color: rgb(245, 245, 245);
+   box-shadow: 0px -1px 7px 6px rgb(188, 201, 196);
    border-radius: 50%;
    transition: 0.7s;
    /* visibility: hidden; */
@@ -94,7 +94,7 @@ font-family: cursive;
 
 }
 .bi-hand-thumbs-up-fill:hover{
-    background-color: rgba(160, 101, 101, 0.414);
+    background-color: rgb(0, 255, 145);
     opacity: 0.5;
 }
 .menu-icon{
