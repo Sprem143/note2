@@ -1,4 +1,4 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link,useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import { useState } from "react";
 import Accordion from "react-bootstrap/Accordion";
@@ -9,9 +9,9 @@ export default function Navbar() {
   const [showac, setShowac] = useState(false);
   const handleCloseac = () => setShowac(false);
   const handleShowac = () => setShowac(true);
-  // for sidebar option
+  const auth= localStorage.getItem('student');
   const [show, setShow] = useState(false);
-
+  const navigate= useNavigate();
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const [clickedLink, setClickedLink] = useState(null);
@@ -20,6 +20,12 @@ export default function Navbar() {
   };
   function disappearmodal(){
     document.getElementsByClassName("acnt-model")[1].style.display="hidden"
+  }
+  function signout(){
+    localStorage.clear();
+    navigate("/signin")
+    document.getElementsByClassName("acnt-model")[1].style.display="hidden"
+
   }
   return (
     <>
@@ -414,8 +420,9 @@ export default function Navbar() {
                   />
                 </Modal.Body>
                 <Modal.Footer className="authentication">
-                  <Link to="signin" onClick={disappearmodal}>sign in</Link>
-                  <Link to="signup" onClick={disappearmodal}>sign up</Link>
+                  {auth?<Link onClick={signout} to="/signin">sign out</Link>:
+                <Link to="signin" onClick={disappearmodal}>sign in</Link>}
+                <Link to="signup" onClick={disappearmodal}>sign up</Link>
                 </Modal.Footer>
               </div>
             </Modal>

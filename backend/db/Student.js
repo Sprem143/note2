@@ -1,6 +1,6 @@
 const mongoose= require('mongoose')
 const studentSchema = new mongoose.Schema({
-    name:String,
+    nam:String,
     email:String,
     password:String
 })

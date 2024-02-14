@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import PrivateComponent from './mainpage/PrivateComponent';
 import { useState } from 'react';
 import Home from "./mainpage/Home";
 import Navbar from "./mainpage/Navbar";
@@ -75,20 +76,25 @@ const[image,setImg]=useState("static/images/arrows-fullscreen.svg")
      
 
       <BrowserRouter>
+      <Navbar />
       <Routes>
-      <Route className="routes" path="/" element={ <Navbar /> }>
+      {/* <Route className="routes" path="/" element={ <Navbar /> }> */}
           <Route index element={<Home />} />
+
+          <Route element={<PrivateComponent/>}>
           <Route path="python/*" element={<><Apppython /></>} />
           <Route path="css/*" element={<><Appcss /> </>} />
           <Route path="html/*" element={<><Apphtml/> </>} />
           <Route path="java/*" element={<><AppJava/></>} />
           <Route path="react/*" element={<><Appreact/></>} />
+          </Route>
+          
           <Route path="javascript/*" element={<Appjs/>} />
           <Route path="signin" element={<Signin/>} />
           <Route path="signup" element={<Signup/>} />
 
           <Route path="*" element={<Nopage />} />
-        </Route>
+        {/* </Route> */}
       </Routes>
     </BrowserRouter>
     </>
