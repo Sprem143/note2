@@ -1,5 +1,8 @@
 const express = require('express');
 const app = express();
+const OpenAI= require('openai');
+require("dotenv").config();
+const openai = new OpenAI({ apiKey: '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' });
 const bodyParser = require('body-parser');
 const cors = require("cors")
 require("./db/config")
@@ -27,8 +30,33 @@ app.post('/signin',async(req,res)=>{
     res.send({result:'user not found'})
   }
 })
-    
-  
+    //    chat bot ---------------
+  app.post('/chatbot',(req,res)=>{
+   let question=req.body;
+     async function chatbot(question){
+      let ans=  JSON.stringify(question);
+      console.log(ans);
+       res.send(ans)
+     }
+     chatbot(question);
+  })
+    async function main(text) {
+      const chatCompletion = await openai.chat.completions.create({
+        messages: [{ role: 'user', content: 'Say this is a test' }],
+        model: 'gpt-3.5-turbo',
+        prompt:text,
+        max_tokens: 50,
+        engine: 'text-davinci-004'
+      }).then(response => {
+        console.log(response.data.choices[0].text);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+    }
+    // main("Who is PM of india");
+
+
 
   app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);

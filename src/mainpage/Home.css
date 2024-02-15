@@ -35,3 +35,11 @@ position:fixed;
 .form-container input:active{
 border: 2px solid blue;
 }
+.chatbot{
+    position: relative;
+    margin-top: 135px;
+    margin-left: -10%;
+    /* height: 80vh;
+    width: 100vw; */
+   
+}
