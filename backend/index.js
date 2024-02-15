@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const OpenAI= require('openai');
 require("dotenv").config();
-const openai = new OpenAI({ apiKey: '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' });
+const openai = new OpenAI({ apiKey: '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' });
 const bodyParser = require('body-parser');
 const cors = require("cors")
 require("./db/config")
@@ -54,7 +54,7 @@ app.post('/signin',async(req,res)=>{
         console.error(error);
       });
     }
-    // main("Who is PM of india");
+    main("Who is PM of india");
 
 
 
