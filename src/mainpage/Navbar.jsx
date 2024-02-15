@@ -46,7 +46,7 @@ export default function Navbar() {
     document.getElementById("hover-icon").style.marginLeft="700px"
   }
   function setLike1(){document.getElementById("like").style.backgroundImage="url(static/images/em8.jpg)";}
-  function setLike2(){document.getElementById("like").style.backgroundImage="url(static/images/em1.jpg)";}
+  function setLike2(){document.getElementById("like").style.backgroundImage="url(static/images/em.png)";}
   function setLike3(){document.getElementById("like").style.backgroundImage="url(static/images/em2.jpg)";}
   function setLike4(){document.getElementById("like").style.backgroundImage="url(static/images/em3.png)";}
   function setLike5(){document.getElementById("like").style.backgroundImage="url(static/images/em4.png)";}
@@ -447,7 +447,7 @@ export default function Navbar() {
                  <div id="like" onMouseOver={showEmoji} onMouseOut={hideEmoji}></div>
                 <div id="hover-icon" onMouseOver={showEmoji} onMouseOut={hideEmoji} >
                   <div className="emoji" onClick={setLike1}><img src="static/images/em8.jpg"/></div>
-                  <div className="emoji" onClick={setLike2}><img src="static/images/em1.jpg"/></div>
+                  <div className="emoji" onClick={setLike2}><img src="static/images/em.png"/></div>
                   <div className="emoji" onClick={setLike3}><img src="static/images/em2.jpg"/></div>
                   <div className="emoji" onClick={setLike4}><img src="static/images/em3.png"/></div>
                   <div className="emoji" onClick={setLike5}><img src="static/images/em4.png"/></div>

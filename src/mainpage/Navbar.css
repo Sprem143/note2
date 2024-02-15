@@ -83,8 +83,8 @@ font-family: cursive;
 #like{
     height: 30px;
     width: 30px;
-    background-image: url(static/images/em8.jpg);
-    background-size: contain;
+    background-image: url(static/images/em1.jpg);
+    background-size: cover;
     border-radius: 50%;
     box-shadow: 0px -2px 4px 4px rgb(255, 255, 255);
 }
