@@ -143,6 +143,19 @@ font-family: cursive;
     color: red;
     text-decoration:underline
 }
+/* chat bot------- */
+.chatbot{
+    float: right;
+    position: absolute;
+    z-index: 10000;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    margin-top: 82px;
+}
+.chatbot img{
+    border-radius: 50%;
+}
 /* fixed sidebar */
 #topicicon{
     height: 600px;
@@ -233,6 +246,9 @@ float: left;
         visibility: hidden;
         position: fixed;
         height:0;
+    }
+    .chatbot{
+        margin-top: -67px;
     }
     .nav1{
         height: 0;
