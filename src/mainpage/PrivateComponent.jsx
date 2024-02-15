@@ -3,5 +3,5 @@ import { Navigate,Outlet } from "react-router-dom";
 
 export default function PrivateComponent(){
     const auth= localStorage.getItem('student');
-    return auth?<Outlet/>:<Navigate to="/signin"/>  
+    return auth?<Outlet/>:<Navigate to="/signup"/>  
     }
