@@ -6,7 +6,7 @@ export default function Profile(){
   const[studentName,setName]=useState("User")
   const[email,setEmail]=useState("");
   const [keyArray, setKeyArray]=useState([]);
-  const [note,setNote]=useState("")
+  const [note,setNote]=useState("Click on link to see your note")
   
  useEffect(()=>{
     const loadPage=()=>{
@@ -24,6 +24,7 @@ let content= localStorage.getItem(item);
 content=JSON.parse(content).note;
 setNote(content);
  }
+
     return(
         <div className="mt130 container-fluid">
             <h1>Hello {studentName}</h1>
@@ -32,18 +33,10 @@ setNote(content);
             <ul>
               {keyArray.map((item, index)=>(
                
-                <li><Accordion defaultActiveKey="0">
-                <Accordion.Item eventKey={index}>
-                  <Accordion.Header><Link onClick={()=>getNote(item)}>{item}</Link></Accordion.Header>
-                  <Accordion.Body>
-                    {note}
-                  </Accordion.Body>
-                </Accordion.Item>
-              </Accordion></li>
+                <li><Link key={index} onClick={()=>getNote(item)}>{item}</Link></li>
               ))}
             </ul>
-
-
+            <p className="decription">{note}</p>
             
         </div>
     )

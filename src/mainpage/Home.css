@@ -56,3 +56,11 @@ border: 2px solid blue;
 #email{
     width: 60vw;
 }
+.decription{
+    width: 80vw;
+    border: 2px solid black;
+    border-radius: 7px;
+    padding: 5px;
+    background-color: rgb(55, 71, 66);
+    color: white;
+}

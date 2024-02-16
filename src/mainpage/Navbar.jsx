@@ -23,7 +23,7 @@ export default function Navbar() {
     document.getElementsByClassName("acnt-model")[1].style.display = "hidden";
   }
   function signout() {
-    localStorage.clear();
+    localStorage.removeItem('student');
     navigate("/signup");
     document.getElementsByClassName("acnt-model")[1].style.display = "hidden";
   }
@@ -457,7 +457,10 @@ export default function Navbar() {
 
                 </Modal.Body>
                 <Modal.Footer className="ftr">
-                <Link to="profile" onClick={disappearmodal}><h5>Profile</h5></Link>
+                  {
+                    auth?<Link to="profile" onClick={disappearmodal}><h5>Profile</h5></Link>:null
+                  }
+                
                   <div className="authentication">
                   {auth ? (
                     <Link onClick={signout} to="/signup">
