@@ -2,6 +2,7 @@ import "./Home.css";
 import "/src/App.css";
 import React from "react";
 import { useState,useEffect } from "react";
+import Navbar from "./Navbar";
 export default function Home() {
   const[studentName,setName]=useState("user");
   useEffect(() => {

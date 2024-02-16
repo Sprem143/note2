@@ -9,6 +9,9 @@ ol>li,ul>li{
     margin-top: -130px;
     width: fit-content;
 }
+.mt130{
+    margin-top: 130px;
+}
 #fsm{
     margin-left: 60px !important;
 }
@@ -53,6 +56,16 @@ ol>li,ul>li{
     align-items: center;
 flex-basis: 2%;
 }
+#addNote{
+     position: fixed;
+    z-index: 10000;
+    margin-left: 90vw; 
+    margin-top:85px  
+}
+.noteForm{
+    display: flex;
+    flex-direction: column;
+}
 @media screen and (max-width:576px) {
     .theme{
         flex-basis: 20%;
@@ -68,5 +81,8 @@ flex-basis: 2%;
         padding: 0.7%;
         flex-basis: 4.5%;
         margin-top: -2px;
+    }
+    #addNote{
+        margin-top: -7vh;
     }
 }

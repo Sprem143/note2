@@ -11,6 +11,7 @@ export default function Navbar() {
   const handleShowac = () => setShowac(true);
   const auth = localStorage.getItem("student");
   const [show, setShow] = useState(false);
+  const [studentName, setName] = useState("user");
   const navigate = useNavigate();
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -28,19 +29,16 @@ export default function Navbar() {
   }
 
   // name display
-  const [studentName, setName] = useState("user");
+
   useEffect(() => {
     const storedName = localStorage.getItem("student");
-    if (storedName) {
+    if(storedName) {
       let nam = JSON.parse(storedName).name;
       setName(nam);
     }
   }, []);
   function showEmoji(){
-      
-       document.getElementById("hover-icon").style.marginLeft="0"
-      // for(let i=2;i<) 
-     
+       document.getElementById("hover-icon").style.marginLeft="0"     
   }
   function hideEmoji(){
     document.getElementById("hover-icon").style.marginLeft="700px"
@@ -455,15 +453,19 @@ export default function Navbar() {
                   <div className="emoji" onClick={setLike7}><img src="static/images/em6.png"/></div>
                   <div className="emoji" onClick={setLike8}><img src="static/images/em7.webp"/></div>
                    </div>
+                   
+
                 </Modal.Body>
-                <Modal.Footer className="authentication">
+                <Modal.Footer className="ftr">
+                <Link to="profile" onClick={disappearmodal}><h5>Profile</h5></Link>
+                  <div className="authentication">
                   {auth ? (
                     <Link onClick={signout} to="/signup">
                       sign out {studentName}
                     </Link>
                   ) : (
                     <>
-                      <Link to="signin" onClick={disappearmodal}>
+                      <Link style={{marginRight:"10px"}} to="signin" onClick={disappearmodal}>
                         sign in
                       </Link>
                       <Link to="signup" onClick={disappearmodal}>
@@ -471,6 +473,7 @@ export default function Navbar() {
                       </Link>
                     </>
                   )}
+                  </div>
                 </Modal.Footer>
               </div>
             </Modal>

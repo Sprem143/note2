@@ -28,7 +28,6 @@ export default function Signin() {
   }
   useEffect(()=>{
     const auth= localStorage.getItem('student');
-    
     if(auth){
       navigate('/');
     }
@@ -37,10 +36,10 @@ export default function Signin() {
     <div className="signIn">
       <h2>Sign In</h2>
       <form action="" className="form-container needs-validation" noValidate>
-        <label htmlFor="email" className="me-3">
+        <label htmlFor="emai" className="me-3">
           Email
         </label>
-        <input id="email" type="email" className="form-control" value={email} onChange={(e)=>setEmail(e.target.value)}  required />
+        <input id="emai" type="email" className="form-control" value={email} onChange={(e)=>setEmail(e.target.value)}  required />
         <label htmlFor="password" className="me-3">
           Password
         </label>

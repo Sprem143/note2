@@ -42,7 +42,7 @@ export default function Signup() {
           Email
         </label>
         <input
-          id="email"
+          id="emai"
           type="email"
           placeholder="abc@gmail.com"
           className="form-control"

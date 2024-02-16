@@ -103,6 +103,10 @@ font-family: cursive;
     background-size: cover;
     animation: rotate 1s linear 1s infinite alternate;
 }
+.ftr{
+    display: flex;
+    justify-content: space-between;
+}
 @keyframes rotate{
     10%{
         transform: rotateY(25deg);
