@@ -13,7 +13,7 @@ import Appjs from './pages/js/Appjs';
 import Nopage from './mainpage/Nopage';
 import Signin from './mainpage/Signin';
 import Signup from './mainpage/Signup';
-// import Chatbot from './mainpage/Chatbot';
+import Chatbot from './mainpage/Chatbot';
 export default function App(){
   function changeTheme() {
     let colore = document.getElementById("exampleColorInput").value;
@@ -93,7 +93,7 @@ const[image,setImg]=useState("static/images/arrows-fullscreen.svg")
           <Route path="javascript/*" element={<Appjs/>} />
           <Route path="signin" element={<Signin/>} />
           <Route path="signup" element={<Signup/>} />
-          {/* <Route path="chatbot" element={<Chatbot/>} /> */}
+           <Route path="chatbot" element={<Chatbot/>} /> 
           <Route path="*" element={<Nopage />} />
         {/* </Route> */}
       </Routes>

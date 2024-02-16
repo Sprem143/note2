@@ -41,5 +41,18 @@ border: 2px solid blue;
     margin-left: -10%;
     /* height: 80vh;
     width: 100vw; */
-   
+   z-index: 1 !important;
+}
+#definition{
+    width: 50vw;
+    height: auto;
+    background-color: black;
+    color: white;
+    font-style: italic;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+#email{
+    width: 60vw;
 }

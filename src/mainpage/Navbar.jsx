@@ -57,9 +57,9 @@ export default function Navbar() {
   return (
     <>
     {/* chatbot icon */}
-    {/* <div className="chatbot">
+     <div className="chatbot">
     <Link to="chatbot"><img src="static/images/chatbot.png" alt="chaatbot" height='50' /></Link>
-    </div> */}
+    </div> 
       <nav id="main-nav">
         {/* -----------------------menu icons*----------------------*/}
         <div className="menu-icon">

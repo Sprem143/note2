@@ -1,30 +1,60 @@
-// // 
-// import { useState } from "react";
-// export default function Chatbot(){
+
+import { useState } from "react";
+export default function Chatbot(){
 //   const [question, setQuestion]=useState('Default');
-//   const[ans,setAns]=useState("Waiting for ans")
-//   const askQustion=async()=>{
-//     let answer= await fetch('http://localhost:5000/chatbot',{
-//       method:"POST",
-//       headers:{"Content-Type":'application/json'},
-//       body:JSON.stringify({question})
-//     }) 
-//    answer= await answer.json();
-//    let nsr=JSON.stringify(answer.question)
-//    setAns(nsr)
-//    alert(ans,"1")
-//    alert(nsr,"2")
-// }
-// console.log(ans)
-// alert(ans,"3")
-//   return(
-//     <div className="container-fluid body-home">
-//     <form >
-//       <label htmlFor="email" className="me-3">Query</label>
-//         <input id="email" type="text" className="form-control" value={question} onChange={(e)=>setQuestion(e.target.value)}  required />
-//         <button className="btn btn-primary mt-3" type="submit" onClick={askQustion}>search </button>
-//     </form>
-//     <p>{ans}</p>
-//     </div>
-//   )
-// }
+//   const askQuestion = async (question) => {
+//     try {
+//       const response = await fetch('http://localhost:5000/chatbot', {
+//         method: "POST",
+//         headers: {
+//           "Content-Type": 'application/json'
+//         },
+//         body: JSON.stringify({ question }) // Assuming question is a variable available in the scope
+//       });
+  
+//       if (!response.ok) {
+//         throw new Error('Network response was not ok');
+//       }
+//       const answer = await response.json();
+//       alert(JSON.stringify(answer));
+//     } catch (error) {
+//       console.error('Error fetching data:', error.message);
+//       alert("Response is not ok");
+//     }
+//   };
+
+  const [language, setLanguage] = useState('');
+  const [definition, setDefinition] = useState('Your answer will display here');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch('http://localhost:5000/chatbot', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ language }),
+      });
+
+      const data = await response.json();
+      setDefinition(data.definition);
+    } catch (error) {
+      console.error('Error fetching data:', error.message);
+      setDefinition('Error fetching definition');
+    }
+  };
+
+
+  return(
+    <div className="container-fluid body-home">
+    <form onSubmit={handleSubmit}>
+      <label htmlFor="email" className="me-3">Query</label>
+        <input id="email" type="text" className="form-control" value={language} onChange={(e)=>setLanguage(e.target.value)} placeholder="search any definition"  required />
+        <button className="btn btn-primary mt-3" type="submit">search </button>
+    </form>
+    <p id="definition">{definition}</p>
+    </div>
+  )
+}
