@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import { Link } from 'react-router-dom';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Profile from './mainpage/Profile';
 import PrivateComponent from './mainpage/PrivateComponent';
@@ -27,8 +28,8 @@ function changetext(){
 document.getElementById("root").style.color= colore  }
 
 const[v, setImage]= useState(0);
-const [noteTitle,setNoteTitle]=useState('')
-const [note,setNote]=useState('')
+// const [noteTitle,setNoteTitle]=useState('')
+// const [note,setNote]=useState('')
 const[image,setImg]=useState("static/images/arrows-fullscreen.svg")
  const handleImage=()=>{
   console.log(v);
@@ -47,14 +48,14 @@ const[image,setImg]=useState("static/images/arrows-fullscreen.svg")
   }
 }
 // ---------add note modal -------------
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-  const addNote=async()=>{
-      localStorage.setItem(noteTitle,JSON.stringify({note}));
-    let sn= localStorage.getItem('note5');
-    alert(JSON.parse(sn).note);
-  }
+  // const [show, setShow] = useState(false);
+  // const handleClose = () => setShow(false);
+  // const handleShow = () => setShow(true);
+  // const addNote=async()=>{
+  //     localStorage.setItem(noteTitle,JSON.stringify({note}));
+  //   let sn= localStorage.getItem('note5');
+  //   alert(JSON.parse(sn).note);
+  // }
   // ----------------------------------------
 
   return(
@@ -92,7 +93,7 @@ const[image,setImg]=useState("static/images/arrows-fullscreen.svg")
      
 {/* ---------------------add note--------------- */}
 
-      <svg id="addNote" onClick={handleShow} xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="blue" className="bi bi-file-earmark-word-fill" viewBox="0 0 16 16">
+      {/* <svg id="addNote" onClick={handleShow} xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="blue" className="bi bi-file-earmark-word-fill" viewBox="0 0 16 16">
   <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M5.485 6.879l1.036 4.144.997-3.655a.5.5 0 0 1 .964 0l.997 3.655 1.036-4.144a.5.5 0 0 1 .97.242l-1.5 6a.5.5 0 0 1-.967.01L8 9.402l-1.018 3.73a.5.5 0 0 1-.967-.01l-1.5-6a.5.5 0 1 1 .97-.242z"/>
 </svg>
       <Modal show={show} onHide={handleClose}>
@@ -104,7 +105,6 @@ const[image,setImg]=useState("static/images/arrows-fullscreen.svg")
                <label htmlFor="">Note title</label>
                <input type="text" value={noteTitle} onChange={(e)=>setNoteTitle(e.target.value)} required/>
                <label htmlFor="">Note</label>
-               {/* <input type="text" value={note} onChange={(e)=>setNote(e.target.value)} required/> */}
                <textarea cols="30" rows="5" value={note} onChange={(e)=>setNote(e.target.value)}></textarea>
           </form>
         </Modal.Body>
@@ -116,9 +116,7 @@ const[image,setImg]=useState("static/images/arrows-fullscreen.svg")
             Save
           </Button>
         </Modal.Footer>
-      </Modal>
-
-
+      </Modal> */}
 
 
       <BrowserRouter>

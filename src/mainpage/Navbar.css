@@ -163,16 +163,18 @@ font-family: cursive;
     text-decoration:underline
 }
 /* chat bot------- */
-.chatbot{
+.fixedIcon{
     float: right;
-    position: absolute;
-    z-index: 10000;
+    position: fixed;
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
     margin-top: 82px;
 }
-.chatbot img{
+#addNote{
+    margin-top: 87px;
+}
+.fixedIcon img{
     border-radius: 50%;
 }
 /* fixed sidebar */
@@ -270,8 +272,15 @@ float: left;
     .chatbot{
         margin-top: -67px;
     }
+    .fixedIcon{
+        margin-top: -64px;
+    }
     .nav1{
         height: 0;
+    }
+    #addNote{
+        margin-top: -59px;
+        margin-left: 277px;
     }
     .nav2{
         display: flex;

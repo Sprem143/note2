@@ -61,10 +61,6 @@ export default function Signup() {
           onChange={(e) => setPassword(e.target.value)}
           required
         />
-         <label  className="me-3">
-          Choose profile Pic
-        </label>
-        <input type="file" onClick={(e)=>setPic(e.target.value)} />
         <button
           type="submit"
           className="btn btn-primary mt-3"
