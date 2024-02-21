@@ -56,12 +56,6 @@ ol>li,ul>li{
     align-items: center;
 flex-basis: 2%;
 }
-#addNote{
-     position: fixed;
-    z-index: 10000;
-    margin-left: 90vw; 
-    margin-top:85px  
-}
 .noteForm{
     display: flex;
     flex-direction: column;

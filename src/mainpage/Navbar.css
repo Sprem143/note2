@@ -6,6 +6,7 @@ ul{
     list-style: none;
 }
 
+
 .links-container{
     height: 80px;
     background-color:rgb(16, 16, 76);;
@@ -14,7 +15,7 @@ ul{
     justify-content: space-evenly;
    position: fixed;
    width: 100%;
-   z-index: 0 !important;
+   z-index: 1 !important;
 }
 .round-img{
     border-radius: 50%;
@@ -162,6 +163,9 @@ font-family: cursive;
     color: red;
     text-decoration:underline
 }
+.carousel {
+    z-index: 2;
+}
 /* chat bot------- */
 .fixedIcon{
     float: right;
@@ -172,7 +176,7 @@ font-family: cursive;
     margin-top: 82px;
 }
 #addNote{
-    margin-top: 87px;
+    margin-top: 7px;
 }
 .fixedIcon img{
     border-radius: 50%;

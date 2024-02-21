@@ -67,6 +67,10 @@ const addNote=async()=>{
   return (
     <>
     {/* ----------add note section------------ */}
+   
+    {/* chatbot icon */}
+     <div className="fixedIcon">
+    <Link to="chatbot"><img src="static/images/chatbot.png" alt="chaatbot" height='50' /></Link>
     <svg id="addNote" onClick={nhandleShow} xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="blue" className=" fixedItem bi bi-file-earmark-word-fill" viewBox="0 0 16 16">
   <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M5.485 6.879l1.036 4.144.997-3.655a.5.5 0 0 1 .964 0l.997 3.655 1.036-4.144a.5.5 0 0 1 .97.242l-1.5 6a.5.5 0 0 1-.967.01L8 9.402l-1.018 3.73a.5.5 0 0 1-.967-.01l-1.5-6a.5.5 0 1 1 .97-.242z"/>
 </svg>
@@ -79,7 +83,6 @@ const addNote=async()=>{
                <label htmlFor="">Note title</label>
                <input type="text" value={noteTitle} onChange={(e)=>setNoteTitle(e.target.value)} required/>
                <label htmlFor="">Note</label>
-               {/* <input type="text" value={note} onChange={(e)=>setNote(e.target.value)} required/> */}
                <textarea cols="30" rows="5" value={note} onChange={(e)=>setNote(e.target.value)}></textarea>
           </form>
         </Modal.Body>
@@ -94,9 +97,6 @@ const addNote=async()=>{
         </Modal.Footer>
       </Modal>
 
-    {/* chatbot icon */}
-     <div className="fixedIcon">
-    <Link to="chatbot"><img src="static/images/chatbot.png" alt="chaatbot" height='50' /></Link>
     </div> 
       <nav id="main-nav">
         {/* -----------------------menu icons*----------------------*/}
@@ -494,13 +494,11 @@ const addNote=async()=>{
                   <div className="emoji" onClick={setLike8}><img src="static/images/em7.webp"/></div>
                    </div>
                    
-
                 </Modal.Body>
                 <Modal.Footer className="ftr">
                   {
                     auth?<Link to="profile" onClick={disappearmodal}><h5>Profile</h5></Link>:null
                   }
-                
                   <div className="authentication">
                   {auth ? (
                     <Link onClick={signout} to="/signup">
