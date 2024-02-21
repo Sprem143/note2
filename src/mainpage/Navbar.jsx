@@ -70,7 +70,6 @@ const addNote=async()=>{
    
     {/* chatbot icon */}
      <div className="fixedIcon">
-    <Link to="chatbot"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cio.com%2Farticle%2F189347%2Fwhat-is-a-chatbot-simulating-human-conversation-for-service.html&psig=AOvVaw2yytozvuV8R-79q_EaOu7j&ust=1708596799516000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCIDSzZuZvIQDFQAAAAAdAAAAABAE" alt="chaatbot" height='50' /></Link>
     <svg id="addNote" onClick={nhandleShow} xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="blue" className=" fixedItem bi bi-file-earmark-word-fill" viewBox="0 0 16 16">
   <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M5.485 6.879l1.036 4.144.997-3.655a.5.5 0 0 1 .964 0l.997 3.655 1.036-4.144a.5.5 0 0 1 .97.242l-1.5 6a.5.5 0 0 1-.967.01L8 9.402l-1.018 3.73a.5.5 0 0 1-.967-.01l-1.5-6a.5.5 0 1 1 .97-.242z"/>
 </svg>
@@ -96,6 +95,10 @@ const addNote=async()=>{
           </Button>
         </Modal.Footer>
       </Modal>
+      <Link to="chatbot"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-robot" viewBox="0 0 16 16">
+  <path d="M6 12.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5M3 8.062C3 6.76 4.235 5.765 5.53 5.886a26.6 26.6 0 0 0 4.94 0C11.765 5.765 13 6.76 13 8.062v1.157a.93.93 0 0 1-.765.935c-.845.147-2.34.346-4.235.346s-3.39-.2-4.235-.346A.93.93 0 0 1 3 9.219zm4.542-.827a.25.25 0 0 0-.217.068l-.92.9a25 25 0 0 1-1.871-.183.25.25 0 0 0-.068.495c.55.076 1.232.149 2.02.193a.25.25 0 0 0 .189-.071l.754-.736.847 1.71a.25.25 0 0 0 .404.062l.932-.97a25 25 0 0 0 1.922-.188.25.25 0 0 0-.068-.495c-.538.074-1.207.145-1.98.189a.25.25 0 0 0-.166.076l-.754.785-.842-1.7a.25.25 0 0 0-.182-.135"/>
+  <path d="M8.5 1.866a1 1 0 1 0-1 0V3h-2A4.5 4.5 0 0 0 1 7.5V8a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v1a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1v-.5A4.5 4.5 0 0 0 10.5 3h-2zM14 7.5V13a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.5A3.5 3.5 0 0 1 5.5 4h5A3.5 3.5 0 0 1 14 7.5"/>
+</svg></Link>
 
     </div> 
       <nav id="main-nav">
@@ -421,7 +424,7 @@ const addNote=async()=>{
                 {/* model */}
                 <Button id="acnt-btn" onClick={handleShowac}>
                   <img
-                    src="/static/images/account.png"
+                    src="/static/images/mypic.png"
                     alt="account"
                     className="round-img"
                     height="45"
@@ -463,7 +466,7 @@ const addNote=async()=>{
           <div className="account">
             <Button id="acnt-btn" onClick={handleShowac}>
               <img
-                src="/static/images/account.png"
+                src="/static/images/mypic.png"
                 alt="account"
                 className="round-img"
                 height="45"
@@ -497,17 +500,17 @@ const addNote=async()=>{
                 </Modal.Body>
                 <Modal.Footer className="ftr">
                   {
-                    auth?<Link to="profile" onClick={disappearmodal}><h5>Profile</h5></Link>:null
+                    auth?<Link to="profile" style={{display:"flex", alignItems:"center", gap:"10px"}} onClick={disappearmodal}><img src="static/images/profile.png" alt="profile" className="round-img" height="40" /><h5>Profile</h5></Link>:null
                   }
                   <div className="authentication">
                   {auth ? (
                     <Link onClick={signout} to="/signup">
-                      sign out {studentName}
+                      Log out {studentName}
                     </Link>
                   ) : (
                     <>
                       <Link style={{marginRight:"10px"}} to="signin" onClick={disappearmodal}>
-                        sign in
+                        Log in
                       </Link>
                       <Link to="signup" onClick={disappearmodal}>
                         sign up

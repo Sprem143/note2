@@ -6,7 +6,15 @@ ul{
     list-style: none;
 }
 
-
+.carousel-item li{
+list-style: none;
+}
+#nave li{
+    list-style: none;
+}
+.ftr a{
+    color: white;
+}
 .links-container{
     height: 80px;
     background-color:rgb(16, 16, 76);;
@@ -172,8 +180,11 @@ font-family: cursive;
     position: fixed;
     display: flex;
     flex-direction: row-reverse;
-    width: 100%;
-    margin-top: 82px;
+    gap:15px;
+    margin-top: 82vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 95vw;
 }
 #addNote{
     margin-top: 7px;
@@ -266,6 +277,11 @@ float: left;
     color: white;
     border-radius: 10%;
 }
+@media screen and (max-width:768px) {
+.fixedIcon{
+    margin-left: 90vw;
+}
+}
 
  @media screen and (max-width:576px) {
     .links-container{
@@ -277,15 +293,16 @@ float: left;
         margin-top: -67px;
     }
     .fixedIcon{
-        margin-top: -64px;
+        margin-top: 60vh;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-left: 90vw;
     }
     .nav1{
         height: 0;
     }
-    #addNote{
-        margin-top: -59px;
-        margin-left: 277px;
-    }
+   
     .nav2{
         display: flex;
         visibility: visible;
