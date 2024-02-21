@@ -32,6 +32,10 @@ ul {
     height:inherit;
    
 }
+.java-content{
+    margin-left: 65px;
+     margin-top: -130px; 
+}
 
 .jlinks-container li a:hover {
     color: rgb(255, 0, 149);
@@ -88,6 +92,9 @@ ul {
         margin-top: -6px;
         margin-bottom: 80px;
     }
+.java-content{
+    margin-top: -50px;
+}
 
     .jnav-desktop {
         visibility: hidden;
@@ -108,6 +115,10 @@ ul {
 
     .jnav-mobile {
         margin-top: -83px;
+    }
+    .java-content{
+        margin-top: -130px;
+        margin-left: 10px;
     }
 
     /* .nav2{

@@ -300,6 +300,158 @@ internet connection, as it loads all
 the data at once.</td>
         </tr>
       </table>
+      <h4>How to include Javascript in HTML?</h4>
+      <p>You can include JavaScript in your HTML in two ways:
+        <ul>
+            <li>Embedding code in your HTML file using &lt;script&gt; tag
+</li>
+            <li>Including it as a link to an external file</li>
+        </ul>
+</p>
+
+<h4>Embedding Code</h4>
+<p>You can add JavaScript code in an HTML document by employing the dedicated
+HTML tag &lt;script&gt; that wraps around JavaScript code. The &lt;script&gt; tag can be
+placed in the &lt;head&gt; section of your HTML or in the &lt;body&gt; section, depending on
+when you want the JavaScript to load.
+</p>
+<div className="text-center">
+        <img
+          src="/static/images/js.png"
+          alt=""
+          width="70%"
+          className="img-fluid text-center"
+        />
+      </div>
+<h4>External File</h4>
+<p>To include an external JavaScript file, we can use the script tag with the attribute src.
+The value for the src attribute should be the path to your JavaScript file. This script
+tag should be included between your HTML document's &lt;head&gt; tags.When
+JavaScript files are cached, pages load more quickly.
+</p>
+<div className="text-center">
+<textarea className="code"cols="100" rows="1">&lt;script type="text/javascript" src="path-to-javascript-file.js"&gt; &lt;/script&gt;</textarea>
+</div>
+<h4>How React is declarative?</h4>
+<p>Declarative programming is when you say what you want to do, and describe the
+final state of the desired UI. Imperative programming is when you say how to get
+what you want and provide step-by-step DOM mutations until you reach the desired
+UI. Javascript is an imperative Language whereas React is a declarative language.</p>
+<p><span className="text-danger">For Example:</span>For the following output, You need to add an element to the DOM
+imperatively using JavaScript. As your app gets bigger, with more DOM elements you
+being created, this can become hard to maintain. But, React it performs all of the
+JavaScript/DOM steps as per the declared code to get us to our desired result. It
+abstracts away all the nuts and bolts of how the DOM renders these elements. In
+your code you tell your page "Look like this" and you'll get that result. Declarative
+programming is much easier to read and figure out what is going on in your code.
+That makes it easier to debug and easier for other devs to work on</p>
+<p className="text-success">Output of above program</p>
+<div className="text-center">
+        <img
+          src="/static/images/reactoutput.png"
+          alt=""
+          width="20%"
+          className="img-fluid text-center"
+          style={{border:"1px solid black"}}
+        />
+      </div>
+<h4>JavaScript Code</h4>
+<h5>Index.html</h5>
+
+
+<p className="code"cols="100" rows="4">
+   <p>&lt;html &gt;</p> 
+   <p>     &lt;head&gt;
+</p>
+   <p>     &lt; title&gt;  HTML
+     &lt;/title&gt;
+</p>
+   <p>     &lt;/head &gt;
+</p>
+   <p>     &lt;body&gt;
+</p>
+   <p>     &lt;div  id="root" &gt; &lt;/div &gt;
+</p>
+   <p> &lt;script src="script.js" type="javascript:&gt;
+     &lt;/script&gt;</p>
+   <p>     &lt;/body&gt;
+</p>
+   <p>&lt;/html&gt;</p>  
+</p>
+<h5>script.js</h5>
+<section className="code">
+    <p>const div = document.createElement("div");
+</p>
+<p>const heading= document.createElement("h1");
+</p>
+<p>heading.textContent = "Hello";</p>
+<p>heading.className = "header";
+</p>
+<p>const para= document.createElement("p");
+para.textContent = "Welcome to the session"</p>
+<p>para.className = "para";
+</p>
+<p>const btn = document.createElement("button");</p>
+<p>btn.textContent="Click";</p>
+<p>btn.className = "btn";</p>
+<p>div.append(heading);</p>
+<p>div.append(para);</p>
+<p>div.append(btn);</p>
+<p>document.getElementById("root").append(div);</p>
+</section>
+
+<h4>React Code</h4>
+<h5>index.html</h5>
+<section className="code">
+    <p> &lt;html &gt;</p>
+    <p> &lt;head &gt;</p>
+    <p> &lt;title &gt;  &lt;/title &gt;</p>
+    <p> &lt;script crossorigin src="https://unpkg.com/react@18/umd/react.development.js" &gt;&lt;/script &gt;</p>
+    <p> &lt;script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" &gt; &lt; /script&gt;</p>
+    <p> &lt;script src="https://unpkg.com/@babel/standalone/babel.min.js" &gt; &lt;/script &gt;</p>
+    <p> &lt;head &gt;</p>
+    <p> &lt; body&gt;</p>
+    <p> &lt;div id="root" &gt; &lt; /div&gt;</p>
+    <p> &lt;script src="scripts.js" type="text/babel" &gt; &lt;/script &gt;</p>
+    <p> &lt;/body &gt;</p>
+    <p> &lt;/html &gt;</p>
+</section>
+<h5>script.js</h5>
+<section className="code">
+    <p>const heading = React.createElement("h1", null, "Hello");
+</p>
+    <p>const para = React.createElement("p", &#123;className:"para" &#125;, "Welcome to the
+session");</p>
+    <p>const btn = React.createElement("button",&#123; className:"btn"&#125;, "Click");</p>
+    <p>const div = React.createElement("div", &#123;className:"App", children :
+[heading,para,btn]&#125;);
+</p>
+    <p>ReactDOM.createRoot(document.getElementById("root")).render(div);</p>
+</section>
+<h5>script.js (Using JSX)</h5>
+<section className="code">
+<p>const header = (</p>
+<p>&lt;div &gt;</p>
+<p>&lt;h1 className="header" &gt; Hello &lt; /h1&gt;</p>
+<p>&lt;p className="para" &gt; Welcome to the session &lt;/p &gt;  </p>
+<p>&lt; button className="btn"&gt; Click &lt; /button&gt;</p>
+<p>&lt;/div &gt; </p>
+<p>);</p>
+<p>ReactDOM.createRoot(document.getElementById("root")).render(header);</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
   );
 }

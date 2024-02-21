@@ -18,6 +18,7 @@ import Vararg from './javatopics/Varargs';
 import Variable from './javatopics/Variable';
 import JavaHome from "./JavaHome";
 import Jnavbar from "./Jnavbar";
+import JDBC from "./javatopics/JDBC";
 export default function AppJava() {
   return (
     <>
@@ -40,6 +41,7 @@ export default function AppJava() {
         <Route path="opps" element={<Opps />} />
         <Route path="java/vararg" element={<Vararg />} />
         <Route path="variable" element={<Variable />} />
+        <Route path="jdbc" element={<JDBC />} />
         </Route>
       </Routes>
     </>

@@ -16,6 +16,10 @@ export default function Jnavbar() {
           <Carousel fade indicators={false} touch={true} interval={null} >
             {/* ------Slide 01 ------------- */}
             <Carousel.Item className="jtopic-slide">
+            <li>
+                <Link to="jdbc" style={{ color: clickedLink == 'jdbc' ? 'red' : 'white' }}
+        onClick={() => handleLinkClick('jdbc')}>JDBC</Link>
+              </li>
               <li>
                 <Link to="accessmodifier" style={{ color: clickedLink == 'accessmodifier' ? 'red' : 'white' }}
         onClick={() => handleLinkClick('accessmodifier')}>Access Modifier</Link>
@@ -88,6 +92,13 @@ export default function Jnavbar() {
           <Carousel fade indicators={false} touch={true} interval={null} >
             {/* ------Slide 01 ------------- */}
             <Carousel.Item className="jtopic-slide">
+              <li>  <Link to="jdbc">JDBC</Link> </li>
+              <li> <Link to="array">Array</Link> </li>
+              <li>  <Link to="languagefundamental">Fundamental</Link> </li> 
+              <li>   <Link to="datatype">Data Type</Link> </li>
+              </Carousel.Item>
+              {/* exptra link  paste above */}
+              <Carousel.Item className="jtopic-slide">
               <li>  <Link to="accessmodifier">Access Modifier</Link> </li>
               <li> <Link to="array">Array</Link> </li>
               <li>  <Link to="languagefundamental">Fundamental</Link> </li> 
