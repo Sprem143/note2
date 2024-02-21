@@ -70,7 +70,7 @@ const addNote=async()=>{
    
     {/* chatbot icon */}
      <div className="fixedIcon">
-    <Link to="chatbot"><img src="static/images/chatbot.png" alt="chaatbot" height='50' /></Link>
+    <Link to="chatbot"><img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.cio.com%2Farticle%2F189347%2Fwhat-is-a-chatbot-simulating-human-conversation-for-service.html&psig=AOvVaw2yytozvuV8R-79q_EaOu7j&ust=1708596799516000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCIDSzZuZvIQDFQAAAAAdAAAAABAE" alt="chaatbot" height='50' /></Link>
     <svg id="addNote" onClick={nhandleShow} xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="blue" className=" fixedItem bi bi-file-earmark-word-fill" viewBox="0 0 16 16">
   <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M5.485 6.879l1.036 4.144.997-3.655a.5.5 0 0 1 .964 0l.997 3.655 1.036-4.144a.5.5 0 0 1 .97.242l-1.5 6a.5.5 0 0 1-.967.01L8 9.402l-1.018 3.73a.5.5 0 0 1-.967-.01l-1.5-6a.5.5 0 1 1 .97-.242z"/>
 </svg>
