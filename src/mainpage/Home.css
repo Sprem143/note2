@@ -75,10 +75,16 @@ border: 2px solid blue;
     .sider{
         flex-direction: row;
     }
+    .body-home{
+        width: 100% !important;
+       }
 }
 @media screen and (max-width:576px){
    .sider{
     flex-direction: row;
-    width: 55%;
+    width: 100%;
+   }
+   .body-home{
+    width: 100% !important;
    }
 }
