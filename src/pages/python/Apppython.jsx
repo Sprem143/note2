@@ -7,7 +7,7 @@ import PythonHome from "./PythonHome";
 import Pynavbar from "./Pynavbar";
 import LanguageFundamental from "./pythontopics/LanguageFundamental";
 import Identifier from "./pythontopics/Identifier";
-import startProject from "./pythontopics/StartProject";
+import StartProject from "./pythontopics/StartProject";
 export default function Apppython(){
   return (
     <>
@@ -19,7 +19,7 @@ export default function Apppython(){
           <Route path="seaborn" element={<><Seaborn/> </>} />
           <Route path="languagefundamental" element={<><LanguageFundamental/> </>} />
           <Route path="identifier" element={<><Identifier/> </>} />
-          <Route path="startproject" element={<><startProject/> </>} />
+          <Route path="startproject" element={<><StartProject/> </>} />
         </Route>
       </Routes>
     </>
