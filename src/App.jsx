@@ -15,6 +15,7 @@ import Nopage from './mainpage/Nopage';
 import Signin from './mainpage/Signin';
 import Signup from './mainpage/Signup';
 import Chatbot from './mainpage/Chatbot';
+import Footer from './mainpage/Footer';
 export default function App(){
   function changeTheme() {
     let colore = document.getElementById("exampleColorInput").value;
@@ -96,6 +97,7 @@ const[image,setImg]=useState("static/images/arrows-fullscreen.svg")
           <Route path="*" element={<Nopage />} />
         {/* </Route> */}
       </Routes>
+      <Footer />
     </BrowserRouter>
 
 
