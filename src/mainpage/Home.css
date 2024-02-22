@@ -56,3 +56,29 @@ border: 2px solid blue;
 #email{
     width: 60vw;
 }
+.lyout{
+    display: flex;
+}
+.sider{
+    padding-top: 10px;
+    width: 40vw;
+    z-index: 0;
+    display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+@media screen and (max-width:768px) {
+    .lyout{
+        flex-direction: column !important;
+    }
+    .sider{
+        flex-direction: row;
+    }
+}
+@media screen and (max-width:576px){
+   .sider{
+    flex-direction: row;
+    width: 55%;
+   }
+}

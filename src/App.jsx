@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useState } from 'react';
+import { useState ,useEffect} from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Profile from './mainpage/Profile';
 import PrivateComponent from './mainpage/PrivateComponent';
@@ -43,6 +43,10 @@ const[image,setImg]=useState("static/images/arrows-fullscreen.svg")
     setImage(0)
   }
 }
+
+
+
+
 
   return(
     <>

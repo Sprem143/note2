@@ -46,7 +46,7 @@ export default function JDBC(){
             alt=""
             width="90%"
             className="img-fluid"
-            style={{ zIndex: 0}}
+            style={{ zIndex: 1}}
           />
         </div>
         </div>

@@ -1,6 +1,9 @@
 import "./Home.css";
 import "/src/App.css";
 import React from "react";
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import { Link } from "react-router-dom";
 import { useState,useEffect } from "react";
 import Navbar from "./Navbar";
 export default function Home() {
@@ -14,7 +17,8 @@ export default function Home() {
   }, []);
   return (
     
-      <div className="container-fluid body-home" id="fsm">
+      <div className="container-fluid body-home lyout" id="fsm">
+        <div>
           <h1>
             <b className="text-danger hd"> Welcome {studentName}</b>
           </h1>
@@ -86,5 +90,31 @@ export default function Home() {
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Happy coding! 👩‍💻👨‍💻
           </p>
           </div>
+          <div className="sider">
+          <Card style={{ width: '18rem', border:'2px solid black' }}>
+      <Card.Img variant="top" src="static/images/jdbccard.jpg" height="180"/>
+      <Card.Body>
+        <Card.Title>JDBC</Card.Title>
+        <Card.Text>
+          JDBC class in now started from february 22, 2024 in Ducate by Mahesh Sir. For daily class Note please click on below link
+        </Card.Text>
+        <Button variant="primary"><Link to='java/jdbc' style={{color:'white', textDecoration:"none"}}>Go to JDBC Page</Link></Button>
+      </Card.Body>
+    </Card>
+
+    <Card style={{ width: '18rem', border:'2px solid black' }}>
+      <Card.Img variant="top" src="static/images/React.jpg" height="180"/>
+      <Card.Body>
+        <Card.Title>React</Card.Title>
+        <Card.Text>
+           For react note from scratch, visite react page by clicking below.
+        </Card.Text>
+        <Button variant="primary"><Link to='react' style={{color:'white', textDecoration:"none"}}>Go to React Page</Link></Button>
+      </Card.Body>
+    </Card>
+
+            </div>
+          </div>
+         
   );
 }

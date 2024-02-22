@@ -181,10 +181,12 @@ font-family: cursive;
     display: flex;
     flex-direction: row-reverse;
     gap:15px;
-    margin-top: 82vh;
+    margin-top: 80vh;
     display: flex;
     flex-direction: column;
     margin-left: 95vw;
+    z-index: 10 !important;
+
 }
 #addNote{
     margin-top: 7px;
@@ -312,12 +314,17 @@ float: left;
         position: fixed;
         margin-top: -140px;
         margin-bottom: 50px;
+        z-index: 10;
     }
     .menu-icon {
         margin-top: -121px !important;
         padding: 0 !important;
         z-index: 20;
         position:fixed;
+    }
+    .links-container2 li{
+        list-style: none;
+
     }
     .links-container2{
     display: flex;
