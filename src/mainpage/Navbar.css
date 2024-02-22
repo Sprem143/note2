@@ -329,7 +329,7 @@ float: left;
     }
     .toolbar{
         margin-top:-130px;
-    }
+padding-top: -10px !important;    }
     .links-container2 li a{
         text-decoration: none;
         color: white;
@@ -365,9 +365,13 @@ float: left;
     }
     #theme{
         margin-top: -115px;
+        flex-basis: 12%;
     }
     .mi, .pyicon{
         margin-top: -135px;
+    }
+    .body-home{
+        margin-top: 140px !important;
     }
    
  }

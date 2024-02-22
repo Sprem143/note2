@@ -13,7 +13,7 @@ export default function Home() {
     }
   }, []);
   return (
-    <>
+    
       <div className="container-fluid body-home" id="fsm">
           <h1>
             <b className="text-danger hd"> Welcome {studentName}</b>
@@ -86,9 +86,5 @@ export default function Home() {
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Happy coding! 👩‍💻👨‍💻
           </p>
           </div>
-      <div className="movingobject">
-        <img src="/static/images/python-logo.png" alt="" />
-      </div>
-    </>
   );
 }

@@ -12,9 +12,9 @@ export default function Pynavbar() {
             {/* ------Slide 01 ------------- */}
             <Carousel.Item className="jtopic-slide">
               <li> <Link to="numpy">Numpy </Link> </li>
-              <li> <Link to="panda">Panda </Link> </li>
-              <li> <Link to="seaborn">Seaborn </Link> </li>
-              <li> <Link to="Matlibplot">Matlibplot </Link> </li>
+              <li> <Link to="languagefundamental">Language Fundamental </Link> </li>
+              <li> <Link to="identifier">Identifiers </Link> </li>
+              <li> <Link to="startproject">Start Project </Link> </li>
               <li> <Link to="Machine Learning">Comment </Link> </li>
               <li> <Link to="Deep Learning">Variable </Link> </li>
             </Carousel.Item>
@@ -70,9 +70,9 @@ export default function Pynavbar() {
             {/* ------Slide 01 ------------- */}
             <Carousel.Item className="jtopic-slide">
             <li> <Link to="numpy">Numpy </Link> </li>
-              <li> <Link to="panda">Panda </Link> </li>
-              <li> <Link to="seaborn">Seaborn </Link> </li>
-              <li> <Link to="Matlibplot">Matlibplot </Link> </li>
+            <li> <Link to="languagefundamental">Language Fundamental </Link> </li>
+              <li> <Link to="identifier">Identifiers </Link> </li>
+              <li> <Link to="startproject"> Start Project </Link> </li>
             </Carousel.Item>
             {/* ---------------slide II------------- */}
             <Carousel.Item className="jtopic-slide">
