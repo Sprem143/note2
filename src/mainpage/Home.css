@@ -12,7 +12,6 @@ position:fixed;
 }
 .movingobject img{
     animation: move 5s linear 1s infinite alternate;
-
 }
 .signIn{
    margin-top: 130px;

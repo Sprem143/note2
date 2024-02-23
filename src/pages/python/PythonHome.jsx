@@ -80,8 +80,7 @@ export default function PythonHome() {
                 </li>
             </ol>
             <p>These diverse applications showcase the versatility of Python, making it a favorite among developers for a wide range of projects and industries.</p>
-     
-                <h3>💡 Let's Code Together, Let's Master Python!</h3>
+             <h3>💡 Let's Code Together, Let's Master Python!</h3>
       </div>
     </>
   );

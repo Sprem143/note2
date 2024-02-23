@@ -5,7 +5,6 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link } from "react-router-dom";
 import { useState,useEffect } from "react";
-import Navbar from "./Navbar";
 export default function Home() {
   const[studentName,setName]=useState("user");
   useEffect(() => {

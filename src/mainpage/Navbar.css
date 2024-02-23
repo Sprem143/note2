@@ -181,12 +181,11 @@ font-family: cursive;
     display: flex;
     flex-direction: row-reverse;
     gap:15px;
-    margin-top: 80vh;
+    margin-top: 75vh;
     display: flex;
     flex-direction: column;
-    margin-left: 95vw;
+    margin-left: 95%;
     z-index: 10 !important;
-
 }
 #addNote{
     margin-top: 7px;
@@ -282,6 +281,7 @@ float: left;
 @media screen and (max-width:768px) {
 .fixedIcon{
     margin-left: 90vw;
+    margin-top: 75vh;
 }
 }
 
@@ -295,11 +295,11 @@ float: left;
         margin-top: -67px;
     }
     .fixedIcon{
-        margin-top: 60vh;
+        margin-top: 55vh;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        margin-left: 90vw;
+        margin-left: 87vw;
     }
     .nav1{
         height: 0;
@@ -324,7 +324,6 @@ float: left;
     }
     .links-container2 li{
         list-style: none;
-
     }
     .links-container2{
     display: flex;

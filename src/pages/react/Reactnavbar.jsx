@@ -1,6 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
 import Carousel from "react-bootstrap/Carousel";
 import "../java/Jnavbar.css"
+import './React.module.css'
 export default function Reactnavbar() {
   return (
     <>

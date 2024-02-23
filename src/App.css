@@ -9,6 +9,7 @@ ol>li,ul>li{
     height: 200px;
     background-color: rgb(21, 21, 95);
     color: white;
+    width: fit-content;
 }
 .container-fluid{
     margin-top: -130px;
@@ -115,9 +116,12 @@ table, td,th{
 ul li{
     list-style: disc;
 }
+.footer{
+    width: 100%;
+}
 @media screen and (max-width:576px) {
     .theme{
-        flex-basis: 20%;
+        flex-basis: 11%;
     }
     .toolbar{
         margin-top: -130px !important;
@@ -133,5 +137,8 @@ ul li{
     }
     #addNote{
         margin-top: -7vh;
+    }
+    .code{
+        width:auto;
     }
 }

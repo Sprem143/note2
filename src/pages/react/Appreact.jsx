@@ -27,6 +27,7 @@ import Useref from "./reacttopics/Useref";
 import Usestate from "./reacttopics/Usestate";
 import Reactnavbar from "./Reactnavbar";
 import ReactHome from "./ReactHome";
+import ReactHm from "./ReactHm";
 export default function Appreact() {
   return (
     <>
@@ -58,6 +59,7 @@ export default function Appreact() {
         <Route path="usereducer" element={<Usereducer />} />
         <Route path="useref" element={<Useref />} />
         <Route path="usestate" element={<Usestate />} />
+        <Route path="reacthm" element={<ReactHm />} />
        
       </Route>
       </Routes>

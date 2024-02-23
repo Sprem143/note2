@@ -116,15 +116,13 @@ ul {
     .jnav-mobile {
         margin-top: -83px;
     }
+    .carousel{
+ z-index: 10;
+    }
     .java-content{
         margin-top: -130px;
         margin-left: 10px;
     }
-
-    /* .nav2{
-    display: flex;
-    justify-content: space-evenly;
-} */
     .joption-body {
         height: 400px;
         width: 200px;
@@ -135,22 +133,16 @@ ul {
         padding: 1%;
         background-color: rgb(91, 36, 84);
     }
-
     #joption-dismiss {
         float: right;
         background-color: rgb(0, 0, 0);
         padding: 0 3px 0 3px;
         color: white;
     }
-
     .linkstyle a {
         text-decoration: none;
         list-style: none;
         color: white;
         margin: 2%;
     }
-
-    /* #root{
-        margin-top: 50px;
-    } */
 }

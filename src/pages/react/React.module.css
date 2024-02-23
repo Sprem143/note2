@@ -1,0 +1,13 @@
+.react-home{
+    width:170%;
+    margin-left: 60px;
+    margin-top: -130px;
+}
+
+@media screen and (max-width:576px) {
+    .react-home{
+        margin-top: -130px;
+        width: 150%;
+        padding: 5%;
+    }
+}
