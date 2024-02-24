@@ -131,7 +131,7 @@ const addNote=async()=>{
                       alt="python"
                       height="30"
                     />
-                    <Link to="/python">Python</Link>
+                    <Link to="/python" onClick={handleClose}>Python</Link>
                   </Accordion.Header>
                   <Accordion.Body className="accordionbody">
                     {/* dropdown links */}
@@ -142,31 +142,31 @@ const addNote=async()=>{
                           style={{
                             color: clickedLink == "numpy" ? "red" : "magenta",
                           }}
-                          onClick={() => handleLinkClick("numpy")}
+                          onClick={event=>{() => handleLinkClick("numpy"),handleClose()}}
                         >
                           Numpy
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to="/python/panda"
+                          to="/python/languagefundamental"
                           style={{
-                            color: clickedLink == "panda" ? "red" : "magenta",
+                            color: clickedLink == "lf" ? "red" : "magenta",
                           }}
-                          onClick={() => handleLinkClick("panda")}
+                          onClick={event=>{() => handleLinkClick("lf"),handleClose()}}
                         >
-                          Panda
+                          Identifiers
                         </Link>
                       </li>
                       <li>
                         <Link
-                          to="/python/seaborn"
+                          to="/python/startproject"
                           style={{
-                            color: clickedLink == "seaborn" ? "red" : "magenta",
+                            color: clickedLink == "sp" ? "red" : "magenta",
                           }}
-                          onClick={() => handleLinkClick("seaborn")}
+                          onClick={event=>{() => handleLinkClick("sp"),handleClose()}}
                         >
-                          Seaborn
+                          Django Project
                         </Link>
                       </li>
                       <li>
@@ -176,7 +176,7 @@ const addNote=async()=>{
                             color:
                               clickedLink == "matlibplot" ? "red" : "magenta",
                           }}
-                          onClick={() => handleLinkClick("matlibplot")}
+                          onClick={event=>{() => handleLinkClick("matlibplot"),handleClose()}}
                         >
                           Matlibplot
                         </Link>
@@ -190,7 +190,7 @@ const addNote=async()=>{
                                 ? "red"
                                 : "magenta",
                           }}
-                          onClick={() => handleLinkClick("machinelearning")}
+                          onClick={event=>{() => handleLinkClick("machinelearning"),handleClose()}}
                         >
                           Machine Learining
                         </Link>
@@ -202,7 +202,7 @@ const addNote=async()=>{
                             color:
                               clickedLink == "deeplearning" ? "red" : "magenta",
                           }}
-                          onClick={() => handleLinkClick("deeplearning")}
+                          onClick={event=>{() => handleLinkClick("deeplearning"),handleClose()}}
                         >
                           Deep Learining
                         </Link>
@@ -210,16 +210,41 @@ const addNote=async()=>{
                     </ul>
                   </Accordion.Body>
                 </Accordion.Item>
-                <Accordion.Item eventKey="1">
+                <Accordion.Item eventKey="1" className="accordianItem">
                   <Accordion.Header className="accordianHeader">
                     <img
                       src="/static/images/java-logo.png"
                       alt="python"
                       height="30"
                     />
-                    <Link to="/java">Java</Link>
+                    <Link onClick={handleClose} to="/java">Java</Link>
                   </Accordion.Header>
-                  <Accordion.Body>{/* dropdown links */}</Accordion.Body>
+                  <Accordion.Body className="accordionbody">
+                 <ul>
+                 <li>
+                        <Link
+                          to="java/jdbc"
+                          style={{
+                            color: clickedLink == "jdbc" ? "red" : "magenta",
+                          }}
+                          onClick={event=>{() => handleLinkClick("jdbc"),handleClose()}}
+                        >
+                          JDBC
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to="java/languagefundamental"
+                          style={{
+                            color: clickedLink == "jlf" ? "red" : "magenta",
+                          }}
+                          onClick={event=>{() => handleLinkClick("jlf"),handleClose()}}
+                        >
+                          Identifiers
+                        </Link>
+                      </li>
+                 </ul>
+                    </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="2">
                   <Accordion.Header className="accordianHeader">
@@ -228,9 +253,24 @@ const addNote=async()=>{
                       alt="react"
                       height="30"
                     />
-                    <Link to="/react">React</Link>
+                    <Link onClick={handleClose} to="/react">React</Link>
                   </Accordion.Header>
-                  <Accordion.Body>{/* dropdown links */}</Accordion.Body>
+                  <Accordion.Body className="accordionbody">
+                    {/* dropdown links */}
+                    <ul>
+                    <li>
+                        <Link
+                          to="react/basic"
+                          style={{
+                            color: clickedLink == "rbasic" ? "red" : "magenta",
+                          }}
+                          onClick={event=>{() => handleLinkClick("rbasic"),handleClose()}}
+                        >
+                          Basic
+                        </Link>
+                      </li>
+                    </ul>
+                    </Accordion.Body>
                 </Accordion.Item>
 
                 <Accordion.Item eventKey="3">
@@ -240,9 +280,9 @@ const addNote=async()=>{
                       alt="html"
                       height="30"
                     />
-                    <Link to="/html">HTML</Link>
+                    <Link onClick={handleClose} to="/html">HTML</Link>
                   </Accordion.Header>
-                  <Accordion.Body>{/* dropdown links */}</Accordion.Body>
+                  <Accordion.Body className="accordionbody">{/* dropdown links */}</Accordion.Body>
                 </Accordion.Item>
 
                 <Accordion.Item eventKey="4">
@@ -253,9 +293,9 @@ const addNote=async()=>{
                       height="30"
                       width="25"
                     />
-                    <Link to="/css">CSS</Link>
+                    <Link onClick={handleClose} to="/css">CSS</Link>
                   </Accordion.Header>
-                  <Accordion.Body>{/* dropdown links */}</Accordion.Body>
+                  <Accordion.Body className="accordionbody">{/* dropdown links */}</Accordion.Body>
                 </Accordion.Item>
 
                 <Accordion.Item eventKey="5">
@@ -265,9 +305,9 @@ const addNote=async()=>{
                       alt="js"
                       height="30"
                     />
-                    <Link to="/javascript">JavaScript</Link>
+                    <Link onClick={handleClose} to="/javascript">JavaScript</Link>
                   </Accordion.Header>
-                  <Accordion.Body>{/* dropdown links */}</Accordion.Body>
+                  <Accordion.Body className="accordionbody">{/* dropdown links */}</Accordion.Body>
                 </Accordion.Item>
 
                 <Accordion.Item eventKey="6">
@@ -277,9 +317,9 @@ const addNote=async()=>{
                       alt="js"
                       height="30"
                     />
-                    <Link to="/django">Django</Link>
+                    <Link onClick={handleClose} to="/django">Django</Link>
                   </Accordion.Header>
-                  <Accordion.Body>{/* dropdown links */}</Accordion.Body>
+                  <Accordion.Body className="accordionbody">{/* dropdown links */}</Accordion.Body>
                 </Accordion.Item>
 
                 <Accordion.Item eventKey="7">
@@ -289,9 +329,9 @@ const addNote=async()=>{
                       alt="spring"
                       height="30"
                     />
-                    <Link to="/spring">Spring</Link>
+                    <Link onClick={handleClose} to="/spring">Spring</Link>
                   </Accordion.Header>
-                  <Accordion.Body>{/* dropdown links */}</Accordion.Body>
+                  <Accordion.Body className="accordionbody">{/* dropdown links */}</Accordion.Body>
                 </Accordion.Item>
 
                 <Accordion.Item eventKey="8">
@@ -301,7 +341,7 @@ const addNote=async()=>{
                       alt="js"
                       height="30"
                     />
-                    <Link to="/springboot">Springboot</Link>
+                    <Link onClick={handleClose} to="/springboot">Springboot</Link>
                   </Accordion.Header>
                   <Accordion.Body>{/* dropdown links */}</Accordion.Body>
                 </Accordion.Item>
@@ -313,17 +353,17 @@ const addNote=async()=>{
                       alt="nodejs"
                       height="30"
                     />
-                    <Link to="/nodejs">Node JS</Link>
+                    <Link onClick={handleClose} to="/nodejs">Node JS</Link>
                   </Accordion.Header>
-                  <Accordion.Body>{/* dropdown links */}</Accordion.Body>
+                  <Accordion.Body className="accordionbody">{/* dropdown links */}</Accordion.Body>
                 </Accordion.Item>
 
                 <Accordion.Item eventKey="10">
                   <Accordion.Header className="accordianHeader">
                     <img src="/static/images/c-logo.png" alt="c" height="30" />
-                    <Link to="/c">C Language</Link>
+                    <Link onClick={handleClose} to="/c">C Language</Link>
                   </Accordion.Header>
-                  <Accordion.Body>{/* dropdown links */}</Accordion.Body>
+                  <Accordion.Body className="accordionbody">{/* dropdown links */}</Accordion.Body>
                 </Accordion.Item>
 
                 <Accordion.Item eventKey="11">
@@ -333,9 +373,9 @@ const addNote=async()=>{
                       alt="c++"
                       height="30"
                     />
-                    <Link to="/c++">C++ Language</Link>
+                    <Link onClick={handleClose} to="/c++">C++ Language</Link>
                   </Accordion.Header>
-                  <Accordion.Body>{/* dropdown links */}</Accordion.Body>
+                  <Accordion.Body className="accordionbody">{/* dropdown links */}</Accordion.Body>
                 </Accordion.Item>
               </Accordion>
             </Offcanvas.Body>

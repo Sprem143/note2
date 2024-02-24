@@ -53,8 +53,16 @@ export default function Identifier(){
     <li>def (Invalid)</li>
     <li>if (Invalid)</li>
 </ol>
-
-
+<b className='text-danger'>Note:</b>
+<ol>
+    <li> If identifier starts with _ symbol then it indicates that it is private</li>
+    <li>If identifier starts with __(two under score symbols) indicating that strongly private 
+identifier.
+</li>
+    <li>If the identifier starts and ends with two underscore symbols then the identifier is 
+language defined special name,which is also known as magic methods</li>
+</ol>
+<p> <b className="text-danger">Eg: </b> __add__</p>
         </div>
     )
 }

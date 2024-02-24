@@ -14,9 +14,10 @@ export default function Pynavbar() {
               <li> <Link to="numpy">Numpy </Link> </li>
               <li> <Link to="languagefundamental">Language Fundamental </Link> </li>
               <li> <Link to="identifier">Identifiers </Link> </li>
+              <li> <Link to="Reservedword">Reserved Keywords </Link> </li>
+              <li> <Link to="datatype">Data type</Link> </li>
+
               <li> <Link to="startproject">Start Project </Link> </li>
-              <li> <Link to="Machine Learning">Comment </Link> </li>
-              <li> <Link to="Deep Learning">Variable </Link> </li>
             </Carousel.Item>
 
             {/* slide II */}
@@ -70,13 +71,13 @@ export default function Pynavbar() {
             {/* ------Slide 01 ------------- */}
             <Carousel.Item className="jtopic-slide">
             <li> <Link to="numpy">Numpy </Link> </li>
-            <li> <Link to="languagefundamental">Language Fundamental </Link> </li>
+              <li> <Link to="languagefundamental">Language Fundamental </Link> </li>
               <li> <Link to="identifier">Identifiers </Link> </li>
-              <li> <Link to="startproject"> Start Project </Link> </li>
+              <li> <Link to="Reservedword">Reserved Keywords </Link> </li>
             </Carousel.Item>
             {/* ---------------slide II------------- */}
             <Carousel.Item className="jtopic-slide">
-            <li> <Link to="Machine Learning">Comment </Link> </li>
+            <li> <Link to="datatype">Data type</Link> </li>
               <li> <Link to="Deep Learning">Variable </Link> </li>
               <li> <Link to="Machine Learning">Comment </Link> </li>
               <li> <Link to="Deep Learning">Variable </Link> </li>

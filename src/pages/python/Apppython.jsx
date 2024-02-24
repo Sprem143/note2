@@ -8,6 +8,8 @@ import Pynavbar from "./Pynavbar";
 import LanguageFundamental from "./pythontopics/LanguageFundamental";
 import Identifier from "./pythontopics/Identifier";
 import StartProject from "./pythontopics/StartProject";
+import Reservedword from "./pythontopics/Reservedword";
+import Datatype from "./pythontopics/Datatype";
 export default function Apppython(){
   return (
     <>
@@ -20,6 +22,9 @@ export default function Apppython(){
           <Route path="languagefundamental" element={<><LanguageFundamental/> </>} />
           <Route path="identifier" element={<><Identifier/> </>} />
           <Route path="startproject" element={<><StartProject/> </>} />
+          <Route path="reservedword" element={<><Reservedword/> </>} />
+          <Route path="datatype" element={<><Datatype/> </>} />
+
         </Route>
       </Routes>
     </>
