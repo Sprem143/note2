@@ -19,6 +19,7 @@ import Variable from './javatopics/Variable';
 import JavaHome from "./JavaHome";
 import Jnavbar from "./Jnavbar";
 import JDBC from "./javatopics/JDBC";
+import Quize from "./Quize";
 export default function AppJava() {
   return (
     <>
@@ -42,6 +43,7 @@ export default function AppJava() {
         <Route path="java/vararg" element={<Vararg />} />
         <Route path="variable" element={<Variable />} />
         <Route path="jdbc" element={<JDBC />} />
+        <Route path="jdbc/quiz" element={<Quize />} />
         </Route>
       </Routes>
     </>

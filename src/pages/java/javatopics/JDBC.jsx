@@ -1,6 +1,13 @@
+import "/src/App.css";
+import React from "react";
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import { Link } from "react-router-dom";
+
 export default function JDBC(){
     return(
-        <div className="java-content ">
+        <div className="java-content lyout">
+          <div>
 <h2 className="text-center text-danger"><b>JDBC By Mahesh Sir (Java Expert)</b></h2>
 <h5>Definitions:</h5>
 <p><span className="text-danger">Def-I</span> JDBC is a step by step</p>
@@ -49,6 +56,31 @@ export default function JDBC(){
             style={{ zIndex: 1}}
           />
         </div>
+        </div>
+        <div className="sider">
+          <Card style={{ width: '18rem', border:'2px solid black' }}>
+      <Card.Img variant="top" src="static/images/java/jdbcquestion.jpg" height="180"/>
+      <Card.Body>
+        <Card.Title>JDBC MCQ</Card.Title>
+        <Card.Text>
+          JDBC class in now started from february 22, 2024 in Ducate by Mahesh Sir. For daily class Note please click on below link
+        </Card.Text>
+        <Button variant="primary"><Link to='quiz' style={{color:'white', textDecoration:"none"}}>Go to JDBC Page</Link></Button>
+      </Card.Body>
+    </Card>
+
+    <Card style={{ width: '18rem', border:'2px solid black' }}>
+      <Card.Img variant="top" src="static/images/React.jpg" height="180"/>
+      <Card.Body>
+        <Card.Title>React</Card.Title>
+        <Card.Text>
+           For react note from scratch, visite react page by clicking below.
+        </Card.Text>
+        <Button variant="primary"><Link to='react' style={{color:'white', textDecoration:"none"}}>Go to React Page</Link></Button>
+      </Card.Body>
+    </Card>
+
+            </div>
         </div>
     )
 }
