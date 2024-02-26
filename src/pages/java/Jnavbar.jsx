@@ -21,27 +21,41 @@ export default function Jnavbar() {
         onClick={() => handleLinkClick('jdbc')}>JDBC</Link>
               </li>
               <li>
+                <Link to="advjava" style={{ color: clickedLink == 'advjava' ? 'red' : 'white' }}
+        onClick={() => handleLinkClick('advjava')}>Advance Java</Link>
+              </li>
+              <li>
                 <Link to="accessmodifier" style={{ color: clickedLink == 'accessmodifier' ? 'red' : 'white' }}
         onClick={() => handleLinkClick('accessmodifier')}>Access Modifier</Link>
               </li>
               <li>
+                <Link to="languagefundamental" style={{ color: clickedLink == 'lf' ? 'red' : 'white' }}
+        onClick={() => handleLinkClick('lf')}>Language-Fundamental</Link>
+              </li>
+              <li>
+                <Link to="datatype" style={{ color: clickedLink == 'dt' ? 'red' : 'white' }}
+        onClick={() => handleLinkClick('dt')}>Data Type</Link>
+              </li>
+            </Carousel.Item>
+            {/* --------extra links paste here--------- */}
+
+            <Carousel.Item className="jtopic-slide">
+            <li>
                 <Link to="array"  style={{ color: clickedLink == 'array' ? 'red' : 'white' }}
         onClick={() => handleLinkClick('array')}>Array</Link>
               </li>
+           
               <li>
-                <Link to="languagefundamental">Fundamental</Link>
+                <Link to="vararg" style={{ color: clickedLink == 'vararg' ? 'red' : 'white' }}
+        onClick={() => handleLinkClick('vararg')}>Var-args Method</Link>
               </li>
               <li>
-                <Link to="datatype">Data Type</Link>
+                <Link to="variable"  style={{ color: clickedLink == 'variable' ? 'red' : 'white' }}
+        onClick={() => handleLinkClick('variable')}>Variable</Link>
               </li>
-
-              <li>
-                <Link to="variable">Variable</Link>
-              </li>
-              <li>
-                <Link to="vararg"> Var-args Method</Link>
-              </li>
+             
             </Carousel.Item>
+
             {/* ---------------slide II------------- */}
             <Carousel.Item className="jtopic-slide">
               <li>
@@ -92,9 +106,14 @@ export default function Jnavbar() {
           <Carousel fade indicators={false} touch={true} interval={null} >
             {/* ------Slide 01 ------------- */}
             <Carousel.Item className="jtopic-slide">
-              <li>  <Link to="jdbc">JDBC</Link> </li>
-              <li> <Link to="array">Array</Link> </li>
-              <li>  <Link to="languagefundamental">Fundamental</Link> </li> 
+            <li>
+                <Link to="jdbc" style={{ color: clickedLink == 'jdbc' ? 'red' : 'white' }}
+        onClick={() => handleLinkClick('jdbc')}>JDBC</Link>
+              </li>              <li>
+                <Link to="advjava" style={{ color: clickedLink == 'advjava' ? 'red' : 'white' }}
+        onClick={() => handleLinkClick('advjava')}>Advance Java</Link>
+              </li>             
+               <li>  <Link to="languagefundamental">Fundamental</Link> </li> 
               <li>   <Link to="datatype">Data Type</Link> </li>
               </Carousel.Item>
               {/* exptra link  paste above */}

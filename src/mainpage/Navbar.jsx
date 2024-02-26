@@ -55,14 +55,14 @@ const addNote=async()=>{
   function hideEmoji(){
     document.getElementById("hover-icon").style.marginLeft="700px"
   }
-  function setLike1(){document.getElementById("like").style.backgroundImage="url(static/images/em8.jpg)";}
-  function setLike2(){document.getElementById("like").style.backgroundImage="url(static/images/em.png)";}
-  function setLike3(){document.getElementById("like").style.backgroundImage="url(static/images/em2.jpg)";}
-  function setLike4(){document.getElementById("like").style.backgroundImage="url(static/images/em3.png)";}
-  function setLike5(){document.getElementById("like").style.backgroundImage="url(static/images/em4.png)";}
-  function setLike6(){document.getElementById("like").style.backgroundImage="url(static/images/em5.jpeg)";}
-  function setLike7(){document.getElementById("like").style.backgroundImage="url(static/images/em6.png)";}
-  function setLike8(){document.getElementById("like").style.backgroundImage="url(static/images/em7.webp)";}
+  function setLike1(){document.getElementById("like").style.backgroundImage="url(/static/images/em8.jpg)";}
+  function setLike2(){document.getElementById("like").style.backgroundImage="url(/static/images/em.png)";}
+  function setLike3(){document.getElementById("like").style.backgroundImage="url(/static/images/em2.jpg)";}
+  function setLike4(){document.getElementById("like").style.backgroundImage="url(/static/images/em3.png)";}
+  function setLike5(){document.getElementById("like").style.backgroundImage="url(/static/images/em4.png)";}
+  function setLike6(){document.getElementById("like").style.backgroundImage="url(/static/images/em5.jpeg)";}
+  function setLike7(){document.getElementById("like").style.backgroundImage="url(/static/images/em6.png)";}
+  function setLike8(){document.getElementById("like").style.backgroundImage="url(/static/images/em7.webp)";}
 
   return (
     <>
@@ -525,22 +525,27 @@ const addNote=async()=>{
                 </Modal.Header>
                 <Modal.Body className="model-body">
                   <img  src="/static/images/mypic.png" className="round-img" height='120' />
-                 <div id="like" onMouseOver={showEmoji} onMouseOut={hideEmoji}></div>
+
+                 <a href="https://www.facebook.com/profile.php?id=100011571371578" target="_blank"><img src="/static/images/fb.png" alt="facebook" className="round-img fb sm" height='35' /></a>  
+                 <a href="https://www.instagram.com/prem_programr/" target="_blank"><img src="/static/images/instagram.jpg" alt="Instagram" className="round-img insta sm" height='30' /></a>  
+                 <a href="https://wa.me/7366943700" target="_blank"><img src="/static/images/whatsapp.webp" alt="whatsapp" className="round-img whatsapp sm" height='30' /></a>  
+                 <a href="https://www.linkedin.com/in/kumar-prem-94aabc1999/" target="_blank"><img src="/static/images/linkedin.png" alt="linkedin" className="round-img linkedin sm" height='30' /></a>  
+                <div id="like" onMouseOver={showEmoji} onMouseOut={hideEmoji}></div>
                 <div id="hover-icon" onMouseOver={showEmoji} onMouseOut={hideEmoji} >
-                  <div className="emoji" onClick={setLike1}><img src="static/images/em8.jpg"/></div>
-                  <div className="emoji" onClick={setLike2}><img src="static/images/em.png"/></div>
-                  <div className="emoji" onClick={setLike3}><img src="static/images/em2.jpg"/></div>
-                  <div className="emoji" onClick={setLike4}><img src="static/images/em3.png"/></div>
-                  <div className="emoji" onClick={setLike5}><img src="static/images/em4.png"/></div>
-                  <div className="emoji" onClick={setLike6}><img src="static/images/em5.jpeg"/></div>
-                  <div className="emoji" onClick={setLike7}><img src="static/images/em6.png"/></div>
-                  <div className="emoji" onClick={setLike8}><img src="static/images/em7.webp"/></div>
+                  <div className="emoji" onClick={setLike1}><img src="/static/images/em8.jpg"/></div>
+                  <div className="emoji" onClick={setLike2}><img src="/static/images/em.png"/></div>
+                  <div className="emoji" onClick={setLike3}><img src="/static/images/em2.jpg"/></div>
+                  <div className="emoji" onClick={setLike4}><img src="/static/images/em3.png"/></div>
+                  <div className="emoji" onClick={setLike5}><img src="/static/images/em4.png"/></div>
+                  <div className="emoji" onClick={setLike6}><img src="/static/images/em5.jpeg"/></div>
+                  <div className="emoji" onClick={setLike7}><img src="/static/images/em6.png"/></div>
+                  <div className="emoji" onClick={setLike8}><img src="/static/images/em7.webp"/></div>
                    </div>
                    
                 </Modal.Body>
                 <Modal.Footer className="ftr">
                   {
-                    auth?<Link to="profile" style={{display:"flex", alignItems:"center", gap:"10px"}} onClick={disappearmodal}><img src="static/images/profile.png" alt="profile" className="round-img" height="40" /><h5>Profile</h5></Link>:null
+                    auth?<Link to="profile" style={{display:"flex", alignItems:"center", gap:"10px"}} onClick={disappearmodal}><img src="/static/images/profile.png" alt="profile" className="round-img" height="40" /><h5>Profile</h5></Link>:null
                   }
                   <div className="authentication">
                   {auth ? (
