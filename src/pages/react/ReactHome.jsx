@@ -8,7 +8,7 @@ export default function ReactHome() {
       <h2 className="text-center">Welcome to World of Python</h2>
             <h2 className="text-center"> Welcome to React Home Page</h2>
       <h4>Introduction Of React</h4>
-      <p>
+      <p id="react">
         React is a JavaScript library for building user interfaces. JavaScript
         libraries like React are collections of prewritten code snippets that
         can be used and reused to perform common JavaScript functions, helps in
