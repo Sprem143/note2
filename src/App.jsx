@@ -19,9 +19,14 @@ import Signin from './mainpage/Signin';
 import Signup from './mainpage/Signup';
 import Chatbot from './mainpage/Chatbot';
 import './mainpage/Navbar.css'
-import ReactHome from './pages/react/ReactHome';
-// import Footer from './mainpage/Footer';
+ // import Footer from './mainpage/Footer';
 export default function App(){
+  // search data ---------------------
+  const db={
+    java:"Java is a beatiful language",
+    python:"Python is high level langauge",
+    react:"react is a js library which is used to design frontend"
+  }
   function changeTheme() {
     let colore = document.getElementById("exampleColorInput").value;
 document.getElementById("root").style.backgroundColor= colore  }
@@ -58,12 +63,14 @@ const [inputValue, setInputValue]=useState('')
   const handleQuestion=()=>{
    setUserQuestion(inputValue);
    setInputValue('')
-   let lcq=inputValue.toLowerCase();
-   if(lcq.includes('react')){
-   let text= document.getElementById('react').textContent;
-   setAns(text)
-    console.log(text);
-   }
+  if(inputValue.includes('java')){
+    setAns(db.java);
+  }else if(inputValue.includes('python')){
+    setAns(db.python)
+  }else{
+    setAns("Sorry data is not available in our database")
+  }
+  
   }
   
   return(
