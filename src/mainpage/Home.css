@@ -57,6 +57,8 @@ border: 2px solid blue;
 }
 .lyout{
     display: flex;
+    flex-direction: row;
+    width: fit-content;
 }
 .sider{
     padding-top: 10px;
@@ -70,6 +72,8 @@ border: 2px solid blue;
 @media screen and (max-width:768px) {
     .lyout{
         flex-direction: column !important;
+        width:100%;
+        z-index: -1!important;
     }
     .sider{
         flex-direction: row;

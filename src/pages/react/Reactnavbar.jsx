@@ -13,7 +13,7 @@ export default function Reactnavbar() {
             {/* ------Slide 01 ------------- */}
             <Carousel.Item className="jtopic-slide">
               <li> <Link to="basic">Basic </Link> </li>
-              <li> <Link to="upgrade">Upgrade </Link> </li>
+              <li> <Link to="createreactapp">Create-React-App </Link> </li>
               <li> <Link to="es6">ES6 </Link> </li>
               <li> <Link to="renderhtml">Render-HTML </Link> </li>
               <li> <Link to="jsx">JSX </Link> </li>
