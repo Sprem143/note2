@@ -134,76 +134,76 @@ export default function JDBC() {
         <div className="text-center">
           <img src="/static/images/java/type4.png" alt="" width="90%" className="img-fluid" style={{ zIndex: 1 }} />
         </div>
-<p className="bg-dark text-white ps-4">Class Date: 27/02/2024</p>
-<h3 className="td">Steps to prepare first JDBC applications</h3>
-<ol type="I">
-  <li>Load the register driver</li>
-  Establish connection between java application and database.
-  <li>Create either statement or PreparedStatement or CollableStatement as per the requirements. </li>
-  <li>Write and execute Sql queres.</li>
-  <li>Close the statement and connection</li>
-</ol>
+        <p className="bg-dark text-white ps-4">Class Date: 27/02/2024</p>
+        <h3 className="td">Steps to prepare first JDBC applications</h3>
+        <ol type="I">
+          <li>Load the register driver</li>
+          Establish connection between java application and database.
+          <li>Create either statement or PreparedStatement or CollableStatement as per the requirements. </li>
+          <li>Write and execute Sql queres.</li>
+          <li>Close the statement and connection</li>
+        </ol>
 
-<h3 className="sh">1. Load and Register the driver</h3>
-<p className="code">
-  public static Class forName(String Driver_class_name) throws ClassNotFoundException <br />
-  class c = Class.forName("oracle.jdbc.OracleDriver");
-</p>
-<h5 className="td">Internal flow of above statement:-</h5>
-<p className="code">
- package oracle.jdbc; <br />
-  public class OracleDriver implements Driver &#123; <br />
-  &nbsp;&nbsp; static &#123; <br />
-  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;   DriverManager.registerDriver(); <br />
-  &nbsp;&nbsp;  &#125; <br />
-    &#125; <br />
-package java.sql; <br />
-public class DriverManager&#123; <br />
-&nbsp;&nbsp; public static void registerDriver(Driver d)&#123; <br />
-&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; -------------- <br />
-&nbsp;&nbsp; &#125; <br />
- &#125; <br />
- public class JDBCApp&#123; <br />
- &nbsp;&nbsp; public static void main(String[]e) throws Exception&#123; <br />
- &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; class c = Class.forName("oracle.jdbc.OracleDriver"); <br />
- &nbsp;&nbsp; &#125; <br />
- &#125; <br />
-</p>
+        <h3 className="sh">1. Load and Register the driver</h3>
+        <p className="code">
+          public static Class forName(String Driver_class_name) throws ClassNotFoundException <br />
+          class c = Class.forName("oracle.jdbc.OracleDriver");
+        </p>
+        <h5 className="td">Internal flow of above statement:-</h5>
+        <p className="code">
+          package oracle.jdbc; <br />
+          public class OracleDriver implements Driver &#123; <br />
+          &nbsp;&nbsp; static &#123; <br />
+          &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;   DriverManager.registerDriver(); <br />
+          &nbsp;&nbsp;  &#125; <br />
+          &#125; <br />
+          package java.sql; <br />
+          public class DriverManager&#123; <br />
+          &nbsp;&nbsp; public static void registerDriver(Driver d)&#123; <br />
+          &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; -------------- <br />
+          &nbsp;&nbsp; &#125; <br />
+          &#125; <br />
+          public class JDBCApp&#123; <br />
+          &nbsp;&nbsp; public static void main(String[]e) throws Exception&#123; <br />
+          &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; class c = Class.forName("oracle.jdbc.OracleDriver"); <br />
+          &nbsp;&nbsp; &#125; <br />
+          &#125; <br />
+        </p>
 
-<h5 className="td">Java.sql package : </h5>
-<ul>
-  <li>Driver [I]</li>
-  <li>DriverManaget [C]</li>
-  <li>Connection [I]</li>
-  <li>Statement [I]</li>
-  <li>PreparedStatement [I]</li>
-  <li>CallableStatement [I]</li>
-  <li>ResultSet [I]</li>
-  <li>ResultSetMetaData [I]</li>
-  <li>DatabaseMetaData [I]</li>
-</ul>
-<h5 className="td">Establish Connection between java application and database</h5>
-<p className="code">
-  public static Connection getConnection(String driver_url,String db_user_Name, String db_pwd) throws SqlException <br />
-  Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","system","java") <br />   
-  </p>
+        <h5 className="td">Java.sql package : </h5>
+        <ul>
+          <li>Driver [I]</li>
+          <li>DriverManager [C]</li>
+          <li>Connection [I]</li>
+          <li>Statement [I]</li>
+          <li>PreparedStatement [I]</li>
+          <li>CallableStatement [I]</li>
+          <li>ResultSet [I]</li>
+          <li>ResultSetMetaData [I]</li>
+          <li>DatabaseMetaData [I]</li>
+        </ul>
+        <h5 className="td">Establish Connection between java application and database</h5>
+        <p className="code">
+          public static Connection getConnection(String driver_url,String db_user_Name, String db_pwd) throws SqlException <br />
+          Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:XE","system","java") <br />
+        </p>
 
-<h5 className="sh">Driver URL</h5>
-<p><b className="td">Type-4</b> Driver provided by Oracle</p>
-<p> <b className="td">Driver class:</b> oracle.jdbc.OracleDriver</p>
-<p><b className="td">Driver_URL: </b>jdbc:oracle:thin:@localhost:1521:xe</p>
-<p><b className="td">Type-4 :</b> driver provided by MySql: </p>
-<p><b className="td">Driver Class:</b> com.mysql.jdbc.Driver</p>
-<p><b className="td">Driver_URL:</b> jdbc:mysql://localhost:3306/db_Name</p>
-<p className="text-success">Q. In JDBC, Connection is an interface, but how getConection() method will create Connection object? </p>
-<p><b className="td">Ans:</b> JDBC is an abstraction [collection of interfaces] provided by <b>SUN</b> and implemented by all database vendors.</p>
-<div className="text-center">
+        <h5 className="sh">Driver URL</h5>
+        <p><b className="td">Type-4</b> Driver provided by Oracle</p>
+        <p> <b className="td">Driver class:</b> oracle.jdbc.OracleDriver</p>
+        <p><b className="td">Driver_URL: </b>jdbc:oracle:thin:@localhost:1521:xe</p>
+        <p><b className="td">Type-4 :</b> driver provided by MySql: </p>
+        <p><b className="td">Driver Class:</b> com.mysql.jdbc.Driver</p>
+        <p><b className="td">Driver_URL:</b> jdbc:mysql://localhost:3306/db_Name</p>
+        <p className="text-success">Q. In JDBC, Connection is an interface, but how getConection() method will create Connection object? </p>
+        <p><b className="td">Ans:</b> JDBC is an abstraction [collection of interfaces] provided by <b>SUN</b> and implemented by all database vendors.</p>
+        <div className="text-center">
           <img src="/static/images/java/connection.png" alt="" width="90%" className="img-fluid" style={{ zIndex: 1 }} />
         </div>
 
       </div>
-        {/* -----------sider--------------------- */}
-      
+      {/* -----------sider--------------------- */}
+
       <div className="sider">
         <Card style={{ width: '18rem', border: '2px solid black' }}>
           <Card.Img variant="top" src="/static/images/java/jdbcquestion.jpg" height="180" />

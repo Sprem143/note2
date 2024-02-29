@@ -16,18 +16,19 @@ export default function Pynavbar() {
               <li> <Link to="identifier">Identifiers </Link> </li>
               <li> <Link to="Reservedword">Reserved Keywords </Link> </li>
               <li> <Link to="datatype">Data type</Link> </li>
+              <li> <Link to="typecasting">Type Casting</Link> </li>
 
-              <li> <Link to="startproject">Start Project </Link> </li>
             </Carousel.Item>
 
             {/* slide II */}
             <Carousel.Item className="jtopic-slide">
-            <li> <Link to="numpy">Numpy </Link> </li>
               <li> <Link to="panda">Panda </Link> </li>
               <li> <Link to="seaborn">Seaborn </Link> </li>
               <li> <Link to="Matlibplot">Matlibplot </Link> </li>
               <li> <Link to="Machine Learning">Comment </Link> </li>
               <li> <Link to="Deep Learning">Variable </Link> </li>
+              <li> <Link to="startproject">Start Project </Link> </li>
+
             </Carousel.Item>
             {/* slide III */}
             <Carousel.Item className="jtopic-slide">
@@ -78,7 +79,7 @@ export default function Pynavbar() {
             {/* ---------------slide II------------- */}
             <Carousel.Item className="jtopic-slide">
             <li> <Link to="datatype">Data type</Link> </li>
-              <li> <Link to="Deep Learning">Variable </Link> </li>
+            <li> <Link to="typecasting">Type Casting</Link> </li>
               <li> <Link to="Machine Learning">Comment </Link> </li>
               <li> <Link to="Deep Learning">Variable </Link> </li>
             </Carousel.Item>

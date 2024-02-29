@@ -41,20 +41,26 @@ export default function Advjava(){
 <div className="text-center">
     <img src="/static/images/java/advjava.png" alt="advance java" width='100%' />
 </div>
-<h5 className="td">JDBC</h5>
-<p>JDBC stands for Java Database Connectivity. It is a Java-based API (Application Programming Interface) that allows Java applications to interact with relational databases. JDBC provides a standard interface for connecting to databases, executing SQL queries, and processing the results. It is a part of the Java Standard Edition (SE) platform and is essential for database connectivity in Java applications.</p>
-<h5 className="td">JSP</h5>
-<p>
-JSP stands for JavaServer Pages. It is a technology used in Java web development to create dynamic, server-side web pages. JSP allows Java code to be embedded within HTML pages, enabling the separation of dynamic and static content in a web application.</p>
-
-    <h5 className="td">Servlet</h5> 
-    <p>A servlet in Java is a server-side component that extends the capabilities of a server. It is specifically designed to handle requests and generate dynamic responses for web applications. Servlets are part of the Java Platform, Enterprise Edition (Java EE) and are commonly used to build web applications.</p>  
 <h4 className="td">Edition of Java</h4>
 <ol type="I">
 <li><b>Standard Edition (J2SE/JSE)</b>- Core Java+JDBC(use for develop stand alone applications)</li>
 <li><b>Enterprise Edition (J2EE/JEE)</b>- Servlets + JSPs(used for develop web applications)</li>
 <li><b>Java Micro Edition (J2ME/JME) -</b> Use to develop mobile application and embedded application(remote devices).</li>
 </ol>
+
+<h5 className="td">JSP</h5>
+<p>
+JSP stands for JavaServer Pages. It is a technology used in Java web development to create dynamic, server-side web pages. JSP allows Java code to be embedded within HTML pages, enabling the separation of dynamic and static content in a web application.</p>
+
+    <h5 className="td">Servlet</h5> 
+    <p>A servlet in Java is a server-side component that extends the capabilities of a server. It is specifically designed to handle requests and generate dynamic responses for web applications. Servlets are part of the Java Platform, Enterprise Edition (Java EE) and are commonly used to build web applications.</p>  
+    <h5 className="td">JDBC</h5>
+<p>JDBC(Java Database Connectivity) is a technology which can be used to communicate with database from java application.It is a Java-based API (Application Programming Interface) that allows Java applications to interact with relational databases. JDBC provides a standard interface for connecting to databases, executing SQL queries, and processing the results. It is essential for database connectivity in Java applications.</p>
+<ul>
+    <li>JDBC is part of Java standard edition(J2SE/JSE)</li>
+    <li>JDBC is a specification(Guidelines) defined by Java vendor and implemented by Database vender.</li>
+    <li>Database vender provided implementation is called Driver software.</li>
+</ul>
 
 <div className="text-center">
     <img src="/static/images/java/jdbccomponent.png" alt="advance java" width='100%' />
@@ -68,6 +74,12 @@ JSP stands for JavaServer Pages. It is a technology used in Java web development
     <li>Process result from resultSet</li>
     <li>Close connection</li>
 </ol>
+<div className="text-center">
+    <img src="/static/images/java/jdbcprocess.png" alt="advance java" width='100%' style={{border:"1px solid black"}} />
+</div>
+
+<hr />
+
 
         </div>
     )
