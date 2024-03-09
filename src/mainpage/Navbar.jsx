@@ -41,6 +41,17 @@ export default function Navbar() {
     navigate("/signup");
     document.getElementsByClassName("acnt-model")[1].style.display = "hidden";
   }
+  const[i,seti]=useState(0);
+  function changePic(){
+    if(i==0){
+      document.getElementById("prpic").src= "/static/images/mypic.png" ;
+     seti(1);
+    }else{
+      document.getElementById("prpic").src= "/static/images/chnd.png" ;
+     seti(0);
+    }
+   console.log(i)
+  }
   // name display
   useEffect(() => {
     const storedName = localStorage.getItem("student");
@@ -520,7 +531,7 @@ export default function Navbar() {
                   <Modal.Title>Prem Kumar</Modal.Title>
                 </Modal.Header>
                 <Modal.Body className="model-body">
-                  <img src="/static/images/mypic.png" className="round-img" height='120' />
+                  <img src="/static/images/mypic.png" onClick={changePic} className="round-img" id="prpic" height='120' />
 
                   <a href="https://www.facebook.com/profile.php?id=100011571371578" target="_blank"><img src="/static/images/fb.png" alt="facebook" className="round-img fb sm" height='35' /></a>
                   <a href="https://www.instagram.com/prem_programr/" target="_blank"><img src="/static/images/instagram.jpg" alt="Instagram" className="round-img insta sm" height='30' /></a>

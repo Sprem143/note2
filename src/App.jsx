@@ -85,15 +85,7 @@ export default function App() {
     else if(inputValue.includes('vs')&& inputValue.includes('code')){
       setAns(db.vscode)
     }
-    // else if(inputValue.includes('')){
-      
-    // }else if(inputValue.includes('')){
-      
-    // }else if(inputValue.includes('')){
-      
-    // }else if(inputValue.includes('')){
-      
-    // }
+  
 
     else {
       setAns("Sorry data is not available in our database")
@@ -171,13 +163,14 @@ export default function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route element={<PrivateComponent />}>
-            <Route path="python/*" element={<><Apppython /></>} />
-            <Route path="css/*" element={<><Appcss /> </>} />
-            <Route path="html/*" element={<><Apphtml /> </>} />
+           
             <Route path="java/*" element={<><AppJava /></>} />
-            <Route path="react/*" element={<><Appreact /></>} />
             <Route path="profile/" element={<><Profile /></>} />
           </Route>
+          <Route path="react/*" element={<><Appreact /></>} />
+          <Route path="python/*" element={<><Apppython /></>} />
+            <Route path="css/*" element={<><Appcss /> </>} />
+            <Route path="html/*" element={<><Apphtml /> </>} />
           <Route path="javascript/*" element={<Appjs />} />
           <Route path="signin" element={<Signin />} />
           <Route path="signup" element={<Signup />} />
