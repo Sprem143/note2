@@ -40,7 +40,6 @@ list-style: none;
     font-weight: bold;
     z-index: 5;
 }
-
 .links-container li a:hover{
     color: aquamarine;
     transition:0.5s;
@@ -364,14 +363,24 @@ margin-left: -10vw;
     .chatbot{
         margin-top: -67px;
     }
-    #prpic{
-        height: 150px;
-    }
     .fb{
         margin-left: -20vw;
     }
     .insta{
-        margin-left: -16vw;
+        margin-top: -2vh;
+        margin-left: 3vh;
+    }
+    .whatsapp{
+        margin-top: -5vh;
+        margin-left: 20vw;
+    }
+    .linkedin{
+        margin-left: 30vw;
+        margin-top: -15vh;
+    }
+    #prpic{
+        width: 80%;
+        height: 80%;
     }
     .fixedIcon{
         margin-top: 100%;
