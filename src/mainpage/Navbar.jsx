@@ -43,13 +43,253 @@ export default function Navbar() {
   }
   const[i,seti]=useState(0);
   function changePic(){
-    if(i==0){
-      document.getElementById("prpic").src= "/static/images/mypic.png" ;
-     seti(1);
-    }else{
-      document.getElementById("prpic").src= "/static/images/chnd.png" ;
-     seti(0);
-    }
+   switch(i){
+    case 0:
+      document.getElementById("prpic").src = "/static/images/ct0.jpg";
+      seti(1);
+      break;
+      case 1:
+      document.getElementById("prpic").src = "/static/images/ct1.jpg";
+      seti(2);
+      break;
+      case 2:
+      document.getElementById("prpic").src = "/static/images/ct2.jpg";
+      seti(3);
+      break;
+      case 3:
+      document.getElementById("prpic").src = "/static/images/ct3.jpg";
+      seti(4);
+      break;
+      case 4:
+      document.getElementById("prpic").src = "/static/images/ct4.jpg";
+      seti(5);
+      break;
+      case 5:
+      document.getElementById("prpic").src = "/static/images/ct5.jpg";
+      seti(6);
+      break;
+      case 6:
+      document.getElementById("prpic").src = "/static/images/ct6.jpg";
+      seti(7);
+      break;
+      case 7:
+      document.getElementById("prpic").src = "/static/images/ct7.jpg";
+      seti(8);
+      break;
+      case 8:
+      document.getElementById("prpic").src = "/static/images/ct8.jpg";
+      seti(9);
+      break;
+      case 9:
+      document.getElementById("prpic").src = "/static/images/ct9.jpg";
+      seti(10);
+      break;
+      case 10:
+      document.getElementById("prpic").src = "/static/images/ct10.jpg";
+      seti(11);
+      break;
+      case 11:
+      document.getElementById("prpic").src = "/static/images/ct11.jpg";
+      seti(12);
+      break;
+      case 12:
+      document.getElementById("prpic").src = "/static/images/ct12.jpg";
+      seti(13);
+      break;
+      case 13:
+      document.getElementById("prpic").src = "/static/images/ct13.jpg";
+      seti(14);
+      break;
+      case 14:
+      document.getElementById("prpic").src = "/static/images/ct14.jpg";
+      seti(15);
+      break;
+      case 15:
+      document.getElementById("prpic").src = "/static/images/ct15.jpg";
+      seti(16);
+      break;
+      case 16:
+      document.getElementById("prpic").src = "/static/images/ct16.jpg";
+      seti(17);
+      break;
+      case 17:
+      document.getElementById("prpic").src = "/static/images/ct17.jpg";
+      seti(18);
+      break;
+      case 18:
+      document.getElementById("prpic").src = "/static/images/ct18.jpg";
+      seti(19);
+      break;
+      case 19:
+      document.getElementById("prpic").src = "/static/images/ct19.jpg";
+      seti(20);
+      break;
+      case 20:
+      document.getElementById("prpic").src = "/static/images/ct20.jpg";
+      seti(21);
+      break;
+      case 21:
+      document.getElementById("prpic").src = "/static/images/ct21.jpg";
+      seti(22);
+      break;
+      case 22:
+      document.getElementById("prpic").src = "/static/images/ct22.jpg";
+      seti(23);
+      break;
+      case 23:
+      document.getElementById("prpic").src = "/static/images/ct23.jpg";
+      seti(24);
+      break;
+      case 24:
+      document.getElementById("prpic").src = "/static/images/ct24.jpg";
+      seti(25);
+      break;
+      case 25:
+      document.getElementById("prpic").src = "/static/images/ct25.jpg";
+      seti(26);
+      break;
+      case 26:
+      document.getElementById("prpic").src = "/static/images/ct26.jpg";
+      seti(27);
+      break;
+      case 27:
+      document.getElementById("prpic").src = "/static/images/ct27.jpg";
+      seti(28);
+      break;
+      case 28:
+      document.getElementById("prpic").src = "/static/images/ct28.jpg";
+      seti(29);
+      break;
+      case 29:
+      document.getElementById("prpic").src = "/static/images/ct29.jpg";
+      seti(30);
+      break;
+      case 30:
+      document.getElementById("prpic").src = "/static/images/ct30.jpg";
+      seti(31);
+      break;
+      case 31:
+      document.getElementById("prpic").src = "/static/images/ct31.jpg";
+      seti(32);
+      break;
+      case 32:
+      document.getElementById("prpic").src = "/static/images/ct32.jpg";
+      seti(33);
+      break;
+      case 33:
+      document.getElementById("prpic").src = "/static/images/ct33.jpg";
+      seti(34);
+      break;
+      case 34:
+      document.getElementById("prpic").src = "/static/images/ct34.jpg";
+      seti(35);
+      break;
+      case 35:
+      document.getElementById("prpic").src = "/static/images/ct35.jpg";
+      seti(36);
+      break;
+      case 36:
+      document.getElementById("prpic").src = "/static/images/ct36.jpg";
+      seti(37);
+      break;
+      case 37:
+      document.getElementById("prpic").src = "/static/images/ct37.jpg";
+      seti(38);
+      break;
+      case 38:
+      document.getElementById("prpic").src = "/static/images/ct38.jpg";
+      seti(39);
+      break;
+      case 39:
+      document.getElementById("prpic").src = "/static/images/ct39.jpg";
+      seti(40);
+      break;
+      case 40:
+      document.getElementById("prpic").src = "/static/images/ct40.jpg";
+      seti(41);
+      break;
+      case 41:
+      document.getElementById("prpic").src = "/static/images/ct41.jpg";
+      seti(42);
+      break;
+      case 42:
+      document.getElementById("prpic").src = "/static/images/ct42.jpg";
+      seti(43);
+      break;
+      case 43:
+      document.getElementById("prpic").src = "/static/images/ct43.jpg";
+      seti(44);
+      break; 
+      case 44:
+      document.getElementById("prpic").src = "/static/images/ct44.jpg";
+      seti(45);
+      break;
+      case 45:
+      document.getElementById("prpic").src = "/static/images/ct45.jpg";
+      seti(46);
+      break;
+      case 46:
+      document.getElementById("prpic").src = "/static/images/ct46.jpg";
+      seti(47);
+      break;
+      case 47:
+      document.getElementById("prpic").src = "/static/images/ct47.jpg";
+      seti(48);
+      break;
+      case 48:
+      document.getElementById("prpic").src = "/static/images/ct48.jpg";
+      seti(49);
+      break;
+      case 49:
+      document.getElementById("prpic").src = "/static/images/ct49.jpg";
+      seti(50);
+      break;
+      case 50:
+      document.getElementById("prpic").src = "/static/images/ct50.jpg";
+      seti(51);
+      break;
+      case 51:
+      document.getElementById("prpic").src = "/static/images/ct51.jpg";
+      seti(52);
+      break;
+      case 52:
+      document.getElementById("prpic").src = "/static/images/ct52.jpg";
+      seti(53);
+      break;
+      case 53:
+      document.getElementById("prpic").src = "/static/images/ct53.jpg";
+      seti(54);
+      break;
+      case 54:
+      document.getElementById("prpic").src = "/static/images/ct54.jpg";
+      seti(55);
+      break;
+      case 55:
+      document.getElementById("prpic").src = "/static/images/ct55.jpg";
+      seti(56);
+      break;
+      case 56:
+      document.getElementById("prpic").src = "/static/images/ct56.jpg";
+      seti(57);
+      break;
+      case 57:
+      document.getElementById("prpic").src = "/static/images/ct57.jpg";
+      seti(58);
+      break;
+      case 58:
+        document.getElementById("prpic").src = "/static/images/ct58.jpg";
+        seti(59);
+        break;
+        case 59:
+          document.getElementById("prpic").src = "/static/images/ct59.jpg";
+          seti(60);
+          break;
+          case 60:
+            document.getElementById("prpic").src = "/static/images/ct60.png";
+            seti(0);
+            break;
+
+   }
    console.log(i)
   }
   // name display
