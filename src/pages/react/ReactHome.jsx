@@ -249,7 +249,7 @@ export default function ReactHome() {
         </thead>
         <tbody>
         <tr>
-          <td>1</td>
+          <td>1.</td>
           <td>
             In MPAs, content is constantly loaded, which increases the load on
             your server. This can adversely affect web page speed and overall

@@ -20,10 +20,10 @@ export default function Jnavbar() {
                 <Link to="jdbc" style={{ color: clickedLink == 'jdbc' ? 'red' : 'white' }}
         onClick={() => handleLinkClick('jdbc')}>JDBC</Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="advjava" style={{ color: clickedLink == 'advjava' ? 'red' : 'white' }}
         onClick={() => handleLinkClick('advjava')}>Advance Java</Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="accessmodifier" style={{ color: clickedLink == 'accessmodifier' ? 'red' : 'white' }}
         onClick={() => handleLinkClick('accessmodifier')}>Access Modifier</Link>

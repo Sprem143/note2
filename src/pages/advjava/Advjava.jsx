@@ -77,8 +77,92 @@ JSP stands for JavaServer Pages. It is a technology used in Java web development
 <div className="text-center">
     <img src="/static/images/java/jdbcprocess.png" alt="advance java" width='100%' style={{border:"1px solid black"}} />
 </div>
-
 <hr />
+
+  <h2 className="text-center fw-bold text-danger">JDBC</h2>
+<ul>
+    <li>JDBC is a technology which can be used to communicate with database from java application</li>
+    <li>JDBC is a part of <span className="fw-bold">Java Standard Edition( J2SE/JSE)</span></li>    <li>JDBC is a specification (Guidelines) defined by Java Vendor and implemented by Database vendor.</li>
+    <li>Database Vendor provided implementation is called Driver software.</li>
+</ul>
+
+<h4 className="sh">JDBC Features</h4>
+<ol type="I">
+    <li>JDBC is a standard API. We can communicate with any database without rewriting our application, i.e it is platform independent technology.</li>
+    <li>Most of JDBC Drivers are developed in Java and hence JDBC concept can work for any platform i.e it is platform independent technology.</li>
+    <li>By using JDBC API, we can perform basic CRUD operation very easily.
+    <ul className="text-success">
+        <li>C - Create (Insert)</li>
+        <li>R - Retrieve (select)</li>
+        <li>U - Update (Update)</li>
+        <li>D - Delete (Delete)</li>
+    </ul>
+We can also perform complete operations (like joins calling stored procedures) very easily.
+    </li>
+    <li>Huge vendor support for JDBC. They developed multiple products based on JDBC API.. </li>
+</ol>
+
+<h4 className="sh">JDBC versions</h4>
+<ul>
+    <li>Java 1.1V (Java SE 1.1 V) =&gt; JDBC 1.0V</li>
+    <li>Java 1.4V (Java SE 1.4 V) =&gt; JDBC 3.0V</li>
+    <li>Java 5 (Java SE 5) =&gt; No update in JDBC</li>
+    <li>Java 6 (Java SE 6) =&gt; JDBC 4.0V</li>
+    <li>Java 8 (Java SE 8) =&gt; JDBC 4.2V</li>
+    <li>Java 9 (Java SE 9) =&gt; JDBC 4.3V (Latest version)</li>
+</ul>
+
+
+<h4 className="fw-bold">Differences between ODBC & JDBC</h4>
+<table>
+    <thead>
+       <tr className="fw-bold ">
+        <td><span className="text-center">ODBC</span></td>
+        <td ><span className="text-center">JDBC</span></td>
+       </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>I. ODBC  stands for Open Data Base Connectivity.</td>
+        <td>JDBC stands for Java Data Base Connectivity.</td>
+      </tr>
+      <tr>
+        <td>II. Introduced by microsoft in 1992.</td>
+        <td>Introduced by Sun Micro Systems in 1997</td>
+      </tr>
+
+      <tr>
+        <td>III. We can use ODBC for any  language like C, C++, Java etc.</td>
+        <td>We can use JDBC only for Java language.</td>
+      </tr>
+      <tr>
+        <td>IV. We can use ODBC only for window platform.</td>
+        <td>We can use JDBC for any platform.</td>
+      </tr>
+      <tr>
+        <td>V. Mostly ODBC Drivers are developed in native language like C,C++</td>
+        <td>Mostly JDBC Drivers are developed in Java.</td>
+      </tr>
+      <tr>
+        <td>For Java Applications, it is not recommended to use ODBC because performance  will be down due to internal conversions and application will become platform dependent.</td>
+        <td>For Java application, It is highly recommended to use JDBC because there are no performance and platform dependent problems.</td>
+      </tr>
+    </tbody>
+</table>
+<hr />
+<h4 className="text-bold text-danger">Q. How Java is data base independent ?</h4>
+<div className="text-center">
+    <img src="/static/images/java/dbindependent.png" alt="advance java" width='100%' style={{border:"1px solid black"}} />
+</div>
+<hr />
+<p> <span className="td">Note: </span> Java is data base independent but driver is database dependent</p>
+<div className="text-center">
+    <img src="/static/images/java/platformindependent.png" alt="advance java" width='100%' style={{border:"1px solid black"}} />
+</div>
+<hr />
+<p><span className="td">Note: </span> Java is platform independent but JVM is platform dependent.</p>
+
+
 
 
         </div>

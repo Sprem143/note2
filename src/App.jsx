@@ -14,6 +14,8 @@ import Apppython from './pages/python/Apppython';
 import Apphtml from './pages/html/Apphtml';
 import Appreact from './pages/react/Appreact';
 import Appjs from './pages/js/Appjs';
+import Appadvjava from './pages/advjava/Appadvjava';
+import AppNodejs from './pages/nodejs/AppNodejs';
 import Nopage from './mainpage/Nopage';
 import Signin from './mainpage/Signin';
 import Signup from './mainpage/Signup';
@@ -28,8 +30,8 @@ export default function App() {
     react: "react is a js library which is used to design frontend",
     webpack: "Webpack is a module bundler. Its main purpose is to bundle javaScript files for usage in browser. For example if there are 2-3 files like - index.js app.js, form.js, button.js. A module bundler will create a bundle of these files with their dependencies. Webpack  goesthrough your package and creaes a dependency graph which consistes of various modules which your web app would require to function as expected. Then, depending on this grap, it creates a new package which consists of the minimum number of files required, ofter just a single bundle.js file which can be plugged into the html file easily and used for application. CRA comes pre configured with a webpack.",
     nodejs: "Node.js is a run-time environment that comes with everything you need to run a JavaScript programme. It is used for running scripts on the server to render content before it is delivered to a web browser.",
-    npm:"Node Package Manager, or NPM, is a tool and repository for developing and sharing JavaScript code. You can download Node.js installer from this link- https://nodejs.org/en/download/. NPM is installed automatically when node js is installed.",
-    vscode:"Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux.. Visit the official website of the Visual Studio Code using any web browser like Google Chrome, Microsoft Edge, etc to install the VS Code according to your operating system"
+    npm: "Node Package Manager, or NPM, is a tool and repository for developing and sharing JavaScript code. You can download Node.js installer from this link- https://nodejs.org/en/download/. NPM is installed automatically when node js is installed.",
+    vscode: "Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux.. Visit the official website of the Visual Studio Code using any web browser like Google Chrome, Microsoft Edge, etc to install the VS Code according to your operating system"
   }
   function changeTheme() {
     let colore = document.getElementById("exampleColorInput").value;
@@ -75,17 +77,17 @@ export default function App() {
       setAns(db.python)
     } else if (inputValue.includes('react')) {
       setAns(db.react)
-    }else if(inputValue.includes('webpack')){
-       setAns(db.webpack)
-    }else if(inputValue.includes('nodejs')){
+    } else if (inputValue.includes('webpack')) {
+      setAns(db.webpack)
+    } else if (inputValue.includes('nodejs')) {
       setAns(db.nodejs)
-    }else if(inputValue.includes('npm')){
+    } else if (inputValue.includes('npm')) {
       setAns(db.npm)
     }
-    else if(inputValue.includes('vs')&& inputValue.includes('code')){
+    else if (inputValue.includes('vs') && inputValue.includes('code')) {
       setAns(db.vscode)
     }
-  
+
 
     else {
       setAns("Sorry data is not available in our database")
@@ -163,16 +165,18 @@ export default function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route element={<PrivateComponent />}>
-           
             <Route path="java/*" element={<><AppJava /></>} />
             <Route path="profile/" element={<><Profile /></>} />
           </Route>
+
           <Route path="react/*" element={<><Appreact /></>} />
+          <Route path="advjava/*" element={<Appadvjava />} />
           <Route path="python/*" element={<><Apppython /></>} />
-            <Route path="css/*" element={<><Appcss /> </>} />
-            <Route path="html/*" element={<><Apphtml /> </>} />
+          <Route path="css/*" element={<><Appcss /> </>} />
+          <Route path="html/*" element={<><Apphtml /> </>} />
           <Route path="javascript/*" element={<Appjs />} />
           <Route path="signin" element={<Signin />} />
+          <Route path="nodejs/*" element={<AppNodejs />} />
           <Route path="signup" element={<Signup />} />
           <Route path="chatbot" element={<Chatbot />} />
           <Route path="*" element={<Nopage />} />

@@ -34,7 +34,7 @@ export default function Appreact() {
     <>
       <Routes>
       <Route className="routes" path="/" element={ <Reactnavbar /> }>
-          <Route index element={<ReactHome />} />
+        <Route index element={<ReactHome />} />
         <Route path="basic" element={<Basic />} />
         <Route path="class" element={<Class />} />
         <Route path="component" element={<Component />} />
@@ -62,7 +62,6 @@ export default function Appreact() {
         <Route path="usestate" element={<Usestate />} />
         <Route path="reacthm" element={<ReactHm />} />
         <Route path="createreactapp" element={<Createreactapp />} />
-       
       </Route>
       </Routes>
     </>

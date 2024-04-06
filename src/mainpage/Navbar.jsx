@@ -564,9 +564,24 @@ export default function Navbar() {
                       alt="js"
                       height="30"
                     />
-                    <Link onClick={handleClose} to="/django">Django</Link>
+                    <Link onClick={handleClose} to="/advjava">Adv. Java</Link>
                   </Accordion.Header>
-                  <Accordion.Body className="accordionbody">{/* dropdown links */}</Accordion.Body>
+                  <Accordion.Body className="accordionbody">
+                    {/* dropdown links */}
+                    <ul>
+                      <li>
+                        <Link
+                          to="advjava/driver"
+                          style={{
+                            color: clickedLink == "driver" ? "red" : "magenta",
+                          }}
+                          onClick={event => { () => handleLinkClick("driver"), handleClose() }}
+                        >
+                          Driver
+                        </Link>
+                      </li>
+                    </ul>
+                    </Accordion.Body>
                 </Accordion.Item>
 
                 <Accordion.Item eventKey="7">

@@ -453,8 +453,66 @@ export default function Component() {
 </p>
 <b>Navbar.js (class-based)</b>
 <div className="code">
-    
+   import &#123; Component &#125; from "react" <br />
+   import styles from "./navbar.module.css"; <br />
+   <br />
+   class Navbar extends Component &#123; <br />
+   &emsp; render()&#123; <br />
+   &emsp;&emsp;   return( <br />
+   &emsp;&emsp;&emsp;      &lt;div className=&#123;styles.navbar&#125; &gt; <br />
+   &emsp;&emsp;&emsp;&emsp;    &lt;span&gt; Title of Navbar &lt;/span &gt; <br />
+   &emsp;&emsp;&emsp;&emsp;   &lt;span&gt; <br />
+   &emsp;&emsp;&emsp;&emsp;&emsp;  Cart Icon &lt;sup&gt;count &lt;/sup&gt; <br />
+   &emsp;&emsp;&emsp;&emsp;  &lt;/span &gt; <br />
+   &emsp;&emsp;&emsp;  &lt;/div&gt; <br />
+   &emsp;&emsp;   ); <br />
+   &emsp;    &#125; <br />
+       &#125; <br />
+export default Navbar;
 </div>
+
+<h4 className="fw-bold">Navbar.js (Stateless function)</h4>
+<div className="code">
+    import styles form "./navbar.module.css"; <br />
+    <br />
+    function Navbar()&#123; <br />
+    &emsp; return( <br />
+    &emsp; &emsp; &lt;div className=&#123;styles.navbar&#125; &gt; <br />
+    &emsp; &emsp; &emsp; &lt;span&gt;Title of Navbar &lt;/span&gt; <br />
+    &emsp; &emsp; &emsp; &lt;span&gt; <br />
+    &emsp; &emsp; &emsp; &emsp; Card Icon &lt;sup&gt;count &lt;/sup &gt; <br />
+    &emsp; &emsp; &emsp; &lt;/span &gt; <br />
+    &emsp; &emsp; &lt;/div &gt; <br />
+    &emsp; ); <br />
+    &#125; <br />
+    export default Navbar;
+</div>
+ <p><span className="td">Note: </span> Functional component can create and maintain  their internal state using
+React hooks. They can also be a container component.
+</p>
+ <br />
+ <br />
+ <br />
+ <h1 className="td text-center">Component Lifecycle Methods</h1>
+<h4 className="sh">Lifecycle</h4>
+<p>
+    Lifecycle is the series of stages through which a component passes from the beginning of its life until its death. The life of the React component starts when it is born (created/Mounted) and ends when it is destroyed (Unmounted).
+</p>
+<h5>Different Phases of a Lifecycle</h5>
+<ul>
+    <li><span className="fw-bold">Mounting: </span>When a component is being created and inserted into the DOM.</li>
+    <li><span className="fw-bold">Updating: </span> When a Component is being re-rendered due to any updates made to its state or props.</li>
+    <li><span className="fw-bold">Unmounting: </span>When it is destroyed/removed from the DOM.</li>
+    <li><span className="fw-bold">Error Handling: </span>When there is an error during rendering.</li>
+</ul>
+<p>During the lifecycle of a component, certain methods are called at each phase where we can execute some logic or perform a side-effect.</p>
+<p><span className="fw-bold">Side effects</span> are actions that are not predictable because they are actions that are performed with the "outside world." <br />
+For example: Using Browser APIs like localStorage, using the native DOM methods
+instead of the ReactDOM, fetching the data from an API, and setting timeouts and
+intervals.
+
+</p>
+
         </div>
     )
 }
